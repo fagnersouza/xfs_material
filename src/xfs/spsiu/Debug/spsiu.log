@@ -1,4 +1,6 @@
 ﻿  pch.cpp
+  brxutil.cpp
   dllmain.cpp
+  Generating Code...
      Creating library C:\Projetos\xfs_material\src\xfs\Debug\spsiu.lib and object C:\Projetos\xfs_material\src\xfs\Debug\spsiu.exp
   spsiu.vcxproj -> C:\Projetos\xfs_material\src\xfs\Debug\spsiu.dll

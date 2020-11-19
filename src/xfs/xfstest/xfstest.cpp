@@ -6,46 +6,53 @@
 #include<XFSAPI.H>
 #include<XFSADMIN.H>
 #include<XFSCONF.H>
-
-#define TEXTO(x) const_cast<LPSTR>(x)
+#include<brxutil.h>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    //std::cout << "Hello World!\n";
 
     //ETAPA 1
     
-    HRESULT result;
+    HRESULT hResult;
     WFSVERSION xfs_version;
     WFSVERSION sp_version;
+    WORD MENORVERSAO = 0X0B01;
+    WORD MAIORVERSAO = 0x0A03;
+                                //1.11  à 3.10 : range de versao do XFS Manager que a aplicacao suporta
+    hResult = WFSStartUp(VERSAO(MENORVERSAO, MAIORVERSAO), &xfs_version);
 
-    result = WFSStartUp(MAKELONG(0X0003, 0X0003), &xfs_version);
-
-    std::cout << "Result: " << result << "\n";
+    std::cout << "Result WFSStartUp: " << hResult << "\n";
     std::cout << "Description: " << xfs_version.szDescription << "\n";
     std::cout << "SystemStatus: " << xfs_version.szSystemStatus << "\n";
     std::cout << "HighVersion: " << std::hex << xfs_version.wHighVersion << "\n";
     std::cout << "LowVersion: " << std::hex << xfs_version.wLowVersion << "\n";
     std::cout << "Version: " << xfs_version.wVersion << "\n";
+    std::cout << std::endl;
 
 
     //ETAPA 2
+    HSERVICE hService;
 
-    HSERVICE service;
-
-    result = WFSOpen(
-        TEXTO("Sensros"),
+    hResult = WFSOpen(
+        TEXTO("Sensores"),
         WFS_DEFAULT_HAPP,
         TEXTO("XFSTest"),
         0,
-        5000,
-        MAKELONG(0X0003, 0X0303),
+        (5*1000),
+        VERSAO(MENORVERSAO, MAIORVERSAO),//qual a versão de SPI a aplicação suporta
         &xfs_version,
         &sp_version,
-        &service
+        &hService
     );
 
-    std::cout << "Result: " << std::dec << result << "\n";
+    std::cout << "Result WFSOpen: " << std::dec << hResult << "\n";
+
+    if (hResult == WFS_SUCCESS) {
+        hResult = WFSClose(hService);
+    }
+
+    std::cout << std::endl;
 
 
     //ETAPA 3
