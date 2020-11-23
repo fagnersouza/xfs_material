@@ -1,71 +1,258 @@
 // xfstest.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include<windows.h>
+#include <windows.h>
 #include <iostream>
-#include<XFSAPI.H>
-#include<XFSADMIN.H>
-#include<XFSCONF.H>
-#include<brxutil.h>
+#include <thread>
+#include "XFSAPI.H"
+#include "XFSADMIN.H"
+#include "XFSCONF.H"
+#include <XFSSIU.H>
+#include <brxutil.h>
+
+boolean bStopThread = false;
+HWND messageWindow = NULL;
+LPCWSTR lpszClass = L"XFSTEST";
+HINSTANCE hInst = NULL;
+
+HANDLE hModuleThread = NULL;
+HANDLE hRegEvent = NULL;
+
+using namespace std;
+
+boolean CreateXFSMonitor();
+boolean RegisterCallback();
+LRESULT CALLBACK  PostCallBack(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
+DWORD FAR PASCAL ThreadMonitor(string name);
+
+boolean CreateXFSMonitor() {
+    cout << "---" << "Monitor de Eventos XFS" << "---" << endl;
+
+    BOOL bOk;
+    DWORD IdThread;
+
+    hModuleThread = CreateThread(
+        (LPSECURITY_ATTRIBUTES)NULL,
+        0L,
+        (LPTHREAD_START_ROUTINE)ThreadMonitor,
+        (LPVOID)NULL,
+        CREATE_SUSPENDED, // Nao inicia de imediato
+        &IdThread); // IdThread
+
+    if (hModuleThread) {
+
+        hRegEvent = CreateEvent(
+            NULL,    // no security
+            TRUE,    // explicit reset req
+            FALSE,   // initial event reset
+            NULL     // no name
+        );
+
+        if (hRegEvent) {
+            ResumeThread(hModuleThread);
+            WaitForSingleObject(hRegEvent, 3000l);
+        }
+    }
+    else {
+        return false;
+    }
+
+    return true;
+}
+
+boolean RegisterCallback() {
+    WNDCLASS WinClass;
+    HWND hwndPost = NULL;
+
+    memset(&WinClass, 0, sizeof(WNDCLASS));
+    WinClass.style = 0; // Not Global
+    WinClass.lpfnWndProc = (WNDPROC)PostCallBack;
+    WinClass.hInstance = hInst;
+    WinClass.lpszClassName = lpszClass;
+
+    if (RegisterClass(&WinClass)) {
+        hwndPost = CreateWindow(lpszClass,  /* Class Name */
+            NULL,                           /* Caption */
+            0,                              /* Style */
+            0, 0, 0, 0,                     /* x,y,cx,cy */
+            NULL,                           /* Parent Window = Desktop */
+            NULL,                           /* Menu Handle */
+            hInst,                          /* Module Instance */
+            NULL);                          /* Initialization data */
+
+        if (!hwndPost) {
+            cout << "falha ao criar janela" << endl;
+            return false;
+        }
+    }
+    else {
+        return false;
+    }
+
+    cout << "hwndPost: " << hex << hwndPost << endl;
+
+    messageWindow = hwndPost;
+
+    return true;
+}
+
+DWORD FAR PASCAL ThreadMonitor(string name) {
+    if (!RegisterCallback())
+        return 0;
+
+    SetEvent(hRegEvent); // Processo de regitro Efetuado
+
+    MSG msg;
+    while (GetMessage(&msg, NULL, 0, 0)) {
+        TranslateMessage(&msg);
+        DispatchMessage(&msg);
+    }
+
+    return 1; // Thread finalizada normalmente
+}
 
 int main()
 {
-    //std::cout << "Hello World!\n";
+    cout << "Hello World!\n";
 
-    //ETAPA 1
-    
     HRESULT hResult;
     WFSVERSION xfs_version;
     WFSVERSION sp_version;
-    WORD MENORVERSAO = 0X0B01;
-    WORD MAIORVERSAO = 0x0A03;
-                                //1.11  à 3.10 : range de versao do XFS Manager que a aplicacao suporta
-    hResult = WFSStartUp(VERSAO(MENORVERSAO, MAIORVERSAO), &xfs_version);
 
-    std::cout << "Result WFSStartUp: " << hResult << "\n";
-    std::cout << "Description: " << xfs_version.szDescription << "\n";
-    std::cout << "SystemStatus: " << xfs_version.szSystemStatus << "\n";
-    std::cout << "HighVersion: " << std::hex << xfs_version.wHighVersion << "\n";
-    std::cout << "LowVersion: " << std::hex << xfs_version.wLowVersion << "\n";
-    std::cout << "Version: " << xfs_version.wVersion << "\n";
-    std::cout << std::endl;
+    hResult = WFSStartUp(VERSAO(0X0003, 0X0003), &xfs_version);
 
+    cout << "WFSStartUp Result: " << hResult << endl;
+    cout << "Description: " << xfs_version.szDescription << endl;
+    cout << "SystemStatus: " << xfs_version.szSystemStatus << endl;
+    cout << "HighVersion: " << hex << xfs_version.wHighVersion << endl;
+    cout << "LowVersion: " << hex << xfs_version.wLowVersion << endl;
+    cout << "Version: " << xfs_version.wVersion << endl;
+    cout << endl;
 
-    //ETAPA 2
     HSERVICE hService;
+
+
 
     hResult = WFSOpen(
         TEXTO("Sensores"),
         WFS_DEFAULT_HAPP,
-        TEXTO("XFSTest"),
+        TEXTO("BRXFSTEST"),
         0,
-        (5*1000),
-        VERSAO(MENORVERSAO, MAIORVERSAO),//qual a versão de SPI a aplicação suporta
+        5000,
+        VERSAO(0X0003, 0X0303),
         &xfs_version,
         &sp_version,
         &hService
     );
 
-    std::cout << "Result WFSOpen: " << std::dec << hResult << "\n";
+    cout << "WFSOpen Result: " << dec << hResult << endl;
+    cout << "hService: " << dec << hService << endl;
+
+    cout << "XFS Version: " << endl;
+    cout << "Description: " << xfs_version.szDescription << endl;
+    cout << "SystemStatus: " << xfs_version.szSystemStatus << endl;
+    cout << "HighVersion: " << hex << xfs_version.wHighVersion << endl;
+    cout << "LowVersion: " << hex << xfs_version.wLowVersion << endl;
+    cout << "Version: " << xfs_version.wVersion << endl;
+    cout << endl;
+    cout << "SP Version: " << endl;
+    cout << "Description: " << sp_version.szDescription << endl;
+    cout << "SystemStatus: " << sp_version.szSystemStatus << endl;
+    cout << "HighVersion: " << hex << sp_version.wHighVersion << endl;
+    cout << "LowVersion: " << hex << sp_version.wLowVersion << endl;
+    cout << "Version: " << sp_version.wVersion << endl;
+
 
     if (hResult == WFS_SUCCESS) {
-        hResult = WFSClose(hService);
+        CreateXFSMonitor();
+
+        if (messageWindow != NULL) {
+            HRESULT hResult = WFSRegister(hService, SYSTEM_EVENTS | USER_EVENTS | SERVICE_EVENTS | EXECUTE_EVENTS, messageWindow);
+            cout << "WFSRegister Result: " << dec << hResult << endl;
+
+            if (hResult == WFS_SUCCESS) {
+                //thread monitor(ThreadMonitor, "Loop de Mensagens");
+                //monitor.detach();
+            }
+            else {
+                cout << "Error WFSRegister Result: " << dec << hResult << endl;
+            }
+        }
+        else {
+            cout << "falha ao criar janela" << endl;
+        }
     }
 
-    std::cout << std::endl;
+    cin.ignore();
 
+    //Teste
+    LPWFSRESULT   wfsResPointer;
+    hResult = WFSExecute(hService, WFS_CMD_SIU_RESET, NULL, (30 * 1000), &wfsResPointer);
+    WFSFreeResult(wfsResPointer);
+    cout << "WFSExecute Result: " << dec << hResult << endl;
+    //<--
 
-    //ETAPA 3
+    cin.ignore();
+
+    hResult = WFSClose(hService);
+    cout << "WFSClose Result: " << dec << hResult << endl;
     WFSCleanUp();
+    cout << "WFSCleanUp Result: " << dec << hResult << endl;
+
+    if (messageWindow)
+        DestroyWindow(messageWindow);
+
+    if (hInst)
+        UnregisterClass(lpszClass, hInst);
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+LRESULT CALLBACK  PostCallBack(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
+    //cout << "uMsg: " << dec << uMsg << endl;
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+    switch (uMsg) {
+    case WM_TIMER:
+        cout << "WM_TIMER" << endl;
+        return 0;
+    case WFS_TIMER_EVENT:
+        cout << "WM_TIMER" << endl;
+        return 0;
+    case WFS_EXECUTE_EVENT:
+        cout << "WFS_EXECUTE_EVENT" << endl;
+        return 0;
+    case WFS_SERVICE_EVENT:
+        cout << "WFS_SERVICE_EVENT" << endl;
+        return 0;
+    case WFS_USER_EVENT:
+        cout << "WFS_USER_EVENT" << endl;
+        return 0;
+    case WFS_SYSTEM_EVENT:
+        cout << "WFS_SYSTEM_EVENT" << endl;
+        return 0;
+    case WFS_OPEN_COMPLETE:
+        cout << "WFS_OPEN_COMPLETE" << endl;
+        return 0;
+    case WFS_CLOSE_COMPLETE:
+        cout << "WFS_CLOSE_COMPLETE" << endl;
+        return 0;
+    case WFS_LOCK_COMPLETE:
+        cout << "WFS_LOCK_COMPLETE" << endl;
+        return 0;
+    case WFS_UNLOCK_COMPLETE:
+        cout << "WFS_UNLOCK_COMPLETE" << endl;
+        return 0;
+    case WFS_REGISTER_COMPLETE:
+        cout << "WFS_REGISTER_COMPLETE" << endl;
+        return 0;
+    case WFS_DEREGISTER_COMPLETE:
+        cout << "WFS_DEREGISTER_COMPLETE" << endl;
+        return 0;
+    case WFS_GETINFO_COMPLETE:
+        cout << "WFS_GETINFO_COMPLETE" << endl;
+        return 0;
+    case WFS_EXECUTE_COMPLETE:
+        cout << "WFS_EXECUTE_COMPLETE" << endl;
+        return 0;
+    }
+
+    return DefWindowProc(hWnd, uMsg, wParam, lParam);
+}

@@ -3,6 +3,12 @@
 #include<XFSSPI.H>
 #include<XFSSIU.H>
 #include<brxutil.h>
+#include<vector>
+
+using namespace std;
+
+vector<HWND>janelas = {};
+
 
 BOOL APIENTRY DllMain( HMODULE hModule,
                        DWORD  ul_reason_for_call,
@@ -28,8 +34,42 @@ HRESULT extern WINAPI WFPCancelAsyncRequest(HSERVICE hService, REQUESTID Request
 
 HRESULT extern WINAPI WFPClose(HSERVICE hService, HWND hWnd, REQUESTID ReqID) {
     TRACE("Entrei na funcao WFPClose ...");
+    
+    TRACE("hService: %d", hService);
+    TRACE("hWnd: %02X", hWnd);
+    TRACE("ReqID: %d", ReqID);
+    
+    HRESULT hResult = WFS_ERR_INTERNAL_ERROR;
 
-    return WFS_ERR_INTERNAL_ERROR;
+    //-->
+    Sleep(2000);//Simulado algum acesso a dispositivo
+    //TODO: fazer todo o que for preciso para desalocar recursos, fechando conexao com o Device Driver (dispositivo), 
+    // fechando threads, janelas, arquivos e etc.
+    //<--
+
+    hResult = WFS_SUCCESS;
+
+    WFSRESULT   wfsResLocal;
+    memset(&wfsResLocal, 0, sizeof(wfsResLocal));
+
+    wfsResLocal.hResult = hResult;
+    wfsResLocal.hService = hService;
+    wfsResLocal.RequestID = ReqID;
+    GetSystemTime((LPSYSTEMTIME)&wfsResLocal.tsTimestamp);
+
+    LPWFSRESULT lpPostRes;
+
+    if (WFMAllocateBuffer(sizeof(WFSRESULT), WFS_MEM_ZEROINIT | WFS_MEM_SHARE, (LPVOID*)&lpPostRes) != WFS_SUCCESS) {
+        TRACE("PostResult: ERROR WFMAllocateBuffer");
+        return WFS_ERR_INTERNAL_ERROR;
+    }
+
+    memcpy(lpPostRes, &wfsResLocal, sizeof(WFSRESULT));
+
+    PostMessage(hWnd, WFS_CLOSE_COMPLETE, 0, (LPARAM)lpPostRes);//Envia mensagem para a window (hWnd) definida pelo XFS Manager
+
+    TRACE("WFPClose Finalizado. hResult: %d", hResult);
+    return hResult;
 }
 
 HRESULT extern WINAPI WFPDeregister(HSERVICE hService, DWORD dwEventClass, HWND hWndReg, HWND hWnd, REQUESTID ReqID) {
@@ -40,8 +80,44 @@ HRESULT extern WINAPI WFPDeregister(HSERVICE hService, DWORD dwEventClass, HWND 
 
 HRESULT extern WINAPI WFPExecute(HSERVICE hService, DWORD dwCommand, LPVOID lpCmdData, DWORD dwTimeOut, HWND hWnd, REQUESTID ReqID) {
     TRACE("Entrei na funcao WFPExecute ...");
+    // TODO: Logar parametros
+    //
 
-    return WFS_ERR_INTERNAL_ERROR;
+
+    HRESULT hResult = WFS_ERR_INTERNAL_ERROR;
+
+    //TODO: fazer o agendamento do comando dwCommand
+    //
+    Sleep(1000);
+
+    hResult = WFS_SUCCESS;
+
+    WFSRESULT   wfsResLocal;
+    memset(&wfsResLocal, 0, sizeof(wfsResLocal));
+
+    wfsResLocal.hResult = hResult;
+    wfsResLocal.hService = hService;
+    wfsResLocal.RequestID = ReqID;
+    GetSystemTime((LPSYSTEMTIME)&wfsResLocal.tsTimestamp);
+
+    LPWFSRESULT lpPostRes;
+
+    if (WFMAllocateBuffer(sizeof(WFSRESULT), WFS_MEM_ZEROINIT | WFS_MEM_SHARE, (LPVOID*)&lpPostRes) != WFS_SUCCESS) {
+        TRACE("PostResult: ERROR WFMAllocateBuffer");
+        return WFS_ERR_INTERNAL_ERROR;
+    }
+
+    memcpy(lpPostRes, &wfsResLocal, sizeof(WFSRESULT));
+
+    PostMessage(hWnd, WFS_EXECUTE_COMPLETE, 0, (LPARAM)lpPostRes);//Envia mensagem para a window (hWnd) definida pelo XFS Manager
+
+    //TESTE
+    for (HWND it : janelas)
+        PostMessage(it, WFS_SYSTEM_EVENT, 0, (LPARAM)lpPostRes);
+    //--TESTE
+
+    TRACE("WFPExecute Finalizado. hResult: %d", hResult);
+    return hResult;
 }
 
 HRESULT extern WINAPI WFPGetInfo(HSERVICE hService, DWORD dwCategory, LPVOID lpQueryDetails, DWORD dwTimeOut, HWND hWnd, REQUESTID ReqID) {
@@ -60,8 +136,6 @@ HRESULT extern WINAPI WFPLock(HSERVICE hService, DWORD dwTimeOut, HWND hWnd, REQ
 HRESULT extern WINAPI WFPOpen(HSERVICE hService, LPSTR lpszLogicalName, HAPP hApp, LPSTR lpszAppID, DWORD dwTraceLevel, DWORD dwTimeOut, HWND hWnd, REQUESTID ReqID, HPROVIDER hProvider, DWORD dwSPIVersionsRequired, LPWFSVERSION lpSPIVersion, DWORD dwSrvcVersionsRequired, LPWFSVERSION lpSrvcVersion) {
     HRESULT hResult = WFS_ERR_INTERNAL_ERROR;
     TRACE("Executando o WFPOpen ...");
-
-    hService = 1;
 
     TRACE("lpszLogicalName (SIU): %s", lpszLogicalName);
     TRACE("hApp: %02X", hApp);
@@ -121,7 +195,7 @@ HRESULT extern WINAPI WFPOpen(HSERVICE hService, LPSTR lpszLogicalName, HAPP hAp
         return WFS_ERR_INTERNAL_ERROR;
     }
 
-    //memcpy(lpPostRes, &wfsResLocal, sizeof(WFSRESULT));
+    memcpy(lpPostRes, &wfsResLocal, sizeof(WFSRESULT));
 
     PostMessage(hWnd, WFS_OPEN_COMPLETE, 0, (LPARAM)lpPostRes);//Envia mensagem para a window (hWnd) definida pelo XFS Manager
 
@@ -130,9 +204,42 @@ HRESULT extern WINAPI WFPOpen(HSERVICE hService, LPSTR lpszLogicalName, HAPP hAp
 }
 
 HRESULT extern WINAPI WFPRegister(HSERVICE hService, DWORD dwEventClass, HWND hWndReg, HWND hWnd, REQUESTID ReqID) {
-    TRACE("Entrei na funcao WFPRegister ...");
+    HRESULT hResult = WFS_ERR_INTERNAL_ERROR;
+    TRACE("Executando o WFPRegister ...");
 
-    return WFS_ERR_INTERNAL_ERROR;
+    TRACE("hService: %d", hService);
+    TRACE("dwEventClass: %02X", dwEventClass);
+    TRACE("hWndReg: %02X", hWndReg);
+    TRACE("hWnd: %02X", hWnd);
+    TRACE("ReqID: %d", ReqID);
+
+    //Processamento inicia
+    janelas.push_back(hWndReg);
+    //Processamento termina
+
+    hResult = WFS_SUCCESS;
+
+    WFSRESULT   wfsResLocal;
+    memset(&wfsResLocal, 0, sizeof(wfsResLocal));
+
+    wfsResLocal.hResult = hResult;
+    wfsResLocal.hService = hService;
+    wfsResLocal.RequestID = ReqID;
+    GetSystemTime((LPSYSTEMTIME)&wfsResLocal.tsTimestamp);
+
+    LPWFSRESULT lpPostRes;
+
+    if (WFMAllocateBuffer(sizeof(WFSRESULT), WFS_MEM_ZEROINIT | WFS_MEM_SHARE, (LPVOID*)&lpPostRes) != WFS_SUCCESS) {
+        TRACE("PostResult: ERROR WFMAllocateBuffer");
+        return WFS_ERR_INTERNAL_ERROR;
+    }
+
+    memcpy(lpPostRes, &wfsResLocal, sizeof(WFSRESULT));
+
+    PostMessage(hWnd, WFS_REGISTER_COMPLETE, 0, (LPARAM)lpPostRes);
+
+    TRACE("WFPRegister Finalizado. hResult: %d", hResult);
+    return hResult;
 }
 
 HRESULT extern WINAPI WFPSetTraceLevel(HSERVICE hService, DWORD dwTraceLevel) {
