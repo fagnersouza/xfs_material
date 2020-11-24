@@ -162,11 +162,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\common\brxutil.h" />
+    <ClInclude Include="CCommand.h" />
+    <ClInclude Include="CObjectContainer.h" />
+    <ClInclude Include="CServiceProvider.h" />
+    <ClInclude Include="CSession.h" />
+    <ClInclude Include="CThread.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\common\brxutil.cpp" />
+    <ClCompile Include="CCommand.cpp" />
+    <ClCompile Include="CObjectContainer.cpp" />
+    <ClCompile Include="CServiceProvider.cpp" />
+    <ClCompile Include="CSession.cpp" />
+    <ClCompile Include="CThread.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

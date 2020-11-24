@@ -4,6 +4,8 @@
 #include<XFSSIU.H>
 #include<brxutil.h>
 #include<vector>
+#include "CCommand.h"
+#include "CServiceProvider.h"
 
 using namespace std;
 
@@ -176,30 +178,13 @@ HRESULT extern WINAPI WFPOpen(HSERVICE hService, LPSTR lpszLogicalName, HAPP hAp
         strcpy_s(lpSPIVersion->szSystemStatus, lpSrvcVersion->szSystemStatus);
     }
 
-    Sleep(2000);//Simulado algum acesso a dispositivo
+    //
 
-    hResult = WFS_SUCCESS;
+    CServiceProvider* sp = new CServiceProvider();
+    sp->start();
+    sp->setLogicalName(lpszLogicalName);
+    hResult = sp->insertCommand(new CCommand(ReqID, hService, hWnd, WFS_OPEN_COMPLETE, dwTimeOut, 0, NULL, 0));
 
-    WFSRESULT   wfsResLocal;
-    memset(&wfsResLocal, 0, sizeof(wfsResLocal));
-
-    wfsResLocal.hResult = hResult;
-    wfsResLocal.hService = hService;
-    wfsResLocal.RequestID = ReqID;
-    GetSystemTime((LPSYSTEMTIME)&wfsResLocal.tsTimestamp);
-
-    LPWFSRESULT lpPostRes;
-
-    if (WFMAllocateBuffer(sizeof(WFSRESULT), WFS_MEM_ZEROINIT | WFS_MEM_SHARE, (LPVOID*)&lpPostRes) != WFS_SUCCESS) {
-        TRACE("PostResult: ERROR WFMAllocateBuffer");
-        return WFS_ERR_INTERNAL_ERROR;
-    }
-
-    memcpy(lpPostRes, &wfsResLocal, sizeof(WFSRESULT));
-
-    PostMessage(hWnd, WFS_OPEN_COMPLETE, 0, (LPARAM)lpPostRes);//Envia mensagem para a window (hWnd) definida pelo XFS Manager
-
-    TRACE("WFPOpen Finalizado. hResult: %d", hResult);
     return hResult;
 }
 

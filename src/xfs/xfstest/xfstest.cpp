@@ -210,9 +210,9 @@ LRESULT CALLBACK  PostCallBack(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPara
     //cout << "uMsg: " << dec << uMsg << endl;
 
     switch (uMsg) {
-    case WM_TIMER:
-        cout << "WM_TIMER" << endl;
-        return 0;
+    //case WM_TIMER:
+    //    cout << "WM_TIMER" << endl;
+    //    return 0;
     case WFS_TIMER_EVENT:
         cout << "WM_TIMER" << endl;
         return 0;

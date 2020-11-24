@@ -24,6 +24,21 @@
     <ClInclude Include="..\common\brxutil.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CServiceProvider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CSession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CObjectContainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -33,6 +48,21 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\common\brxutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CCommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CServiceProvider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CSession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjectContainer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
