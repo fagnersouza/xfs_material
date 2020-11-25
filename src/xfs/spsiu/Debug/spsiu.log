@@ -1,6 +1,7 @@
 ﻿  pch.cpp
   brxutil.cpp
   CCommand.cpp
+  CMutex.cpp
   CObjectContainer.cpp
   CServiceProvider.cpp
   CSession.cpp

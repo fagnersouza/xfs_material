@@ -14705,3 +14705,3132 @@ ReqID: 2
 19:02:40.279 
 (Date)24.11.2020 (Time)19:02.40,279
 WFPRegister Finalizado. hResult: 0
+08:56:13.281 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+08:56:13.281 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+08:56:13.281 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+08:56:13.281 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+08:56:13.281 OpenKey returning *phkResult x250
+08:56:13.281 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensors_Indicators )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+08:56:13.281 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+08:56:13.281 OpenKey returning *phkResult x254
+08:56:13.281 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+08:56:13.281 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+08:56:13.281 OpenKey returning *phkResult x250
+08:56:13.281 RegOpenKeyEx( x250, SERVICE_PROVIDERS\FS_Sensors )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+08:56:13.281 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+08:56:13.281 OpenKey returning *phkResult x258
+08:56:15.114 
+(Date)25.11.2020 (Time)08:56.15,114
+Executando o WFPOpen ...
+08:56:15.106 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+08:56:15.106 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+08:56:15.114 
+(Date)25.11.2020 (Time)08:56.15,114
+hService: 1
+08:56:15.106 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+08:56:15.114 
+(Date)25.11.2020 (Time)08:56.15,114
+lpszLogicalName (SIU): Sensors_Indicators
+08:56:15.106 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+08:56:15.114 
+(Date)25.11.2020 (Time)08:56.15,114
+hApp: 141598824
+08:56:15.106 OpenKey returning *phkResult x254
+08:56:15.114 
+(Date)25.11.2020 (Time)08:56.15,114
+lpszAppID: BRXFSTEST
+08:56:15.114 
+(Date)25.11.2020 (Time)08:56.15,114
+dwTraceLevel: 0
+08:56:15.106 RegOpenKeyEx( x254, LOGICAL_SERVICES\Sensors_Indicators )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+08:56:15.106 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+08:56:15.115 
+(Date)25.11.2020 (Time)08:56.15,115
+dwTimeOut: 5000
+08:56:15.115 
+(Date)25.11.2020 (Time)08:56.15,115
+hWnd: 1810B0
+08:56:15.106 OpenKey returning *phkResult x258
+08:56:15.115 
+(Date)25.11.2020 (Time)08:56.15,115
+ReqID: 1
+08:56:15.115 
+(Date)25.11.2020 (Time)08:56.15,115
+hProvider: 7800E018
+08:56:15.115 
+(Date)25.11.2020 (Time)08:56.15,115
+dwSPIVersionsRequired: 101FF03
+08:56:15.115 
+(Date)25.11.2020 (Time)08:56.15,115
+dwSPIVersionsRequired.MaiorVersao: FF03
+08:56:15.115 
+(Date)25.11.2020 (Time)08:56.15,115
+dwSPIVersionsRequired.MenorVersao: 101
+08:56:15.115 
+(Date)25.11.2020 (Time)08:56.15,115
+dwSrvcVersionsRequired.MaiorVersao: 03
+08:56:15.115 
+(Date)25.11.2020 (Time)08:56.15,115
+dwSrvcVersionsRequired.MenorVersao: 303
+08:56:15.130 
+(Date)25.11.2020 (Time)08:56.15,130
+WFPOpen Finalizado. hResult: 0
+08:56:15.162 
+(Date)25.11.2020 (Time)08:56.15,162
+Executando o WFPSetTraceLevel ...
+08:56:15.162 
+(Date)25.11.2020 (Time)08:56.15,162
+hService: 1
+08:56:15.162 
+(Date)25.11.2020 (Time)08:56.15,162
+dwTraceLevel: 0
+08:56:15.162 
+(Date)25.11.2020 (Time)08:56.15,162
+WFPRegister Finalizado. hResult: 0
+08:56:15.183 
+(Date)25.11.2020 (Time)08:56.15,183
+Executando o WFPRegister ...
+08:56:15.183 
+(Date)25.11.2020 (Time)08:56.15,183
+hService: 1
+08:56:15.183 
+(Date)25.11.2020 (Time)08:56.15,183
+dwEventClass: 0F
+08:56:15.183 
+(Date)25.11.2020 (Time)08:56.15,183
+hWndReg: 1910B0
+08:56:15.183 
+(Date)25.11.2020 (Time)08:56.15,183
+hWnd: 350DF6
+08:56:15.183 
+(Date)25.11.2020 (Time)08:56.15,183
+ReqID: 2
+08:56:15.183 
+(Date)25.11.2020 (Time)08:56.15,183
+WFPRegister Finalizado. hResult: 0
+08:56:22.089 
+(Date)25.11.2020 (Time)08:56.22,89
+Executando o WFPExecute ...
+08:56:22.089 
+(Date)25.11.2020 (Time)08:56.22,89
+hService: 1
+08:56:22.089 
+(Date)25.11.2020 (Time)08:56.22,89
+dwCommand: 807
+08:56:22.089 
+(Date)25.11.2020 (Time)08:56.22,89
+dwTimeOut: 30000
+08:56:22.089 
+(Date)25.11.2020 (Time)08:56.22,89
+hWnd: 360DF6
+08:56:22.089 
+(Date)25.11.2020 (Time)08:56.22,89
+ReqID: 3
+08:56:22.089 
+(Date)25.11.2020 (Time)08:56.22,89
+WFPExecute Finalizado. hResult: 0
+08:56:23.875 APICALL: WFSCleanUp: Entered
+08:56:23.887 
+(Date)25.11.2020 (Time)08:56.23,887
+Executando o WFPClose ...
+08:56:23.887 
+(Date)25.11.2020 (Time)08:56.23,887
+hService: 1
+08:56:23.887 
+(Date)25.11.2020 (Time)08:56.23,887
+hWnd: 7E05D4
+08:56:23.887 
+(Date)25.11.2020 (Time)08:56.23,887
+ReqID: 4
+08:56:23.963 
+(Date)25.11.2020 (Time)08:56.23,963
+WFPClose Finalizado. hResult: 0
+08:56:23.963 
+(Date)25.11.2020 (Time)08:56.23,963
+Executando o WFPUnloadService ...
+08:56:24.977 APICALL: WFSCleanUp: Exit
+08:56:24.973 
+(Date)25.11.2020 (Time)08:56.24,973
+WFPUnloadService Finalizado. hResult: 0
+08:57:49.146 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+08:57:49.194 
+(Date)25.11.2020 (Time)08:57.49,194
+Executando o WFPOpen ...
+08:57:49.146 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+08:57:49.194 
+(Date)25.11.2020 (Time)08:57.49,194
+hService: 1
+09:05:00.395 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+09:05:00.395 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+09:05:00.395 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+09:05:00.395 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+09:05:00.395 OpenKey returning *phkResult x250
+09:05:00.395 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensors_Indicators )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+09:05:00.395 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+09:05:00.395 OpenKey returning *phkResult x254
+09:05:00.395 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+09:05:00.395 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+09:05:00.395 OpenKey returning *phkResult x250
+09:05:00.395 RegOpenKeyEx( x250, SERVICE_PROVIDERS\FS_Sensors )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+09:05:00.395 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+09:05:00.395 OpenKey returning *phkResult x258
+09:05:02.646 
+(Date)25.11.2020 (Time)09:05.02,646
+Executando o WFPOpen ...
+09:05:02.637 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+09:44:14.598 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+09:44:14.598 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+09:44:14.598 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+09:44:14.598 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+09:44:14.598 OpenKey returning *phkResult x250
+09:44:14.598 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensors_Indicators )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+09:44:14.598 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+09:44:14.598 OpenKey returning *phkResult x254
+09:44:14.598 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+09:44:14.598 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+09:44:14.598 OpenKey returning *phkResult x250
+09:44:14.598 RegOpenKeyEx( x250, SERVICE_PROVIDERS\FS_Sensors )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+09:44:14.598 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+09:44:14.598 OpenKey returning *phkResult x258
+09:44:16.907 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+09:44:16.917 
+(Date)25.11.2020 (Time)09:44.16,917
+Executando o WFPOpen ...
+09:44:16.907 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+09:44:16.917 
+(Date)25.11.2020 (Time)09:44.16,917
+hService: 1
+09:44:47.208 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+09:44:47.240 
+(Date)25.11.2020 (Time)09:44.47,240
+Executando o WFPOpen ...
+09:44:47.208 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+09:44:47.240 
+(Date)25.11.2020 (Time)09:44.47,240
+hService: 1
+09:45:12.726 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+09:45:12.759 
+(Date)25.11.2020 (Time)09:45.12,759
+Executando o WFPOpen ...
+09:45:12.726 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+09:45:12.759 
+(Date)25.11.2020 (Time)09:45.12,759
+hService: 1
+10:01:16.025 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+10:01:16.025 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+10:01:16.025 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+10:01:16.025 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+10:01:16.025 OpenKey returning *phkResult x25c
+10:01:16.025 RegOpenKeyEx( x25c, LOGICAL_SERVICES\Sensors_Indicators )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+10:01:16.025 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+10:01:16.025 OpenKey returning *phkResult x260
+10:01:16.025 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+10:01:16.025 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+10:01:16.025 OpenKey returning *phkResult x25c
+10:01:16.026 RegOpenKeyEx( x25c, SERVICE_PROVIDERS\FS_Sensors )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+10:01:16.026 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+10:01:16.026 OpenKey returning *phkResult x264
+10:01:18.232 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+10:01:18.241 
+(Date)25.11.2020 (Time)10:01.18,241
+Executando o WFPOpen ...
+10:01:18.232 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+10:01:18.241 
+(Date)25.11.2020 (Time)10:01.18,241
+hService: 1
+10:01:18.232 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+10:01:18.232 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+10:01:18.241 
+(Date)25.11.2020 (Time)10:01.18,241
+lpszLogicalName (SIU): Sensors_Indicators
+10:01:18.232 OpenKey returning *phkResult x26c
+10:01:18.241 
+(Date)25.11.2020 (Time)10:01.18,241
+hApp: 141598824
+10:01:18.241 
+(Date)25.11.2020 (Time)10:01.18,241
+lpszAppID: BRXFSTEST
+10:01:18.232 RegOpenKeyEx( x26c, LOGICAL_SERVICES\Sensors_Indicators )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+10:01:18.232 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+10:01:18.242 
+(Date)25.11.2020 (Time)10:01.18,242
+dwTraceLevel: 0
+10:01:18.242 
+(Date)25.11.2020 (Time)10:01.18,242
+dwTimeOut: 5000
+10:01:18.232 OpenKey returning *phkResult x270
+10:01:18.242 
+(Date)25.11.2020 (Time)10:01.18,242
+hWnd: 4C0AAE
+10:01:18.242 
+(Date)25.11.2020 (Time)10:01.18,242
+ReqID: 1
+10:01:18.242 
+(Date)25.11.2020 (Time)10:01.18,242
+hProvider: 7800E018
+10:01:18.242 
+(Date)25.11.2020 (Time)10:01.18,242
+dwSPIVersionsRequired: 101FF03
+10:01:18.243 
+(Date)25.11.2020 (Time)10:01.18,243
+dwSPIVersionsRequired.MaiorVersao: FF03
+10:01:18.243 
+(Date)25.11.2020 (Time)10:01.18,243
+dwSPIVersionsRequired.MenorVersao: 101
+10:01:18.243 
+(Date)25.11.2020 (Time)10:01.18,243
+dwSrvcVersionsRequired.MaiorVersao: 03
+10:01:18.243 
+(Date)25.11.2020 (Time)10:01.18,243
+dwSrvcVersionsRequired.MenorVersao: 303
+10:01:18.268 
+(Date)25.11.2020 (Time)10:01.18,268
+WFPOpen Finalizado. hResult: 0
+10:01:32.544 
+(Date)25.11.2020 (Time)10:01.32,544
+Executando o WFPSetTraceLevel ...
+10:01:32.545 
+(Date)25.11.2020 (Time)10:01.32,545
+hService: 1
+10:01:32.546 
+(Date)25.11.2020 (Time)10:01.32,546
+dwTraceLevel: 0
+10:01:32.546 
+(Date)25.11.2020 (Time)10:01.32,546
+WFPRegister Finalizado. hResult: 0
+10:01:32.573 
+(Date)25.11.2020 (Time)10:01.32,573
+Executando o WFPRegister ...
+10:01:32.573 
+(Date)25.11.2020 (Time)10:01.32,573
+hService: 1
+10:01:32.573 
+(Date)25.11.2020 (Time)10:01.32,573
+dwEventClass: 0F
+10:01:32.573 
+(Date)25.11.2020 (Time)10:01.32,573
+hWndReg: 4D0AAE
+10:01:32.574 
+(Date)25.11.2020 (Time)10:01.32,574
+hWnd: 4D0DAC
+10:01:32.574 
+(Date)25.11.2020 (Time)10:01.32,574
+ReqID: 2
+10:01:32.574 
+(Date)25.11.2020 (Time)10:01.32,574
+WFPRegister Finalizado. hResult: 0
+10:01:38.404 
+(Date)25.11.2020 (Time)10:01.38,404
+Executando o WFPExecute ...
+10:01:38.405 
+(Date)25.11.2020 (Time)10:01.38,405
+hService: 1
+10:01:38.405 
+(Date)25.11.2020 (Time)10:01.38,405
+dwCommand: 807
+10:01:38.405 
+(Date)25.11.2020 (Time)10:01.38,405
+dwTimeOut: 30000
+10:01:38.405 
+(Date)25.11.2020 (Time)10:01.38,405
+hWnd: 90B06
+10:01:38.406 
+(Date)25.11.2020 (Time)10:01.38,406
+ReqID: 3
+10:01:38.406 
+(Date)25.11.2020 (Time)10:01.38,406
+WFPExecute Finalizado. hResult: 0
+10:01:39.231 APICALL: WFSCleanUp: Entered
+10:01:44.443 
+(Date)25.11.2020 (Time)10:01.44,443
+Executando o WFPClose ...
+10:01:44.444 
+(Date)25.11.2020 (Time)10:01.44,444
+hService: 1
+10:01:44.444 
+(Date)25.11.2020 (Time)10:01.44,444
+hWnd: A0B54
+10:01:44.444 
+(Date)25.11.2020 (Time)10:01.44,444
+ReqID: 4
+10:01:44.535 
+(Date)25.11.2020 (Time)10:01.44,535
+WFPClose Finalizado. hResult: 0
+10:01:44.536 
+(Date)25.11.2020 (Time)10:01.44,536
+Executando o WFPUnloadService ...
+10:01:45.545 
+(Date)25.11.2020 (Time)10:01.45,545
+WFPUnloadService Finalizado. hResult: 0
+10:01:45.554 APICALL: WFSCleanUp: Exit
+10:04:59.163 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+10:04:59.177 
+(Date)25.11.2020 (Time)10:04.59,177
+Executando o WFPOpen ...
+10:04:59.163 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+10:04:59.177 
+(Date)25.11.2020 (Time)10:04.59,177
+hService: 1
+10:04:59.163 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+10:04:59.177 
+(Date)25.11.2020 (Time)10:04.59,177
+lpszLogicalName (SIU): Sensors_Indicators
+10:04:59.163 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+10:04:59.177 
+(Date)25.11.2020 (Time)10:04.59,177
+hApp: 141598824
+10:04:59.163 OpenKey returning *phkResult x250
+10:04:59.177 
+(Date)25.11.2020 (Time)10:04.59,177
+lpszAppID: BRXFSTEST
+10:04:59.163 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensors_Indicators )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+10:04:59.177 
+(Date)25.11.2020 (Time)10:04.59,177
+dwTraceLevel: 0
+10:04:59.163 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+10:04:59.177 
+(Date)25.11.2020 (Time)10:04.59,177
+dwTimeOut: 5000
+10:04:59.163 OpenKey returning *phkResult x254
+10:04:59.177 
+(Date)25.11.2020 (Time)10:04.59,177
+hWnd: 130600
+10:04:59.163 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+10:04:59.177 
+(Date)25.11.2020 (Time)10:04.59,177
+ReqID: 1
+10:04:59.163 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+10:04:59.177 
+(Date)25.11.2020 (Time)10:04.59,177
+hProvider: 7800E018
+10:04:59.163 OpenKey returning *phkResult x250
+10:04:59.177 
+(Date)25.11.2020 (Time)10:04.59,177
+dwSPIVersionsRequired: 101FF03
+10:04:59.163 RegOpenKeyEx( x250, SERVICE_PROVIDERS\FS_Sensors )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+10:04:59.177 
+(Date)25.11.2020 (Time)10:04.59,177
+dwSPIVersionsRequired.MaiorVersao: FF03
+10:04:59.163 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+10:04:59.177 
+(Date)25.11.2020 (Time)10:04.59,177
+dwSPIVersionsRequired.MenorVersao: 101
+10:04:59.163 OpenKey returning *phkResult x258
+10:04:59.177 
+(Date)25.11.2020 (Time)10:04.59,177
+dwSrvcVersionsRequired.MaiorVersao: 03
+10:04:59.167 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+10:04:59.177 
+(Date)25.11.2020 (Time)10:04.59,177
+dwSrvcVersionsRequired.MenorVersao: 303
+10:04:59.167 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+10:04:59.192 
+(Date)25.11.2020 (Time)10:04.59,192
+WFPOpen Finalizado. hResult: 0
+10:04:59.167 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+10:04:59.225 
+(Date)25.11.2020 (Time)10:04.59,225
+Executando o WFPUnloadService ...
+10:04:59.167 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+10:04:59.167 OpenKey returning *phkResult x254
+10:04:59.167 RegOpenKeyEx( x254, LOGICAL_SERVICES\Sensors_Indicators )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+10:04:59.167 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+10:04:59.167 OpenKey returning *phkResult x258
+10:05:00.234 
+(Date)25.11.2020 (Time)10:05.00,234
+WFPUnloadService Finalizado. hResult: 0
+10:05:28.133 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+10:05:28.146 
+(Date)25.11.2020 (Time)10:05.28,146
+Executando o WFPOpen ...
+10:05:28.146 
+(Date)25.11.2020 (Time)10:05.28,146
+hService: 1
+10:05:28.133 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+10:05:28.133 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+10:05:28.146 
+(Date)25.11.2020 (Time)10:05.28,146
+lpszLogicalName (SIU): Sensors_Indicators
+10:05:28.146 
+(Date)25.11.2020 (Time)10:05.28,146
+hApp: 141598824
+10:05:28.133 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+10:05:28.134 OpenKey returning *phkResult x250
+10:05:28.146 
+(Date)25.11.2020 (Time)10:05.28,146
+lpszAppID: BRXFSTEST
+10:05:28.134 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensors_Indicators )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+10:05:28.146 
+(Date)25.11.2020 (Time)10:05.28,146
+dwTraceLevel: 0
+10:05:28.146 
+(Date)25.11.2020 (Time)10:05.28,146
+dwTimeOut: 5000
+10:05:28.134 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+10:05:28.146 
+(Date)25.11.2020 (Time)10:05.28,146
+hWnd: F0766
+10:05:28.134 OpenKey returning *phkResult x254
+10:05:28.134 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+10:05:28.146 
+(Date)25.11.2020 (Time)10:05.28,146
+ReqID: 1
+10:05:28.134 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+10:05:28.146 
+(Date)25.11.2020 (Time)10:05.28,146
+hProvider: 7800E018
+10:05:28.134 OpenKey returning *phkResult x250
+10:05:28.146 
+(Date)25.11.2020 (Time)10:05.28,146
+dwSPIVersionsRequired: 101FF03
+10:05:28.146 
+(Date)25.11.2020 (Time)10:05.28,146
+dwSPIVersionsRequired.MaiorVersao: FF03
+10:05:28.134 RegOpenKeyEx( x250, SERVICE_PROVIDERS\FS_Sensors )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+10:05:28.146 
+(Date)25.11.2020 (Time)10:05.28,146
+dwSPIVersionsRequired.MenorVersao: 101
+10:05:28.134 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+10:05:28.134 OpenKey returning *phkResult x258
+10:05:28.146 
+(Date)25.11.2020 (Time)10:05.28,146
+dwSrvcVersionsRequired.MaiorVersao: 03
+10:05:28.137 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+10:05:28.146 
+(Date)25.11.2020 (Time)10:05.28,146
+dwSrvcVersionsRequired.MenorVersao: 303
+10:05:28.167 
+(Date)25.11.2020 (Time)10:05.28,167
+WFPOpen Finalizado. hResult: 0
+10:05:28.137 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+10:05:28.182 
+(Date)25.11.2020 (Time)10:05.28,182
+Executando o WFPSetTraceLevel ...
+10:05:28.137 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+10:05:28.137 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+10:05:28.183 
+(Date)25.11.2020 (Time)10:05.28,183
+hService: 1
+10:05:28.183 
+(Date)25.11.2020 (Time)10:05.28,183
+dwTraceLevel: 0
+10:05:28.137 OpenKey returning *phkResult x254
+10:05:28.137 RegOpenKeyEx( x254, LOGICAL_SERVICES\Sensors_Indicators )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+10:05:28.183 
+(Date)25.11.2020 (Time)10:05.28,183
+WFPRegister Finalizado. hResult: 0
+10:05:28.203 
+(Date)25.11.2020 (Time)10:05.28,203
+Executando o WFPRegister ...
+10:05:28.137 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+10:05:28.203 
+(Date)25.11.2020 (Time)10:05.28,203
+hService: 1
+10:05:28.137 OpenKey returning *phkResult x258
+10:05:28.203 
+(Date)25.11.2020 (Time)10:05.28,203
+dwEventClass: 0F
+10:05:28.203 
+(Date)25.11.2020 (Time)10:05.28,203
+hWndReg: 100766
+10:05:28.203 
+(Date)25.11.2020 (Time)10:05.28,203
+hWnd: 160600
+10:05:28.203 
+(Date)25.11.2020 (Time)10:05.28,203
+ReqID: 2
+10:05:28.203 
+(Date)25.11.2020 (Time)10:05.28,203
+WFPRegister Finalizado. hResult: 0
+10:05:30.361 
+(Date)25.11.2020 (Time)10:05.30,361
+Executando o WFPExecute ...
+10:05:30.362 
+(Date)25.11.2020 (Time)10:05.30,361
+hService: 1
+10:05:30.362 
+(Date)25.11.2020 (Time)10:05.30,362
+dwCommand: 807
+10:05:30.362 
+(Date)25.11.2020 (Time)10:05.30,362
+dwTimeOut: 30000
+10:05:30.362 
+(Date)25.11.2020 (Time)10:05.30,362
+hWnd: 170600
+10:05:30.362 
+(Date)25.11.2020 (Time)10:05.30,362
+ReqID: 3
+10:05:30.362 
+(Date)25.11.2020 (Time)10:05.30,362
+WFPExecute Finalizado. hResult: 0
+10:05:30.883 
+(Date)25.11.2020 (Time)10:05.30,883
+Executando o WFPClose ...
+10:05:30.871 APICALL: WFSCleanUp: Entered
+10:05:30.883 
+(Date)25.11.2020 (Time)10:05.30,883
+hService: 1
+10:05:30.883 
+(Date)25.11.2020 (Time)10:05.30,883
+hWnd: 3306BE
+10:05:30.883 
+(Date)25.11.2020 (Time)10:05.30,883
+ReqID: 4
+10:05:30.931 
+(Date)25.11.2020 (Time)10:05.30,931
+WFPClose Finalizado. hResult: 0
+10:05:30.931 
+(Date)25.11.2020 (Time)10:05.30,931
+Executando o WFPUnloadService ...
+10:05:31.949 APICALL: WFSCleanUp: Exit
+10:05:31.942 
+(Date)25.11.2020 (Time)10:05.31,942
+WFPUnloadService Finalizado. hResult: 0
+11:00:44.476 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:00:44.476 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+11:00:44.477 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:00:44.477 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+11:00:44.477 OpenKey returning *phkResult x250
+11:00:44.477 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensors_Indicators )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:00:44.477 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+11:00:44.477 OpenKey returning *phkResult x254
+11:00:44.477 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:00:44.477 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+11:00:44.477 OpenKey returning *phkResult x250
+11:00:44.477 RegOpenKeyEx( x250, SERVICE_PROVIDERS\FS_Sensors )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:00:44.477 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+11:00:44.477 OpenKey returning *phkResult x258
+11:00:46.719 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:00:46.728 
+(Date)25.11.2020 (Time)11:00.46,728
+Executando o WFPOpen ...
+11:01:02.428 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:01:02.456 
+(Date)25.11.2020 (Time)11:01.02,456
+Executando o WFPOpen ...
+11:01:02.428 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+11:01:02.457 
+(Date)25.11.2020 (Time)11:01.02,457
+hService: 1
+11:01:02.429 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:01:02.457 
+(Date)25.11.2020 (Time)11:01.02,457
+lpszLogicalName (SIU): Sensors_Indicators
+11:01:02.429 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+11:01:02.457 
+(Date)25.11.2020 (Time)11:01.02,457
+hApp: 141598824
+11:01:02.429 OpenKey returning *phkResult x254
+11:01:02.457 
+(Date)25.11.2020 (Time)11:01.02,457
+lpszAppID: BRXFSTEST
+11:01:02.429 RegOpenKeyEx( x254, LOGICAL_SERVICES\Sensors_Indicators )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:01:02.457 
+(Date)25.11.2020 (Time)11:01.02,457
+dwTraceLevel: 0
+11:01:02.429 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+11:01:02.458 
+(Date)25.11.2020 (Time)11:01.02,458
+dwTimeOut: 5000
+11:01:02.429 OpenKey returning *phkResult x258
+11:01:02.458 
+(Date)25.11.2020 (Time)11:01.02,458
+hWnd: AD05D4
+11:01:02.429 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:01:02.458 
+(Date)25.11.2020 (Time)11:01.02,458
+ReqID: 1
+11:01:02.429 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+11:01:02.458 
+(Date)25.11.2020 (Time)11:01.02,458
+hProvider: 7800E018
+11:01:02.429 OpenKey returning *phkResult x254
+11:01:02.458 
+(Date)25.11.2020 (Time)11:01.02,458
+dwSPIVersionsRequired: 101FF03
+11:01:02.429 RegOpenKeyEx( x254, SERVICE_PROVIDERS\FS_Sensors )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:01:02.459 
+(Date)25.11.2020 (Time)11:01.02,459
+dwSPIVersionsRequired.MaiorVersao: FF03
+11:01:02.429 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+11:01:02.459 
+(Date)25.11.2020 (Time)11:01.02,459
+dwSPIVersionsRequired.MenorVersao: 101
+11:01:02.429 OpenKey returning *phkResult x25c
+11:01:02.459 
+(Date)25.11.2020 (Time)11:01.02,459
+dwSrvcVersionsRequired.MaiorVersao: 03
+11:01:02.450 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:01:02.459 
+(Date)25.11.2020 (Time)11:01.02,459
+dwSrvcVersionsRequired.MenorVersao: 303
+11:01:02.450 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+11:01:02.478 
+(Date)25.11.2020 (Time)11:01.02,478
+WFPOpen Finalizado. hResult: 0
+11:01:02.450 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:01:02.495 
+(Date)25.11.2020 (Time)11:01.02,495
+Executando o WFPSetTraceLevel ...
+11:01:02.450 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+11:01:02.496 
+(Date)25.11.2020 (Time)11:01.02,496
+hService: 1
+11:01:02.450 OpenKey returning *phkResult x258
+11:01:02.496 
+(Date)25.11.2020 (Time)11:01.02,496
+dwTraceLevel: 0
+11:01:02.450 RegOpenKeyEx( x258, LOGICAL_SERVICES\Sensors_Indicators )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:01:02.496 
+(Date)25.11.2020 (Time)11:01.02,496
+WFPRegister Finalizado. hResult: 0
+11:01:02.450 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+11:01:02.516 
+(Date)25.11.2020 (Time)11:01.02,516
+Executando o WFPRegister ...
+11:01:02.450 OpenKey returning *phkResult x25c
+11:01:02.517 
+(Date)25.11.2020 (Time)11:01.02,517
+hService: 1
+11:01:02.517 
+(Date)25.11.2020 (Time)11:01.02,517
+dwEventClass: 0F
+11:01:02.517 
+(Date)25.11.2020 (Time)11:01.02,517
+hWndReg: AE05D4
+11:01:02.517 
+(Date)25.11.2020 (Time)11:01.02,517
+hWnd: D0B56
+11:01:02.517 
+(Date)25.11.2020 (Time)11:01.02,517
+ReqID: 2
+11:01:02.517 
+(Date)25.11.2020 (Time)11:01.02,517
+WFPRegister Finalizado. hResult: 0
+11:01:55.729 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:01:55.762 
+(Date)25.11.2020 (Time)11:01.55,762
+Executando o WFPOpen ...
+11:01:55.729 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+11:02:43.555 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:02:43.593 
+(Date)25.11.2020 (Time)11:02.43,593
+Executando o WFPOpen ...
+11:02:43.555 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+11:02:43.594 
+(Date)25.11.2020 (Time)11:02.43,594
+hService: 1
+11:02:55.012 
+(Date)25.11.2020 (Time)11:02.55,12
+Executando o WFPOpen ...
+11:02:54.981 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:02:55.012 
+(Date)25.11.2020 (Time)11:02.55,12
+hService: 1
+11:04:21.556 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:04:21.556 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+11:04:21.556 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:04:21.556 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+11:04:21.556 OpenKey returning *phkResult x250
+11:04:21.556 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensors_Indicators )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:04:21.556 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+11:04:21.556 OpenKey returning *phkResult x254
+11:04:21.556 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:04:21.556 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+11:04:21.556 OpenKey returning *phkResult x250
+11:04:21.556 RegOpenKeyEx( x250, SERVICE_PROVIDERS\FS_Sensors )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:04:21.556 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+11:04:21.556 OpenKey returning *phkResult x258
+11:04:23.578 
+(Date)25.11.2020 (Time)11:04.23,578
+Executando o WFPOpen ...
+11:04:23.567 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:13:33.165 
+(Date)25.11.2020 (Time)11:13.33,165
+Executando o WFPOpen ...
+11:13:33.136 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:14:42.409 
+(Date)25.11.2020 (Time)11:14.42,409
+Executando o WFPOpen ...
+11:14:42.375 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:14:42.409 
+(Date)25.11.2020 (Time)11:14.42,409
+hService: 1
+11:14:42.375 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+11:15:10.117 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:15:10.152 
+(Date)25.11.2020 (Time)11:15.10,152
+Executando o WFPOpen ...
+11:15:10.117 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+11:15:10.152 
+(Date)25.11.2020 (Time)11:15.10,152
+hService: 1
+11:18:15.693 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:18:15.693 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+11:18:15.693 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:18:15.693 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+11:18:15.693 OpenKey returning *phkResult x24c
+11:18:15.693 RegOpenKeyEx( x24c, LOGICAL_SERVICES\Sensors_Indicators )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:18:15.693 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+11:18:15.693 OpenKey returning *phkResult x250
+11:18:15.693 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:18:15.693 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+11:18:15.693 OpenKey returning *phkResult x24c
+11:18:15.693 RegOpenKeyEx( x24c, SERVICE_PROVIDERS\FS_Sensors )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:18:15.693 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+11:18:15.693 OpenKey returning *phkResult x254
+11:18:17.717 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:18:17.727 
+(Date)25.11.2020 (Time)11:18.17,727
+Executando o WFPOpen ...
+11:18:17.727 
+(Date)25.11.2020 (Time)11:18.17,727
+hService: 1
+11:18:38.527 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:18:38.559 
+(Date)25.11.2020 (Time)11:18.38,559
+Executando o WFPOpen ...
+11:18:38.527 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+11:18:38.559 
+(Date)25.11.2020 (Time)11:18.38,559
+hService: 1
+11:23:54.025 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:23:54.025 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+11:23:54.025 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:23:54.025 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+11:23:54.025 OpenKey returning *phkResult x24c
+11:23:54.025 RegOpenKeyEx( x24c, LOGICAL_SERVICES\Sensors_Indicators )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:23:54.025 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+11:23:54.025 OpenKey returning *phkResult x250
+11:23:54.025 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:23:54.025 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+11:23:54.025 OpenKey returning *phkResult x24c
+11:23:54.025 RegOpenKeyEx( x24c, SERVICE_PROVIDERS\FS_Sensors )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:23:54.025 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+11:23:54.025 OpenKey returning *phkResult x254
+11:23:56.046 
+(Date)25.11.2020 (Time)11:23.56,46
+Executando o WFPOpen ...
+11:23:56.038 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:23:56.047 
+(Date)25.11.2020 (Time)11:23.56,47
+hService: 1
+11:24:57.203 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:24:57.203 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+11:24:57.203 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:24:57.366 
+(Date)25.11.2020 (Time)11:24.57,366
+Executando o WFPOpen ...
+11:24:57.203 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+11:24:57.366 
+(Date)25.11.2020 (Time)11:24.57,366
+hService: 1
+11:24:57.203 OpenKey returning *phkResult x250
+11:24:57.367 
+(Date)25.11.2020 (Time)11:24.57,367
+lpszLogicalName (SIU): Sensors_Indicators
+11:24:57.203 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensors_Indicators )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:24:57.367 
+(Date)25.11.2020 (Time)11:24.57,367
+hApp: 141598824
+11:24:57.367 
+(Date)25.11.2020 (Time)11:24.57,367
+lpszAppID: BRXFSTEST
+11:24:57.203 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+11:24:57.367 
+(Date)25.11.2020 (Time)11:24.57,367
+dwTraceLevel: 0
+11:24:57.203 OpenKey returning *phkResult x254
+11:24:57.203 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:24:57.367 
+(Date)25.11.2020 (Time)11:24.57,367
+dwTimeOut: 5000
+11:24:57.368 
+(Date)25.11.2020 (Time)11:24.57,368
+hWnd: C105D4
+11:24:57.203 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+11:24:57.368 
+(Date)25.11.2020 (Time)11:24.57,368
+ReqID: 1
+11:24:57.203 OpenKey returning *phkResult x250
+11:24:57.203 RegOpenKeyEx( x250, SERVICE_PROVIDERS\FS_Sensors )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:24:57.368 
+(Date)25.11.2020 (Time)11:24.57,368
+hProvider: 7800E018
+11:24:57.368 
+(Date)25.11.2020 (Time)11:24.57,368
+dwSPIVersionsRequired: 101FF03
+11:24:57.203 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+11:24:57.203 OpenKey returning *phkResult x258
+11:24:57.368 
+(Date)25.11.2020 (Time)11:24.57,368
+dwSPIVersionsRequired.MaiorVersao: FF03
+11:24:57.356 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:24:57.368 
+(Date)25.11.2020 (Time)11:24.57,368
+dwSPIVersionsRequired.MenorVersao: 101
+11:24:57.369 
+(Date)25.11.2020 (Time)11:24.57,369
+dwSrvcVersionsRequired.MaiorVersao: 03
+11:24:57.356 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+11:24:57.369 
+(Date)25.11.2020 (Time)11:24.57,369
+dwSrvcVersionsRequired.MenorVersao: 303
+11:24:57.356 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:24:57.356 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+11:24:57.385 
+(Date)25.11.2020 (Time)11:24.57,385
+WFPOpen Finalizado. hResult: 0
+11:25:07.499 
+(Date)25.11.2020 (Time)11:25.07,499
+Executando o WFPSetTraceLevel ...
+11:24:57.356 OpenKey returning *phkResult x260
+11:24:57.356 RegOpenKeyEx( x260, LOGICAL_SERVICES\Sensors_Indicators )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:25:07.500 
+(Date)25.11.2020 (Time)11:25.07,500
+hService: 1
+11:25:07.500 
+(Date)25.11.2020 (Time)11:25.07,500
+dwTraceLevel: 0
+11:24:57.356 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+11:25:07.500 
+(Date)25.11.2020 (Time)11:25.07,500
+WFPRegister Finalizado. hResult: 0
+11:24:57.356 OpenKey returning *phkResult x264
+11:25:07.527 
+(Date)25.11.2020 (Time)11:25.07,527
+Executando o WFPRegister ...
+11:25:07.527 
+(Date)25.11.2020 (Time)11:25.07,527
+hService: 1
+11:25:07.527 
+(Date)25.11.2020 (Time)11:25.07,527
+dwEventClass: 0F
+11:25:07.527 
+(Date)25.11.2020 (Time)11:25.07,527
+hWndReg: C205D4
+11:25:07.528 
+(Date)25.11.2020 (Time)11:25.07,528
+hWnd: 120B60
+11:25:07.528 
+(Date)25.11.2020 (Time)11:25.07,528
+ReqID: 2
+11:25:07.528 
+(Date)25.11.2020 (Time)11:25.07,528
+WFPRegister Finalizado. hResult: 0
+11:25:09.997 
+(Date)25.11.2020 (Time)11:25.09,997
+Executando o WFPExecute ...
+11:25:09.998 
+(Date)25.11.2020 (Time)11:25.09,998
+hService: 1
+11:25:09.998 
+(Date)25.11.2020 (Time)11:25.09,998
+dwCommand: 807
+11:25:09.998 
+(Date)25.11.2020 (Time)11:25.09,998
+dwTimeOut: 30000
+11:25:09.998 
+(Date)25.11.2020 (Time)11:25.09,998
+hWnd: 1A0B56
+11:25:09.998 
+(Date)25.11.2020 (Time)11:25.09,998
+ReqID: 3
+11:25:09.999 
+(Date)25.11.2020 (Time)11:25.09,999
+WFPExecute Finalizado. hResult: 0
+11:25:10.855 APICALL: WFSCleanUp: Entered
+11:25:10.867 
+(Date)25.11.2020 (Time)11:25.10,867
+Executando o WFPClose ...
+11:25:10.867 
+(Date)25.11.2020 (Time)11:25.10,867
+hService: 1
+11:25:10.867 
+(Date)25.11.2020 (Time)11:25.10,867
+hWnd: 7D0E8E
+11:25:10.867 
+(Date)25.11.2020 (Time)11:25.10,867
+ReqID: 4
+11:25:10.958 
+(Date)25.11.2020 (Time)11:25.10,958
+WFPClose Finalizado. hResult: 0
+11:25:10.958 
+(Date)25.11.2020 (Time)11:25.10,958
+Executando o WFPUnloadService ...
+11:25:11.970 APICALL: WFSCleanUp: Exit
+11:25:11.964 
+(Date)25.11.2020 (Time)11:25.11,964
+WFPUnloadService Finalizado. hResult: 0
+11:25:38.269 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:25:38.306 
+(Date)25.11.2020 (Time)11:25.38,306
+Executando o WFPOpen ...
+11:25:38.269 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+11:26:33.016 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:26:33.016 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+11:26:33.016 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:26:33.016 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+11:26:33.016 OpenKey returning *phkResult x250
+11:26:33.016 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensors_Indicators )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:26:33.274 
+(Date)25.11.2020 (Time)11:26.33,274
+Executando o WFPOpen ...
+11:26:51.558 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:26:51.606 
+(Date)25.11.2020 (Time)11:26.51,606
+Executando o WFPOpen ...
+11:26:51.558 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+11:27:10.518 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:27:10.578 
+(Date)25.11.2020 (Time)11:27.10,578
+Executando o WFPOpen ...
+11:27:10.518 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+11:29:56.501 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:29:56.501 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+11:29:56.501 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:29:56.501 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+11:29:56.501 OpenKey returning *phkResult x264
+11:29:56.501 RegOpenKeyEx( x264, LOGICAL_SERVICES\Sensors_Indicators )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:29:56.501 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+11:29:56.501 OpenKey returning *phkResult x268
+11:29:56.501 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:29:56.501 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+11:29:56.501 OpenKey returning *phkResult x264
+11:29:56.501 RegOpenKeyEx( x264, SERVICE_PROVIDERS\FS_Sensors )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:29:56.501 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+11:29:56.501 OpenKey returning *phkResult x26c
+11:29:58.662 
+(Date)25.11.2020 (Time)11:29.58,662
+Executando o WFPOpen ...
+11:29:58.651 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:29:58.662 
+(Date)25.11.2020 (Time)11:29.58,662
+hService: 1
+11:29:58.651 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+11:29:58.662 
+(Date)25.11.2020 (Time)11:29.58,662
+lpszLogicalName (SIU): Sensors_Indicators
+11:29:58.651 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:29:58.663 
+(Date)25.11.2020 (Time)11:29.58,663
+hApp: 141598824
+11:29:58.651 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+11:29:58.663 
+(Date)25.11.2020 (Time)11:29.58,663
+lpszAppID: BRXFSTEST
+11:29:58.651 OpenKey returning *phkResult x268
+11:29:58.663 
+(Date)25.11.2020 (Time)11:29.58,663
+dwTraceLevel: 0
+11:29:58.651 RegOpenKeyEx( x268, LOGICAL_SERVICES\Sensors_Indicators )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:29:58.663 
+(Date)25.11.2020 (Time)11:29.58,663
+dwTimeOut: 5000
+11:29:58.651 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+11:29:58.663 
+(Date)25.11.2020 (Time)11:29.58,663
+hWnd: 70BC8
+11:29:58.651 OpenKey returning *phkResult x150
+11:29:58.664 
+(Date)25.11.2020 (Time)11:29.58,664
+ReqID: 1
+11:29:58.664 
+(Date)25.11.2020 (Time)11:29.58,664
+hProvider: 7800E018
+11:29:58.664 
+(Date)25.11.2020 (Time)11:29.58,664
+dwSPIVersionsRequired: 101FF03
+11:29:58.664 
+(Date)25.11.2020 (Time)11:29.58,664
+dwSPIVersionsRequired.MaiorVersao: FF03
+11:29:58.664 
+(Date)25.11.2020 (Time)11:29.58,664
+dwSPIVersionsRequired.MenorVersao: 101
+11:29:58.664 
+(Date)25.11.2020 (Time)11:29.58,664
+dwSrvcVersionsRequired.MaiorVersao: 03
+11:29:58.665 
+(Date)25.11.2020 (Time)11:29.58,665
+dwSrvcVersionsRequired.MenorVersao: 303
+11:29:58.688 
+(Date)25.11.2020 (Time)11:29.58,688
+WFPOpen Finalizado. hResult: 0
+11:29:58.705 
+(Date)25.11.2020 (Time)11:29.58,705
+Executando o WFPSetTraceLevel ...
+11:29:58.705 
+(Date)25.11.2020 (Time)11:29.58,705
+hService: 1
+11:29:58.705 
+(Date)25.11.2020 (Time)11:29.58,705
+dwTraceLevel: 0
+11:29:58.706 
+(Date)25.11.2020 (Time)11:29.58,706
+WFPRegister Finalizado. hResult: 0
+11:29:58.727 
+(Date)25.11.2020 (Time)11:29.58,727
+Executando o WFPRegister ...
+11:29:58.727 
+(Date)25.11.2020 (Time)11:29.58,727
+hService: 1
+11:29:58.727 
+(Date)25.11.2020 (Time)11:29.58,727
+dwEventClass: 0F
+11:29:58.727 
+(Date)25.11.2020 (Time)11:29.58,727
+hWndReg: 80BC8
+11:29:58.728 
+(Date)25.11.2020 (Time)11:29.58,728
+hWnd: 20BCE
+11:29:58.728 
+(Date)25.11.2020 (Time)11:29.58,728
+ReqID: 2
+11:29:58.728 
+(Date)25.11.2020 (Time)11:29.58,728
+WFPRegister Finalizado. hResult: 0
+11:30:08.810 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+11:30:08.837 
+(Date)25.11.2020 (Time)11:30.08,837
+Executando o WFPOpen ...
+11:30:08.810 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+12:08:32.879 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+12:08:32.915 
+(Date)25.11.2020 (Time)12:08.32,915
+Executando o WFPOpen ...
+12:08:32.879 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+12:09:03.825 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+12:09:03.857 
+(Date)25.11.2020 (Time)12:09.03,857
+Executando o WFPOpen ...
+12:09:03.825 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+12:09:55.667 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+12:09:55.667 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+12:09:55.667 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+12:09:55.667 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+12:09:55.667 OpenKey returning *phkResult x14c
+12:09:55.667 RegOpenKeyEx( x14c, LOGICAL_SERVICES\Sensors_Indicators )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+12:09:55.667 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+12:09:55.667 OpenKey returning *phkResult x254
+12:09:55.667 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+12:09:55.667 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+12:09:55.667 OpenKey returning *phkResult x14c
+12:09:55.667 RegOpenKeyEx( x14c, SERVICE_PROVIDERS\FS_Sensors )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+12:09:55.667 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+12:09:55.667 OpenKey returning *phkResult x258
+12:09:57.943 
+(Date)25.11.2020 (Time)12:09.57,943
+Executando o WFPOpen ...
+12:09:57.934 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:15:35.720 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:15:35.720 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+15:15:35.720 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:15:35.720 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+15:15:35.720 OpenKey returning *phkResult x24c
+15:15:35.720 RegOpenKeyEx( x24c, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:15:35.720 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+15:15:35.720 OpenKey returning *phkResult x250
+15:15:35.720 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:15:35.720 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+15:15:35.720 OpenKey returning *phkResult x24c
+15:15:35.720 RegOpenKeyEx( x24c, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:15:35.720 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+15:15:35.720 OpenKey returning *phkResult x254
+15:15:38.038 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:15:38.041 
+(Date)25.11.2020 (Time)15:15.38,41
+Executando o WFPOpen ...
+15:15:38.038 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+15:15:38.041 
+(Date)25.11.2020 (Time)15:15.38,41
+lpszLogicalName (SIU): Sensores
+15:15:38.038 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:15:38.041 
+(Date)25.11.2020 (Time)15:15.38,41
+hApp: 870A068
+15:15:38.038 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+15:15:38.041 
+(Date)25.11.2020 (Time)15:15.38,41
+lpszAppID: BRXFSTEST
+15:15:38.041 
+(Date)25.11.2020 (Time)15:15.38,41
+dwTraceLevel: 0
+15:15:38.038 OpenKey returning *phkResult x250
+15:15:38.041 
+(Date)25.11.2020 (Time)15:15.38,41
+dwTimeOut: 5000
+15:15:38.038 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:15:38.038 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+15:15:38.041 
+(Date)25.11.2020 (Time)15:15.38,41
+hWnd: 411BC
+15:15:38.038 OpenKey returning *phkResult x25c
+15:15:38.041 
+(Date)25.11.2020 (Time)15:15.38,41
+ReqID: 1
+15:15:38.041 
+(Date)25.11.2020 (Time)15:15.38,41
+hProvider: 7800E018
+15:15:38.041 
+(Date)25.11.2020 (Time)15:15.38,41
+dwSPIVersionsRequired: 101FF03
+15:15:38.041 
+(Date)25.11.2020 (Time)15:15.38,41
+dwSPIVersionsRequired.MaiorVersao: FF03
+15:15:38.041 
+(Date)25.11.2020 (Time)15:15.38,41
+dwSPIVersionsRequired.MenorVersao: 101
+15:15:38.041 
+(Date)25.11.2020 (Time)15:15.38,41
+dwSrvcVersionsRequired.MaiorVersao: 03
+15:15:38.041 
+(Date)25.11.2020 (Time)15:15.38,41
+dwSrvcVersionsRequired.MenorVersao: 303
+15:16:34.175 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:16:34.175 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+15:16:34.175 OpenKey returning *phkResult x144
+15:16:34.175 RegOpenKeyEx( x144, XFS_MANAGER )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:16:34.175 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+15:16:34.175 OpenKey returning *phkResult x148
+15:16:34.175 RegOpenKeyEx( x80000000, WOSA/XFS_ROOT )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:16:34.175 OpenKey( HKEY_CLASSES_ROOT,WOSA_ROOT_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2126)
+15:16:51.682 
+(Date)25.11.2020 (Time)15:16.51,682
+Executando o WFPOpen ...
+15:16:51.658 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:16:51.658 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+15:16:51.683 
+(Date)25.11.2020 (Time)15:16.51,683
+lpszLogicalName (SIU): Sensores
+15:16:51.658 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:16:51.683 
+(Date)25.11.2020 (Time)15:16.51,683
+hApp: 870A068
+15:16:51.658 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+15:16:51.683 
+(Date)25.11.2020 (Time)15:16.51,683
+lpszAppID: BRXFSTEST
+15:16:51.658 OpenKey returning *phkResult x250
+15:16:51.683 
+(Date)25.11.2020 (Time)15:16.51,683
+dwTraceLevel: 0
+15:16:51.683 
+(Date)25.11.2020 (Time)15:16.51,683
+dwTimeOut: 5000
+15:16:51.658 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:16:51.658 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+15:16:51.683 
+(Date)25.11.2020 (Time)15:16.51,683
+hWnd: 5A0E74
+15:16:51.658 OpenKey returning *phkResult x254
+15:16:51.683 
+(Date)25.11.2020 (Time)15:16.51,683
+ReqID: 1
+15:16:51.658 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:16:51.684 
+(Date)25.11.2020 (Time)15:16.51,684
+hProvider: 7800E018
+15:16:51.658 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+15:16:51.684 
+(Date)25.11.2020 (Time)15:16.51,684
+dwSPIVersionsRequired: 101FF03
+15:16:51.684 
+(Date)25.11.2020 (Time)15:16.51,684
+dwSPIVersionsRequired.MaiorVersao: FF03
+15:16:51.658 OpenKey returning *phkResult x250
+15:16:51.684 
+(Date)25.11.2020 (Time)15:16.51,684
+dwSPIVersionsRequired.MenorVersao: 101
+15:16:51.658 RegOpenKeyEx( x250, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:16:51.684 
+(Date)25.11.2020 (Time)15:16.51,684
+dwSrvcVersionsRequired.MaiorVersao: 03
+15:16:51.658 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+15:16:51.658 OpenKey returning *phkResult x258
+15:16:51.684 
+(Date)25.11.2020 (Time)15:16.51,684
+dwSrvcVersionsRequired.MenorVersao: 303
+15:16:51.680 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:16:51.680 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+15:16:51.680 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:16:51.680 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+15:16:51.680 OpenKey returning *phkResult x254
+15:16:51.680 RegOpenKeyEx( x254, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:16:51.680 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+15:16:51.680 OpenKey returning *phkResult x25c
+15:18:13.306 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:18:13.306 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+15:18:13.306 OpenKey returning *phkResult x14c
+15:18:13.306 RegOpenKeyEx( x14c, XFS_MANAGER )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:18:13.306 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+15:18:13.306 OpenKey returning *phkResult x150
+15:18:13.306 RegOpenKeyEx( x80000000, WOSA/XFS_ROOT )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:18:13.306 OpenKey( HKEY_CLASSES_ROOT,WOSA_ROOT_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2126)
+15:19:09.413 
+(Date)25.11.2020 (Time)15:19.09,413
+Executando o WFPOpen ...
+15:19:09.396 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:19:09.396 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+15:19:09.413 
+(Date)25.11.2020 (Time)15:19.09,413
+lpszLogicalName (SIU): Sensores
+15:19:09.396 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:19:09.413 
+(Date)25.11.2020 (Time)15:19.09,413
+hApp: 870A068
+15:19:09.413 
+(Date)25.11.2020 (Time)15:19.09,413
+lpszAppID: BRXFSTEST
+15:19:09.396 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+15:19:09.396 OpenKey returning *phkResult x24c
+15:19:09.413 
+(Date)25.11.2020 (Time)15:19.09,413
+dwTraceLevel: 0
+15:19:09.396 RegOpenKeyEx( x24c, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:19:09.414 
+(Date)25.11.2020 (Time)15:19.09,414
+dwTimeOut: 5000
+15:19:09.396 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+15:19:09.414 
+(Date)25.11.2020 (Time)15:19.09,414
+hWnd: 511C4
+15:19:09.396 OpenKey returning *phkResult x250
+15:19:09.414 
+(Date)25.11.2020 (Time)15:19.09,414
+ReqID: 1
+15:19:09.414 
+(Date)25.11.2020 (Time)15:19.09,414
+hProvider: 7800E018
+15:19:09.396 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:19:09.414 
+(Date)25.11.2020 (Time)15:19.09,414
+dwSPIVersionsRequired: 101FF03
+15:19:09.396 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+15:19:09.396 OpenKey returning *phkResult x24c
+15:19:09.414 
+(Date)25.11.2020 (Time)15:19.09,414
+dwSPIVersionsRequired.MaiorVersao: FF03
+15:19:09.396 RegOpenKeyEx( x24c, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:19:09.414 
+(Date)25.11.2020 (Time)15:19.09,414
+dwSPIVersionsRequired.MenorVersao: 101
+15:19:09.415 
+(Date)25.11.2020 (Time)15:19.09,415
+dwSrvcVersionsRequired.MaiorVersao: 03
+15:19:09.396 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+15:19:09.415 
+(Date)25.11.2020 (Time)15:19.09,415
+dwSrvcVersionsRequired.MenorVersao: 303
+15:19:09.396 OpenKey returning *phkResult x254
+15:19:09.408 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:19:09.408 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+15:19:09.408 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:19:09.409 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+15:19:09.409 OpenKey returning *phkResult x250
+15:19:09.409 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:19:09.409 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+15:19:09.409 OpenKey returning *phkResult x254
+15:19:23.925 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:19:23.925 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+15:19:23.925 OpenKey returning *phkResult x148
+15:19:23.925 RegOpenKeyEx( x148, XFS_MANAGER )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:19:23.925 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+15:19:23.925 OpenKey returning *phkResult x14c
+15:19:23.925 RegOpenKeyEx( x80000000, WOSA/XFS_ROOT )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:19:23.925 OpenKey( HKEY_CLASSES_ROOT,WOSA_ROOT_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2126)
+15:19:41.159 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:19:41.159 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+15:19:41.159 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:19:41.159 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+15:19:41.159 OpenKey returning *phkResult x24c
+15:19:41.159 RegOpenKeyEx( x24c, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:19:41.159 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+15:19:41.159 OpenKey returning *phkResult x250
+15:19:41.159 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:19:41.159 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+15:19:41.159 OpenKey returning *phkResult x24c
+15:19:41.159 RegOpenKeyEx( x24c, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:19:41.159 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+15:19:41.159 OpenKey returning *phkResult x254
+15:19:43.330 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:19:43.335 
+(Date)25.11.2020 (Time)15:19.43,335
+Executando o WFPOpen ...
+15:19:43.330 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+15:19:43.330 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:19:43.336 
+(Date)25.11.2020 (Time)15:19.43,336
+lpszLogicalName (SIU): Sensores
+15:19:43.330 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+15:19:43.336 
+(Date)25.11.2020 (Time)15:19.43,336
+hApp: 870A068
+15:19:43.330 OpenKey returning *phkResult x24c
+15:19:43.336 
+(Date)25.11.2020 (Time)15:19.43,336
+lpszAppID: BRXFSTEST
+15:19:43.336 
+(Date)25.11.2020 (Time)15:19.43,336
+dwTraceLevel: 0
+15:19:43.330 RegOpenKeyEx( x24c, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+15:19:43.330 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+15:19:43.336 
+(Date)25.11.2020 (Time)15:19.43,336
+dwTimeOut: 5000
+15:19:43.337 
+(Date)25.11.2020 (Time)15:19.43,337
+hWnd: 460CB6
+15:19:43.330 OpenKey returning *phkResult x258
+15:19:43.337 
+(Date)25.11.2020 (Time)15:19.43,337
+ReqID: 1
+15:19:43.337 
+(Date)25.11.2020 (Time)15:19.43,337
+hProvider: 7800E018
+15:19:43.337 
+(Date)25.11.2020 (Time)15:19.43,337
+dwSPIVersionsRequired: 101FF03
+15:19:43.337 
+(Date)25.11.2020 (Time)15:19.43,337
+dwSPIVersionsRequired.MaiorVersao: FF03
+15:19:43.338 
+(Date)25.11.2020 (Time)15:19.43,338
+dwSPIVersionsRequired.MenorVersao: 101
+15:19:43.338 
+(Date)25.11.2020 (Time)15:19.43,338
+dwSrvcVersionsRequired.MaiorVersao: 03
+15:19:43.338 
+(Date)25.11.2020 (Time)15:19.43,338
+dwSrvcVersionsRequired.MenorVersao: 303
+15:22:57.334 
+(Date)25.11.2020 (Time)15:22.57,334
+Entrei na funcao WFPSetTraceLevel ...
+15:22:57.350 
+(Date)25.11.2020 (Time)15:22.57,350
+Executando o WFPRegister ...
+15:22:57.351 
+(Date)25.11.2020 (Time)15:22.57,351
+hService: 1
+15:22:57.351 
+(Date)25.11.2020 (Time)15:22.57,351
+dwEventClass: 0F
+15:22:57.351 
+(Date)25.11.2020 (Time)15:22.57,351
+hWndReg: 470CB6
+15:22:57.351 
+(Date)25.11.2020 (Time)15:22.57,351
+hWnd: C0D36
+15:22:57.351 
+(Date)25.11.2020 (Time)15:22.57,351
+ReqID: 2
+15:22:57.352 
+(Date)25.11.2020 (Time)15:22.57,352
+WFPRegister Finalizado. hResult: 0
+15:23:06.461 
+(Date)25.11.2020 (Time)15:23.06,461
+Entrei na funcao WFPExecute ...
+15:23:07.476 
+(Date)25.11.2020 (Time)15:23.07,476
+WFPExecute Finalizado. hResult: 0
+15:23:07.608 
+(Date)25.11.2020 (Time)15:23.07,608
+Entrei na funcao WFPClose ...
+15:23:07.608 
+(Date)25.11.2020 (Time)15:23.07,608
+hService: 1
+15:23:07.608 
+(Date)25.11.2020 (Time)15:23.07,608
+hWnd: 22130C
+15:23:07.608 
+(Date)25.11.2020 (Time)15:23.07,608
+ReqID: 4
+15:23:09.615 
+(Date)25.11.2020 (Time)15:23.09,615
+WFPClose Finalizado. hResult: 0
+15:23:09.619 APICALL: WFSCleanUp: Entered
+15:23:09.622 APICALL: WFSCleanUp: Exit
+15:23:09.615 
+(Date)25.11.2020 (Time)15:23.09,615
+Entrei na funcao WFPUnloadService ...
+15:23:09.619 
+(Date)25.11.2020 (Time)15:23.09,619
+Entrei na funcao WFPUnloadService ...
+16:17:39.998 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+16:17:40.005 
+(Date)25.11.2020 (Time)16:17.40,05
+Executando o WFPOpen ...
+16:17:39.998 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+16:17:40.005 
+(Date)25.11.2020 (Time)16:17.40,05
+lpszLogicalName (SIU): Sensores
+16:17:39.998 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+16:17:40.005 
+(Date)25.11.2020 (Time)16:17.40,05
+hApp: 870A068
+16:17:39.998 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+16:17:40.005 
+(Date)25.11.2020 (Time)16:17.40,05
+lpszAppID: BRXFSTEST
+16:17:40.005 
+(Date)25.11.2020 (Time)16:17.40,05
+dwTraceLevel: 0
+16:17:39.998 OpenKey returning *phkResult x254
+16:17:40.005 
+(Date)25.11.2020 (Time)16:17.40,05
+dwTimeOut: 5000
+16:17:39.998 RegOpenKeyEx( x254, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+16:17:40.005 
+(Date)25.11.2020 (Time)16:17.40,05
+hWnd: 2B1126
+16:17:39.998 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+16:17:39.998 OpenKey returning *phkResult x258
+16:17:40.005 
+(Date)25.11.2020 (Time)16:17.40,05
+ReqID: 1
+16:17:40.005 
+(Date)25.11.2020 (Time)16:17.40,05
+hProvider: 7800E018
+16:17:39.998 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+16:17:40.005 
+(Date)25.11.2020 (Time)16:17.40,05
+dwSPIVersionsRequired: 101FF03
+16:17:39.998 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+16:17:39.998 OpenKey returning *phkResult x254
+16:17:40.005 
+(Date)25.11.2020 (Time)16:17.40,05
+dwSPIVersionsRequired.MaiorVersao: FF03
+16:17:39.998 RegOpenKeyEx( x254, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+16:17:40.005 
+(Date)25.11.2020 (Time)16:17.40,05
+dwSPIVersionsRequired.MenorVersao: 101
+16:17:40.005 
+(Date)25.11.2020 (Time)16:17.40,05
+dwSrvcVersionsRequired.MaiorVersao: 03
+16:17:39.998 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+16:17:40.005 
+(Date)25.11.2020 (Time)16:17.40,05
+dwSrvcVersionsRequired.MenorVersao: 303
+16:17:39.998 OpenKey returning *phkResult x25c
+16:17:40.050 
+(Date)25.11.2020 (Time)16:17.40,50
+WFPOpen Finalizado. hResult: 0
+16:17:40.002 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+16:17:40.002 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+16:17:40.050 
+(Date)25.11.2020 (Time)16:17.40,50
+Entrei na funcao WFPSetTraceLevel ...
+16:17:40.002 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+16:17:40.058 
+(Date)25.11.2020 (Time)16:17.40,58
+Executando o WFPRegister ...
+16:17:40.058 
+(Date)25.11.2020 (Time)16:17.40,58
+hService: 1
+16:17:40.002 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+16:17:40.002 OpenKey returning *phkResult x258
+16:17:40.058 
+(Date)25.11.2020 (Time)16:17.40,58
+dwEventClass: 0F
+16:17:40.002 RegOpenKeyEx( x258, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+16:17:40.058 
+(Date)25.11.2020 (Time)16:17.40,58
+hWndReg: 2C1126
+16:17:40.058 
+(Date)25.11.2020 (Time)16:17.40,58
+hWnd: DB0564
+16:17:40.002 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+16:17:40.002 OpenKey returning *phkResult x25c
+16:17:40.058 
+(Date)25.11.2020 (Time)16:17.40,58
+ReqID: 2
+16:17:40.058 
+(Date)25.11.2020 (Time)16:17.40,58
+WFPRegister Finalizado. hResult: -15
+16:18:11.898 
+(Date)25.11.2020 (Time)16:18.11,898
+Entrei na funcao WFPExecute ...
+16:18:11.898 
+(Date)25.11.2020 (Time)16:18.11,898
+WFPExecute Finalizado. hResult: -15
+16:18:12.604 
+(Date)25.11.2020 (Time)16:18.12,604
+Entrei na funcao WFPClose ...
+16:18:12.604 
+(Date)25.11.2020 (Time)16:18.12,604
+hService: 1
+16:18:12.604 
+(Date)25.11.2020 (Time)16:18.12,604
+hWnd: 1512D8
+16:18:12.604 
+(Date)25.11.2020 (Time)16:18.12,604
+ReqID: 4
+16:18:14.608 
+(Date)25.11.2020 (Time)16:18.14,608
+WFPClose Finalizado. hResult: 0
+16:18:14.613 APICALL: WFSCleanUp: Entered
+16:18:14.617 APICALL: WFSCleanUp: Exit
+16:18:14.608 
+(Date)25.11.2020 (Time)16:18.14,608
+Entrei na funcao WFPUnloadService ...
+16:18:14.613 
+(Date)25.11.2020 (Time)16:18.14,613
+Entrei na funcao WFPUnloadService ...
+17:05:31.348 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:05:31.348 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+17:05:31.348 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:05:31.348 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+17:05:31.348 OpenKey returning *phkResult x250
+17:05:31.348 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:05:31.348 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+17:05:31.348 OpenKey returning *phkResult x254
+17:05:31.348 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:05:31.348 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+17:05:31.348 OpenKey returning *phkResult x250
+17:05:31.348 RegOpenKeyEx( x250, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:05:31.348 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+17:05:31.348 OpenKey returning *phkResult x258
+17:05:33.273 
+(Date)25.11.2020 (Time)17:05.33,273
+Executando o WFPOpen ...
+17:05:33.267 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:05:33.267 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+17:05:33.273 
+(Date)25.11.2020 (Time)17:05.33,273
+lpszLogicalName (SIU): Sensores
+17:05:33.267 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:05:33.273 
+(Date)25.11.2020 (Time)17:05.33,273
+hApp: 870A068
+17:05:33.273 
+(Date)25.11.2020 (Time)17:05.33,273
+lpszAppID: BRXFSTEST
+17:05:33.267 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+17:05:33.273 
+(Date)25.11.2020 (Time)17:05.33,273
+dwTraceLevel: 0
+17:05:33.267 OpenKey returning *phkResult x254
+17:05:33.267 RegOpenKeyEx( x254, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:05:33.273 
+(Date)25.11.2020 (Time)17:05.33,273
+dwTimeOut: 5000
+17:05:33.267 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+17:05:33.273 
+(Date)25.11.2020 (Time)17:05.33,273
+hWnd: 570D30
+17:05:33.273 
+(Date)25.11.2020 (Time)17:05.33,273
+ReqID: 1
+17:05:33.267 OpenKey returning *phkResult x25c
+17:05:33.273 
+(Date)25.11.2020 (Time)17:05.33,273
+hProvider: 7800E018
+17:05:33.273 
+(Date)25.11.2020 (Time)17:05.33,273
+dwSPIVersionsRequired: 101FF03
+17:05:33.273 
+(Date)25.11.2020 (Time)17:05.33,273
+dwSPIVersionsRequired.MaiorVersao: FF03
+17:05:33.273 
+(Date)25.11.2020 (Time)17:05.33,273
+dwSPIVersionsRequired.MenorVersao: 101
+17:05:33.273 
+(Date)25.11.2020 (Time)17:05.33,273
+dwSrvcVersionsRequired.MaiorVersao: 03
+17:05:33.273 
+(Date)25.11.2020 (Time)17:05.33,273
+dwSrvcVersionsRequired.MenorVersao: 303
+17:05:33.320 
+(Date)25.11.2020 (Time)17:05.33,320
+WFPOpen Finalizado. hResult: 0
+17:05:33.352 
+(Date)25.11.2020 (Time)17:05.33,352
+Entrei na funcao WFPSetTraceLevel ...
+17:05:33.362 
+(Date)25.11.2020 (Time)17:05.33,362
+Executando o WFPRegister ...
+17:05:33.362 
+(Date)25.11.2020 (Time)17:05.33,362
+hService: 1
+17:05:33.362 
+(Date)25.11.2020 (Time)17:05.33,362
+dwEventClass: 0F
+17:05:33.362 
+(Date)25.11.2020 (Time)17:05.33,362
+hWndReg: 580D30
+17:05:33.362 
+(Date)25.11.2020 (Time)17:05.33,362
+hWnd: 4A11EE
+17:05:33.362 
+(Date)25.11.2020 (Time)17:05.33,362
+ReqID: 2
+17:05:33.362 
+(Date)25.11.2020 (Time)17:05.33,362
+WFPRegister Finalizado. hResult: -15
+17:05:57.455 
+(Date)25.11.2020 (Time)17:05.57,455
+Entrei na funcao WFPExecute ...
+17:05:57.455 
+(Date)25.11.2020 (Time)17:05.57,455
+WFPExecute Finalizado. hResult: -15
+17:05:59.530 
+(Date)25.11.2020 (Time)17:05.59,530
+Entrei na funcao WFPClose ...
+17:05:59.530 
+(Date)25.11.2020 (Time)17:05.59,530
+hService: 1
+17:05:59.530 
+(Date)25.11.2020 (Time)17:05.59,530
+hWnd: 4A07B4
+17:05:59.530 
+(Date)25.11.2020 (Time)17:05.59,530
+ReqID: 4
+17:06:01.537 
+(Date)25.11.2020 (Time)17:06.01,537
+WFPClose Finalizado. hResult: 0
+17:06:01.541 APICALL: WFSCleanUp: Entered
+17:06:01.543 APICALL: WFSCleanUp: Exit
+17:06:01.537 
+(Date)25.11.2020 (Time)17:06.01,537
+Entrei na funcao WFPUnloadService ...
+17:06:01.541 
+(Date)25.11.2020 (Time)17:06.01,541
+Entrei na funcao WFPUnloadService ...
+17:07:38.435 
+(Date)25.11.2020 (Time)17:07.38,435
+Executando o WFPOpen ...
+17:07:38.404 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:07:38.435 
+(Date)25.11.2020 (Time)17:07.38,435
+lpszLogicalName (SIU): Sensores
+17:07:38.405 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+17:07:38.405 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:07:38.435 
+(Date)25.11.2020 (Time)17:07.38,435
+hApp: 870A068
+17:07:38.435 
+(Date)25.11.2020 (Time)17:07.38,435
+lpszAppID: BRXFSTEST
+17:07:38.405 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+17:07:38.435 
+(Date)25.11.2020 (Time)17:07.38,435
+dwTraceLevel: 0
+17:07:38.405 OpenKey returning *phkResult x250
+17:07:38.435 
+(Date)25.11.2020 (Time)17:07.38,435
+dwTimeOut: 5000
+17:07:38.405 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:07:38.436 
+(Date)25.11.2020 (Time)17:07.38,436
+hWnd: 4B11EE
+17:07:38.405 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+17:07:38.405 OpenKey returning *phkResult x254
+17:07:38.436 
+(Date)25.11.2020 (Time)17:07.38,436
+ReqID: 1
+17:07:38.405 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:07:38.436 
+(Date)25.11.2020 (Time)17:07.38,436
+hProvider: 7800E018
+17:07:38.436 
+(Date)25.11.2020 (Time)17:07.38,436
+dwSPIVersionsRequired: 101FF03
+17:07:38.405 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+17:07:38.405 OpenKey returning *phkResult x250
+17:07:38.436 
+(Date)25.11.2020 (Time)17:07.38,436
+dwSPIVersionsRequired.MaiorVersao: FF03
+17:07:38.436 
+(Date)25.11.2020 (Time)17:07.38,436
+dwSPIVersionsRequired.MenorVersao: 101
+17:07:38.405 RegOpenKeyEx( x250, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:07:38.405 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+17:07:38.436 
+(Date)25.11.2020 (Time)17:07.38,436
+dwSrvcVersionsRequired.MaiorVersao: 03
+17:07:38.437 
+(Date)25.11.2020 (Time)17:07.38,437
+dwSrvcVersionsRequired.MenorVersao: 303
+17:07:38.405 OpenKey returning *phkResult x258
+17:07:38.431 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:07:38.483 
+(Date)25.11.2020 (Time)17:07.38,483
+WFPOpen Finalizado. hResult: 0
+17:07:38.431 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+17:07:46.769 
+(Date)25.11.2020 (Time)17:07.46,768
+Entrei na funcao WFPSetTraceLevel ...
+17:07:46.779 
+(Date)25.11.2020 (Time)17:07.46,779
+Executando o WFPRegister ...
+17:07:38.431 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:07:46.779 
+(Date)25.11.2020 (Time)17:07.46,779
+hService: 1
+17:07:38.431 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+17:07:46.779 
+(Date)25.11.2020 (Time)17:07.46,779
+dwEventClass: 0F
+17:07:38.431 OpenKey returning *phkResult x254
+17:07:46.780 
+(Date)25.11.2020 (Time)17:07.46,780
+hWndReg: 4C11EE
+17:07:38.431 RegOpenKeyEx( x254, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:07:38.431 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+17:07:46.780 
+(Date)25.11.2020 (Time)17:07.46,780
+hWnd: B0B84
+17:07:46.780 
+(Date)25.11.2020 (Time)17:07.46,780
+ReqID: 2
+17:07:38.431 OpenKey returning *phkResult x258
+17:07:46.780 
+(Date)25.11.2020 (Time)17:07.46,780
+WFPRegister Finalizado. hResult: -15
+17:07:53.930 
+(Date)25.11.2020 (Time)17:07.53,930
+Entrei na funcao WFPExecute ...
+17:08:38.521 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:08:38.521 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+17:08:38.521 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:08:38.521 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+17:08:38.521 OpenKey returning *phkResult x250
+17:08:38.521 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:08:38.521 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+17:08:38.521 OpenKey returning *phkResult x254
+17:08:38.521 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:08:38.521 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+17:08:38.521 OpenKey returning *phkResult x250
+17:08:38.521 RegOpenKeyEx( x250, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:08:38.521 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+17:08:38.521 OpenKey returning *phkResult x258
+17:08:40.588 
+(Date)25.11.2020 (Time)17:08.40,588
+Executando o WFPOpen ...
+17:08:40.584 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:08:40.588 
+(Date)25.11.2020 (Time)17:08.40,588
+lpszLogicalName (SIU): Sensores
+17:08:40.584 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+17:09:18.870 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:09:18.885 
+(Date)25.11.2020 (Time)17:09.18,885
+Executando o WFPOpen ...
+17:09:18.870 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+17:09:18.885 
+(Date)25.11.2020 (Time)17:09.18,885
+lpszLogicalName (SIU): Sensores
+17:09:18.885 
+(Date)25.11.2020 (Time)17:09.18,885
+hApp: 870A068
+17:09:18.870 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:10:15.756 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:10:15.777 
+(Date)25.11.2020 (Time)17:10.15,777
+Executando o WFPOpen ...
+17:10:15.777 
+(Date)25.11.2020 (Time)17:10.15,777
+lpszLogicalName (SIU): Sensores
+17:10:15.756 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+17:10:57.906 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:10:57.924 
+(Date)25.11.2020 (Time)17:10.57,924
+Executando o WFPOpen ...
+17:10:57.906 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+17:10:57.924 
+(Date)25.11.2020 (Time)17:10.57,924
+lpszLogicalName (SIU): Sensores
+17:12:00.627 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:12:00.627 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+17:12:00.627 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:12:00.627 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+17:12:00.627 OpenKey returning *phkResult x24c
+17:12:00.627 RegOpenKeyEx( x24c, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:12:00.627 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+17:12:00.627 OpenKey returning *phkResult x250
+17:12:00.627 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:12:00.627 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+17:12:00.627 OpenKey returning *phkResult x24c
+17:12:00.628 RegOpenKeyEx( x24c, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:12:00.628 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+17:12:00.628 OpenKey returning *phkResult x254
+17:12:02.882 
+(Date)25.11.2020 (Time)17:12.02,882
+Executando o WFPOpen ...
+17:12:02.877 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:12:02.877 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+17:12:02.882 
+(Date)25.11.2020 (Time)17:12.02,882
+lpszLogicalName (SIU): Sensores
+17:12:02.882 
+(Date)25.11.2020 (Time)17:12.02,882
+hApp: 870A068
+17:12:02.877 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:12:02.882 
+(Date)25.11.2020 (Time)17:12.02,882
+lpszAppID: BRXFSTEST
+17:12:02.883 
+(Date)25.11.2020 (Time)17:12.02,883
+dwTraceLevel: 0
+17:12:02.877 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+17:12:02.883 
+(Date)25.11.2020 (Time)17:12.02,883
+dwTimeOut: 5000
+17:12:02.878 OpenKey returning *phkResult x250
+17:12:02.878 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+17:12:02.883 
+(Date)25.11.2020 (Time)17:12.02,883
+hWnd: 107059E
+17:12:02.878 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+17:12:02.883 
+(Date)25.11.2020 (Time)17:12.02,883
+ReqID: 1
+17:12:02.878 OpenKey returning *phkResult x260
+17:12:02.883 
+(Date)25.11.2020 (Time)17:12.02,883
+hProvider: 7800E018
+17:12:02.883 
+(Date)25.11.2020 (Time)17:12.02,883
+dwSPIVersionsRequired: 101FF03
+17:12:02.883 
+(Date)25.11.2020 (Time)17:12.02,883
+dwSPIVersionsRequired.MaiorVersao: FF03
+17:12:02.884 
+(Date)25.11.2020 (Time)17:12.02,884
+dwSPIVersionsRequired.MenorVersao: 101
+17:12:02.884 
+(Date)25.11.2020 (Time)17:12.02,884
+dwSrvcVersionsRequired.MaiorVersao: 03
+17:12:02.884 
+(Date)25.11.2020 (Time)17:12.02,884
+dwSrvcVersionsRequired.MenorVersao: 303
+17:12:02.931 
+(Date)25.11.2020 (Time)17:12.02,931
+WFPOpen Finalizado. hResult: 0
+17:12:33.134 
+(Date)25.11.2020 (Time)17:12.33,134
+Entrei na funcao WFPSetTraceLevel ...
+17:12:33.150 
+(Date)25.11.2020 (Time)17:12.33,150
+Executando o WFPRegister ...
+17:12:33.150 
+(Date)25.11.2020 (Time)17:12.33,150
+hService: 1
+17:12:33.150 
+(Date)25.11.2020 (Time)17:12.33,150
+dwEventClass: 0F
+17:12:33.150 
+(Date)25.11.2020 (Time)17:12.33,150
+hWndReg: 108059E
+17:12:33.151 
+(Date)25.11.2020 (Time)17:12.33,151
+hWnd: 56098C
+17:12:33.151 
+(Date)25.11.2020 (Time)17:12.33,151
+ReqID: 2
+17:12:44.605 
+(Date)25.11.2020 (Time)17:12.44,605
+WFPRegister Finalizado. hResult: 0
+18:26:43.559 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:26:43.559 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:26:43.663 
+(Date)25.11.2020 (Time)18:26.43,663
+Executando o WFPOpen ...
+18:26:43.559 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:26:43.663 
+(Date)25.11.2020 (Time)18:26.43,663
+lpszLogicalName (SIU): Sensores
+18:26:43.559 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:26:43.559 OpenKey returning *phkResult xd4
+18:26:43.663 
+(Date)25.11.2020 (Time)18:26.43,663
+hApp: 870A068
+18:26:43.663 
+(Date)25.11.2020 (Time)18:26.43,663
+lpszAppID: BRXFSTEST
+18:26:43.559 RegOpenKeyEx( xd4, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:26:43.663 
+(Date)25.11.2020 (Time)18:26.43,663
+dwTraceLevel: 0
+18:26:43.559 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:26:43.559 OpenKey returning *phkResult xd8
+18:26:43.663 
+(Date)25.11.2020 (Time)18:26.43,663
+dwTimeOut: 5000
+18:26:43.663 
+(Date)25.11.2020 (Time)18:26.43,663
+hWnd: 7105DC
+18:26:43.559 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:26:43.559 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+18:26:43.664 
+(Date)25.11.2020 (Time)18:26.43,664
+ReqID: 1
+18:26:43.559 OpenKey returning *phkResult xd4
+18:26:43.664 
+(Date)25.11.2020 (Time)18:26.43,664
+hProvider: 7800E018
+18:26:43.664 
+(Date)25.11.2020 (Time)18:26.43,664
+dwSPIVersionsRequired: 101FF03
+18:26:43.559 RegOpenKeyEx( xd4, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:26:43.559 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:26:43.664 
+(Date)25.11.2020 (Time)18:26.43,664
+dwSPIVersionsRequired.MaiorVersao: FF03
+18:26:43.664 
+(Date)25.11.2020 (Time)18:26.43,664
+dwSPIVersionsRequired.MenorVersao: 101
+18:26:43.559 OpenKey returning *phkResult xdc
+18:26:43.664 
+(Date)25.11.2020 (Time)18:26.43,664
+dwSrvcVersionsRequired.MaiorVersao: 03
+18:26:43.659 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:26:43.664 
+(Date)25.11.2020 (Time)18:26.43,664
+dwSrvcVersionsRequired.MenorVersao: 303
+18:26:43.659 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:26:43.659 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:26:43.698 
+(Date)25.11.2020 (Time)18:26.43,698
+WFPOpen Finalizado. hResult: 0
+18:26:43.698 
+(Date)25.11.2020 (Time)18:26.43,698
+Entrei na funcao WFPSetTraceLevel ...
+18:26:43.659 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:26:43.659 OpenKey returning *phkResult xd8
+18:26:43.710 
+(Date)25.11.2020 (Time)18:26.43,710
+Executando o WFPRegister ...
+18:26:43.710 
+(Date)25.11.2020 (Time)18:26.43,710
+hService: 1
+18:26:43.659 RegOpenKeyEx( xd8, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:26:43.659 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:26:43.710 
+(Date)25.11.2020 (Time)18:26.43,710
+dwEventClass: 0F
+18:26:43.659 OpenKey returning *phkResult xdc
+18:26:43.710 
+(Date)25.11.2020 (Time)18:26.43,710
+hWndReg: 7205DC
+18:26:43.710 
+(Date)25.11.2020 (Time)18:26.43,710
+hWnd: E10582
+18:26:43.710 
+(Date)25.11.2020 (Time)18:26.43,710
+ReqID: 2
+18:26:43.710 
+(Date)25.11.2020 (Time)18:26.43,710
+WFPRegister Finalizado. hResult: 0
+18:26:50.758 
+(Date)25.11.2020 (Time)18:26.50,758
+Entrei na funcao WFPClose ...
+18:26:50.758 
+(Date)25.11.2020 (Time)18:26.50,758
+hService: 1
+18:26:50.758 
+(Date)25.11.2020 (Time)18:26.50,758
+hWnd: E20582
+18:26:50.758 
+(Date)25.11.2020 (Time)18:26.50,758
+ReqID: 3
+18:26:50.784 
+(Date)25.11.2020 (Time)18:26.50,784
+WFPClose Finalizado. hResult: 0
+18:27:05.112 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:27:05.112 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+18:27:05.112 OpenKey returning *phkResult x158
+18:27:05.112 RegOpenKeyEx( x158, XFS_MANAGER )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:27:05.112 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:27:05.112 OpenKey returning *phkResult x15c
+18:27:05.112 RegOpenKeyEx( x80000000, WOSA/XFS_ROOT )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:27:05.112 OpenKey( HKEY_CLASSES_ROOT,WOSA_ROOT_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2126)
+18:29:55.166 
+(Date)25.11.2020 (Time)18:29.55,166
+Executando o WFPOpen ...
+18:29:55.156 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:29:55.166 
+(Date)25.11.2020 (Time)18:29.55,166
+lpszLogicalName (SIU): Sensores
+18:29:55.156 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:29:55.156 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:29:55.166 
+(Date)25.11.2020 (Time)18:29.55,166
+hApp: 870A068
+18:29:55.166 
+(Date)25.11.2020 (Time)18:29.55,166
+lpszAppID: BRXFSTEST
+18:29:55.156 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:29:55.156 OpenKey returning *phkResult x250
+18:29:55.166 
+(Date)25.11.2020 (Time)18:29.55,166
+dwTraceLevel: 0
+18:29:55.156 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:29:55.166 
+(Date)25.11.2020 (Time)18:29.55,166
+dwTimeOut: 5000
+18:29:55.156 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:29:55.166 
+(Date)25.11.2020 (Time)18:29.55,166
+hWnd: 830CBA
+18:29:55.156 OpenKey returning *phkResult x254
+18:29:55.166 
+(Date)25.11.2020 (Time)18:29.55,166
+ReqID: 1
+18:29:55.156 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:29:55.166 
+(Date)25.11.2020 (Time)18:29.55,166
+hProvider: 7800E018
+18:29:55.156 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+18:29:55.166 
+(Date)25.11.2020 (Time)18:29.55,166
+dwSPIVersionsRequired: 101FF03
+18:29:55.166 
+(Date)25.11.2020 (Time)18:29.55,166
+dwSPIVersionsRequired.MaiorVersao: FF03
+18:29:55.156 OpenKey returning *phkResult x250
+18:29:55.156 RegOpenKeyEx( x250, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:29:55.166 
+(Date)25.11.2020 (Time)18:29.55,166
+dwSPIVersionsRequired.MenorVersao: 101
+18:29:55.156 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:29:55.166 
+(Date)25.11.2020 (Time)18:29.55,166
+dwSrvcVersionsRequired.MaiorVersao: 03
+18:29:55.156 OpenKey returning *phkResult x258
+18:29:55.166 
+(Date)25.11.2020 (Time)18:29.55,166
+dwSrvcVersionsRequired.MenorVersao: 303
+18:29:55.160 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:29:55.213 
+(Date)25.11.2020 (Time)18:29.55,213
+WFPOpen Finalizado. hResult: 0
+18:29:55.160 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:29:55.214 
+(Date)25.11.2020 (Time)18:29.55,214
+Entrei na funcao WFPSetTraceLevel ...
+18:29:55.224 
+(Date)25.11.2020 (Time)18:29.55,224
+Executando o WFPRegister ...
+18:29:55.160 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:29:55.160 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:29:55.224 
+(Date)25.11.2020 (Time)18:29.55,224
+hService: 1
+18:29:55.224 
+(Date)25.11.2020 (Time)18:29.55,224
+dwEventClass: 0F
+18:29:55.161 OpenKey returning *phkResult x254
+18:29:55.224 
+(Date)25.11.2020 (Time)18:29.55,224
+hWndReg: 840CBA
+18:29:55.161 RegOpenKeyEx( x254, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:29:55.224 
+(Date)25.11.2020 (Time)18:29.55,224
+hWnd: 9E04B0
+18:29:55.161 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:29:55.161 OpenKey returning *phkResult x258
+18:29:55.224 
+(Date)25.11.2020 (Time)18:29.55,224
+ReqID: 2
+18:29:55.224 
+(Date)25.11.2020 (Time)18:29.55,224
+WFPRegister Finalizado. hResult: 0
+18:29:59.832 
+(Date)25.11.2020 (Time)18:29.59,832
+Entrei na funcao WFPClose ...
+18:29:59.832 
+(Date)25.11.2020 (Time)18:29.59,832
+hService: 1
+18:29:59.832 
+(Date)25.11.2020 (Time)18:29.59,832
+hWnd: A004B0
+18:29:59.832 
+(Date)25.11.2020 (Time)18:29.59,832
+ReqID: 3
+18:29:59.839 
+(Date)25.11.2020 (Time)18:29.59,839
+WFPClose Finalizado. hResult: 0
+18:30:05.299 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:05.299 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+18:30:05.299 OpenKey returning *phkResult xdc
+18:30:05.299 RegOpenKeyEx( xdc, XFS_MANAGER )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:05.299 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:30:05.299 OpenKey returning *phkResult x13c
+18:30:05.299 RegOpenKeyEx( x80000000, WOSA/XFS_ROOT )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:05.299 OpenKey( HKEY_CLASSES_ROOT,WOSA_ROOT_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2126)
+18:30:10.064 
+(Date)25.11.2020 (Time)18:30.10,64
+Executando o WFPOpen ...
+18:30:10.047 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:10.047 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:30:10.065 
+(Date)25.11.2020 (Time)18:30.10,65
+lpszLogicalName (SIU): Sensores
+18:30:10.047 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:10.065 
+(Date)25.11.2020 (Time)18:30.10,65
+hApp: 870A068
+18:30:10.065 
+(Date)25.11.2020 (Time)18:30.10,65
+lpszAppID: BRXFSTEST
+18:30:10.047 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:30:10.065 
+(Date)25.11.2020 (Time)18:30.10,65
+dwTraceLevel: 0
+18:30:10.047 OpenKey returning *phkResult x24c
+18:30:10.065 
+(Date)25.11.2020 (Time)18:30.10,65
+dwTimeOut: 5000
+18:30:10.047 RegOpenKeyEx( x24c, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:10.065 
+(Date)25.11.2020 (Time)18:30.10,65
+hWnd: A104B0
+18:30:10.047 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:30:10.047 OpenKey returning *phkResult x250
+18:30:10.066 
+(Date)25.11.2020 (Time)18:30.10,66
+ReqID: 1
+18:30:10.047 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:10.066 
+(Date)25.11.2020 (Time)18:30.10,66
+hProvider: 7800E018
+18:30:10.066 
+(Date)25.11.2020 (Time)18:30.10,66
+dwSPIVersionsRequired: 101FF03
+18:30:10.047 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+18:30:10.066 
+(Date)25.11.2020 (Time)18:30.10,66
+dwSPIVersionsRequired.MaiorVersao: FF03
+18:30:10.047 OpenKey returning *phkResult x24c
+18:30:10.066 
+(Date)25.11.2020 (Time)18:30.10,66
+dwSPIVersionsRequired.MenorVersao: 101
+18:30:10.047 RegOpenKeyEx( x24c, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:10.067 
+(Date)25.11.2020 (Time)18:30.10,67
+dwSrvcVersionsRequired.MaiorVersao: 03
+18:30:10.047 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:30:10.047 OpenKey returning *phkResult x254
+18:30:10.067 
+(Date)25.11.2020 (Time)18:30.10,67
+dwSrvcVersionsRequired.MenorVersao: 303
+18:30:10.114 
+(Date)25.11.2020 (Time)18:30.10,114
+WFPOpen Finalizado. hResult: 0
+18:30:10.061 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:10.061 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:30:15.980 
+(Date)25.11.2020 (Time)18:30.15,980
+Entrei na funcao WFPSetTraceLevel ...
+18:30:10.061 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:15.996 
+(Date)25.11.2020 (Time)18:30.15,996
+Executando o WFPRegister ...
+18:30:10.061 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:30:15.996 
+(Date)25.11.2020 (Time)18:30.15,996
+hService: 1
+18:30:10.061 OpenKey returning *phkResult x250
+18:30:15.997 
+(Date)25.11.2020 (Time)18:30.15,997
+dwEventClass: 0F
+18:30:10.061 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:15.997 
+(Date)25.11.2020 (Time)18:30.15,997
+hWndReg: A204B0
+18:30:10.061 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:30:15.997 
+(Date)25.11.2020 (Time)18:30.15,997
+hWnd: AA079E
+18:30:10.061 OpenKey returning *phkResult x254
+18:30:15.997 
+(Date)25.11.2020 (Time)18:30.15,997
+ReqID: 2
+18:30:19.585 
+(Date)25.11.2020 (Time)18:30.19,585
+WFPRegister Finalizado. hResult: 0
+18:30:27.841 
+(Date)25.11.2020 (Time)18:30.27,841
+Entrei na funcao WFPClose ...
+18:30:27.842 
+(Date)25.11.2020 (Time)18:30.27,842
+hService: 1
+18:30:27.843 
+(Date)25.11.2020 (Time)18:30.27,843
+hWnd: AB079E
+18:30:27.844 
+(Date)25.11.2020 (Time)18:30.27,844
+ReqID: 3
+18:30:27.861 
+(Date)25.11.2020 (Time)18:30.27,861
+WFPClose Finalizado. hResult: 0
+18:30:33.902 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:33.902 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+18:30:33.902 OpenKey returning *phkResult x144
+18:30:33.902 RegOpenKeyEx( x144, XFS_MANAGER )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:33.902 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:30:33.902 OpenKey returning *phkResult x148
+18:30:33.902 RegOpenKeyEx( x80000000, WOSA/XFS_ROOT )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:33.902 OpenKey( HKEY_CLASSES_ROOT,WOSA_ROOT_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2126)
+18:30:56.626 
+(Date)25.11.2020 (Time)18:30.56,626
+Executando o WFPOpen ...
+18:30:56.610 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:56.610 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:30:56.626 
+(Date)25.11.2020 (Time)18:30.56,626
+lpszLogicalName (SIU): Sensores
+18:30:56.610 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:56.627 
+(Date)25.11.2020 (Time)18:30.56,627
+hApp: 870A068
+18:30:56.627 
+(Date)25.11.2020 (Time)18:30.56,627
+lpszAppID: BRXFSTEST
+18:30:56.610 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:30:56.627 
+(Date)25.11.2020 (Time)18:30.56,627
+dwTraceLevel: 0
+18:30:56.610 OpenKey returning *phkResult x258
+18:30:56.610 RegOpenKeyEx( x258, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:56.628 
+(Date)25.11.2020 (Time)18:30.56,628
+dwTimeOut: 5000
+18:30:56.610 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:30:56.628 
+(Date)25.11.2020 (Time)18:30.56,628
+hWnd: 7911EC
+18:30:56.628 
+(Date)25.11.2020 (Time)18:30.56,628
+ReqID: 1
+18:30:56.610 OpenKey returning *phkResult x25c
+18:30:56.611 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:56.628 
+(Date)25.11.2020 (Time)18:30.56,628
+hProvider: 7800E018
+18:30:56.628 
+(Date)25.11.2020 (Time)18:30.56,628
+dwSPIVersionsRequired: 101FF03
+18:30:56.611 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+18:30:56.611 OpenKey returning *phkResult x258
+18:30:56.629 
+(Date)25.11.2020 (Time)18:30.56,629
+dwSPIVersionsRequired.MaiorVersao: FF03
+18:30:56.629 
+(Date)25.11.2020 (Time)18:30.56,629
+dwSPIVersionsRequired.MenorVersao: 101
+18:30:56.611 RegOpenKeyEx( x258, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:56.611 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:30:56.629 
+(Date)25.11.2020 (Time)18:30.56,629
+dwSrvcVersionsRequired.MaiorVersao: 03
+18:30:56.630 
+(Date)25.11.2020 (Time)18:30.56,630
+dwSrvcVersionsRequired.MenorVersao: 303
+18:30:56.611 OpenKey returning *phkResult x260
+18:30:56.624 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:56.678 
+(Date)25.11.2020 (Time)18:30.56,678
+WFPOpen Finalizado. hResult: 0
+18:30:56.725 
+(Date)25.11.2020 (Time)18:30.56,725
+Entrei na funcao WFPSetTraceLevel ...
+18:30:56.624 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:30:56.624 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:56.734 
+(Date)25.11.2020 (Time)18:30.56,734
+Executando o WFPRegister ...
+18:30:56.735 
+(Date)25.11.2020 (Time)18:30.56,735
+hService: 1
+18:30:56.624 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:30:56.735 
+(Date)25.11.2020 (Time)18:30.56,735
+dwEventClass: 0F
+18:30:56.624 OpenKey returning *phkResult x25c
+18:30:56.735 
+(Date)25.11.2020 (Time)18:30.56,735
+hWndReg: 7A11EC
+18:30:56.624 RegOpenKeyEx( x25c, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:56.624 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:30:56.735 
+(Date)25.11.2020 (Time)18:30.56,735
+hWnd: 2A0A12
+18:30:56.624 OpenKey returning *phkResult x264
+18:30:56.735 
+(Date)25.11.2020 (Time)18:30.56,735
+ReqID: 2
+18:30:56.735 
+(Date)25.11.2020 (Time)18:30.56,735
+WFPRegister Finalizado. hResult: 0
+18:30:59.635 
+(Date)25.11.2020 (Time)18:30.59,635
+Entrei na funcao WFPClose ...
+18:31:48.622 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:31:48.622 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:31:48.622 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:31:48.622 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:31:48.622 OpenKey returning *phkResult x24c
+18:31:48.622 RegOpenKeyEx( x24c, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:31:48.622 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:31:48.622 OpenKey returning *phkResult x250
+18:31:48.622 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:31:48.622 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+18:31:48.622 OpenKey returning *phkResult x24c
+18:31:48.623 RegOpenKeyEx( x24c, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:31:48.623 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:31:48.623 OpenKey returning *phkResult x254
+18:31:50.624 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:31:50.629 
+(Date)25.11.2020 (Time)18:31.50,629
+Executando o WFPOpen ...
+18:31:50.629 
+(Date)25.11.2020 (Time)18:31.50,629
+lpszLogicalName (SIU): Sensores
+18:31:50.624 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:31:50.629 
+(Date)25.11.2020 (Time)18:31.50,629
+hApp: 870A068
+18:31:50.624 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:31:50.624 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:31:50.629 
+(Date)25.11.2020 (Time)18:31.50,629
+lpszAppID: BRXFSTEST
+18:31:50.629 
+(Date)25.11.2020 (Time)18:31.50,629
+dwTraceLevel: 0
+18:31:50.624 OpenKey returning *phkResult x250
+18:31:50.629 
+(Date)25.11.2020 (Time)18:31.50,629
+dwTimeOut: 5000
+18:31:50.624 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:31:50.629 
+(Date)25.11.2020 (Time)18:31.50,629
+hWnd: 510E42
+18:31:50.624 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:31:50.624 OpenKey returning *phkResult x258
+18:31:50.629 
+(Date)25.11.2020 (Time)18:31.50,629
+ReqID: 1
+18:31:50.629 
+(Date)25.11.2020 (Time)18:31.50,629
+hProvider: 7800E018
+18:31:50.629 
+(Date)25.11.2020 (Time)18:31.50,629
+dwSPIVersionsRequired: 101FF03
+18:31:50.629 
+(Date)25.11.2020 (Time)18:31.50,629
+dwSPIVersionsRequired.MaiorVersao: FF03
+18:31:50.629 
+(Date)25.11.2020 (Time)18:31.50,629
+dwSPIVersionsRequired.MenorVersao: 101
+18:31:50.629 
+(Date)25.11.2020 (Time)18:31.50,629
+dwSrvcVersionsRequired.MaiorVersao: 03
+18:31:50.629 
+(Date)25.11.2020 (Time)18:31.50,629
+dwSrvcVersionsRequired.MenorVersao: 303
+18:31:50.671 
+(Date)25.11.2020 (Time)18:31.50,671
+WFPOpen Finalizado. hResult: 0
+18:31:50.672 
+(Date)25.11.2020 (Time)18:31.50,672
+Entrei na funcao WFPSetTraceLevel ...
+18:31:50.681 
+(Date)25.11.2020 (Time)18:31.50,681
+Executando o WFPRegister ...
+18:31:50.681 
+(Date)25.11.2020 (Time)18:31.50,681
+hService: 1
+18:31:50.681 
+(Date)25.11.2020 (Time)18:31.50,681
+dwEventClass: 0F
+18:31:50.681 
+(Date)25.11.2020 (Time)18:31.50,681
+hWndReg: 520E42
+18:31:50.681 
+(Date)25.11.2020 (Time)18:31.50,681
+hWnd: 540A32
+18:31:50.681 
+(Date)25.11.2020 (Time)18:31.50,681
+ReqID: 2
+18:31:50.681 
+(Date)25.11.2020 (Time)18:31.50,681
+WFPRegister Finalizado. hResult: 0
+18:31:55.952 
+(Date)25.11.2020 (Time)18:31.55,952
+Entrei na funcao WFPClose ...
+18:31:55.957 APICALL: WFSCleanUp: Entered
+18:31:55.958 APICALL: WFSCleanUp: Exit
+18:31:55.952 
+(Date)25.11.2020 (Time)18:31.55,952
+hService: 1
+18:31:55.952 
+(Date)25.11.2020 (Time)18:31.55,952
+hWnd: 550A32
+18:31:55.952 
+(Date)25.11.2020 (Time)18:31.55,952
+ReqID: 3
+18:31:55.952 
+(Date)25.11.2020 (Time)18:31.55,952
+WFPClose Finalizado. hResult: 0
+18:31:55.955 
+(Date)25.11.2020 (Time)18:31.55,955
+Entrei na funcao WFPUnloadService ...
+18:31:55.957 
+(Date)25.11.2020 (Time)18:31.55,957
+Entrei na funcao WFPUnloadService ...
+18:32:50.183 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:32:50.204 
+(Date)25.11.2020 (Time)18:32.50,204
+Executando o WFPOpen ...
+18:32:50.183 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:32:50.205 
+(Date)25.11.2020 (Time)18:32.50,205
+lpszLogicalName (SIU): Sensores
+18:32:50.183 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:32:50.205 
+(Date)25.11.2020 (Time)18:32.50,205
+hApp: 870A068
+18:32:50.183 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:32:50.206 
+(Date)25.11.2020 (Time)18:32.50,206
+lpszAppID: BRXFSTEST
+18:32:50.183 OpenKey returning *phkResult x250
+18:32:50.207 
+(Date)25.11.2020 (Time)18:32.50,207
+dwTraceLevel: 0
+18:32:50.183 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:32:50.207 
+(Date)25.11.2020 (Time)18:32.50,207
+dwTimeOut: 5000
+18:32:50.183 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:32:50.207 
+(Date)25.11.2020 (Time)18:32.50,207
+hWnd: 6E104E
+18:32:50.183 OpenKey returning *phkResult x254
+18:32:50.208 
+(Date)25.11.2020 (Time)18:32.50,208
+ReqID: 1
+18:32:50.183 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:32:50.208 
+(Date)25.11.2020 (Time)18:32.50,208
+hProvider: 7800E018
+18:32:50.183 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+18:32:50.208 
+(Date)25.11.2020 (Time)18:32.50,208
+dwSPIVersionsRequired: 101FF03
+18:32:50.183 OpenKey returning *phkResult x250
+18:32:50.208 
+(Date)25.11.2020 (Time)18:32.50,208
+dwSPIVersionsRequired.MaiorVersao: FF03
+18:32:50.183 RegOpenKeyEx( x250, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:32:50.209 
+(Date)25.11.2020 (Time)18:32.50,209
+dwSPIVersionsRequired.MenorVersao: 101
+18:32:50.183 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:32:50.209 
+(Date)25.11.2020 (Time)18:32.50,209
+dwSrvcVersionsRequired.MaiorVersao: 03
+18:32:50.183 OpenKey returning *phkResult x258
+18:32:50.209 
+(Date)25.11.2020 (Time)18:32.50,209
+dwSrvcVersionsRequired.MenorVersao: 303
+18:32:50.199 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:32:50.249 
+(Date)25.11.2020 (Time)18:32.50,249
+WFPOpen Finalizado. hResult: 0
+18:32:50.199 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:32:50.296 
+(Date)25.11.2020 (Time)18:32.50,296
+Entrei na funcao WFPSetTraceLevel ...
+18:32:50.199 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:32:50.313 
+(Date)25.11.2020 (Time)18:32.50,313
+Executando o WFPRegister ...
+18:32:50.199 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:32:50.313 
+(Date)25.11.2020 (Time)18:32.50,313
+hService: 1
+18:32:50.199 OpenKey returning *phkResult x254
+18:32:50.313 
+(Date)25.11.2020 (Time)18:32.50,313
+dwEventClass: 0F
+18:32:50.199 RegOpenKeyEx( x254, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:32:50.313 
+(Date)25.11.2020 (Time)18:32.50,313
+hWndReg: 6F104E
+18:32:50.199 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:32:50.314 
+(Date)25.11.2020 (Time)18:32.50,314
+hWnd: 2E0A12
+18:32:50.199 OpenKey returning *phkResult x258
+18:32:50.314 
+(Date)25.11.2020 (Time)18:32.50,314
+ReqID: 2
+18:32:50.314 
+(Date)25.11.2020 (Time)18:32.50,314
+WFPRegister Finalizado. hResult: 0
+18:34:43.037 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:34:43.037 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:34:43.037 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:34:43.037 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:34:43.037 OpenKey returning *phkResult x258
+18:34:43.037 RegOpenKeyEx( x258, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:34:43.037 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:34:43.037 OpenKey returning *phkResult x25c
+18:34:43.037 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:34:43.037 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+18:34:43.037 OpenKey returning *phkResult x258
+18:34:43.037 RegOpenKeyEx( x258, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:34:43.037 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:34:43.037 OpenKey returning *phkResult x260
+18:34:44.936 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:34:44.939 
+(Date)25.11.2020 (Time)18:34.44,939
+Executando o WFPOpen ...
+18:34:44.939 
+(Date)25.11.2020 (Time)18:34.44,939
+lpszLogicalName (SIU): Sensores
+18:34:44.936 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:34:44.936 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:34:44.939 
+(Date)25.11.2020 (Time)18:34.44,939
+hApp: 870A068
+18:34:44.936 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:34:44.939 
+(Date)25.11.2020 (Time)18:34.44,939
+lpszAppID: BRXFSTEST
+18:34:44.939 
+(Date)25.11.2020 (Time)18:34.44,939
+dwTraceLevel: 0
+18:34:44.936 OpenKey returning *phkResult x25c
+18:34:44.936 RegOpenKeyEx( x25c, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:34:44.939 
+(Date)25.11.2020 (Time)18:34.44,939
+dwTimeOut: 5000
+18:34:44.939 
+(Date)25.11.2020 (Time)18:34.44,939
+hWnd: DE070A
+18:34:44.936 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:34:44.936 OpenKey returning *phkResult x258
+18:34:44.939 
+(Date)25.11.2020 (Time)18:34.44,939
+ReqID: 1
+18:34:44.939 
+(Date)25.11.2020 (Time)18:34.44,939
+hProvider: 7800E018
+18:34:44.939 
+(Date)25.11.2020 (Time)18:34.44,939
+dwSPIVersionsRequired: 101FF03
+18:34:44.939 
+(Date)25.11.2020 (Time)18:34.44,939
+dwSPIVersionsRequired.MaiorVersao: FF03
+18:34:44.939 
+(Date)25.11.2020 (Time)18:34.44,939
+dwSPIVersionsRequired.MenorVersao: 101
+18:34:44.939 
+(Date)25.11.2020 (Time)18:34.44,939
+dwSrvcVersionsRequired.MaiorVersao: 03
+18:34:44.940 
+(Date)25.11.2020 (Time)18:34.44,940
+dwSrvcVersionsRequired.MenorVersao: 303
+18:34:44.973 
+(Date)25.11.2020 (Time)18:34.44,973
+WFPOpen Finalizado. hResult: 0
+18:34:45.020 
+(Date)25.11.2020 (Time)18:34.45,20
+Entrei na funcao WFPSetTraceLevel ...
+18:34:45.032 
+(Date)25.11.2020 (Time)18:34.45,32
+Executando o WFPRegister ...
+18:34:45.032 
+(Date)25.11.2020 (Time)18:34.45,32
+hService: 1
+18:34:45.032 
+(Date)25.11.2020 (Time)18:34.45,32
+dwEventClass: 0F
+18:34:45.032 
+(Date)25.11.2020 (Time)18:34.45,32
+hWndReg: DF070A
+18:34:45.032 
+(Date)25.11.2020 (Time)18:34.45,32
+hWnd: 290C14
+18:34:45.032 
+(Date)25.11.2020 (Time)18:34.45,32
+ReqID: 2
+18:34:45.032 
+(Date)25.11.2020 (Time)18:34.45,32
+WFPRegister Finalizado. hResult: 0
+18:34:48.553 
+(Date)25.11.2020 (Time)18:34.48,553
+Entrei na funcao WFPClose ...
+18:34:48.580 APICALL: WFSCleanUp: Entered
+18:34:48.583 APICALL: WFSCleanUp: Exit
+18:34:48.553 
+(Date)25.11.2020 (Time)18:34.48,553
+hService: 1
+18:34:48.553 
+(Date)25.11.2020 (Time)18:34.48,553
+hWnd: 2A0C14
+18:34:48.553 
+(Date)25.11.2020 (Time)18:34.48,553
+ReqID: 3
+18:34:48.553 
+(Date)25.11.2020 (Time)18:34.48,553
+WFPClose Finalizado. hResult: 0
+18:34:48.577 
+(Date)25.11.2020 (Time)18:34.48,577
+Entrei na funcao WFPUnloadService ...
+18:34:48.580 
+(Date)25.11.2020 (Time)18:34.48,580
+Entrei na funcao WFPUnloadService ...
+18:51:33.012 
+(Date)25.11.2020 (Time)18:51.33,12
+Executando o WFPOpen ...
+18:51:33.004 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:51:33.004 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:51:33.012 
+(Date)25.11.2020 (Time)18:51.33,12
+lpszLogicalName (SIU): Sensores
+18:51:33.004 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:51:33.012 
+(Date)25.11.2020 (Time)18:51.33,12
+hApp: 870A068
+18:51:33.004 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:51:33.012 
+(Date)25.11.2020 (Time)18:51.33,12
+lpszAppID: BRXFSTEST
+18:51:33.004 OpenKey returning *phkResult x24c
+18:51:33.012 
+(Date)25.11.2020 (Time)18:51.33,12
+dwTraceLevel: 0
+18:51:33.004 RegOpenKeyEx( x24c, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:51:33.012 
+(Date)25.11.2020 (Time)18:51.33,12
+dwTimeOut: 5000
+18:51:33.004 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:51:33.012 
+(Date)25.11.2020 (Time)18:51.33,12
+hWnd: 141100
+18:51:33.004 OpenKey returning *phkResult x250
+18:51:33.012 
+(Date)25.11.2020 (Time)18:51.33,12
+ReqID: 1
+18:51:33.012 
+(Date)25.11.2020 (Time)18:51.33,12
+hProvider: 7800E018
+18:51:33.004 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:51:33.004 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+18:51:33.012 
+(Date)25.11.2020 (Time)18:51.33,12
+dwSPIVersionsRequired: 101FF03
+18:51:33.004 OpenKey returning *phkResult x24c
+18:51:33.012 
+(Date)25.11.2020 (Time)18:51.33,12
+dwSPIVersionsRequired.MaiorVersao: FF03
+18:51:33.012 
+(Date)25.11.2020 (Time)18:51.33,12
+dwSPIVersionsRequired.MenorVersao: 101
+18:51:33.004 RegOpenKeyEx( x24c, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:51:33.012 
+(Date)25.11.2020 (Time)18:51.33,12
+dwSrvcVersionsRequired.MaiorVersao: 03
+18:51:33.004 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:51:33.004 OpenKey returning *phkResult x254
+18:51:33.012 
+(Date)25.11.2020 (Time)18:51.33,12
+dwSrvcVersionsRequired.MenorVersao: 303
+18:51:33.045 
+(Date)25.11.2020 (Time)18:51.33,45
+WFPOpen Finalizado. hResult: 0
+18:51:33.009 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:51:33.060 
+(Date)25.11.2020 (Time)18:51.33,60
+Entrei na funcao WFPSetTraceLevel ...
+18:51:33.009 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:51:33.009 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:51:33.070 
+(Date)25.11.2020 (Time)18:51.33,70
+Executando o WFPRegister ...
+18:51:33.009 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:51:33.070 
+(Date)25.11.2020 (Time)18:51.33,70
+hService: 1
+18:51:33.070 
+(Date)25.11.2020 (Time)18:51.33,70
+dwEventClass: 0F
+18:51:33.009 OpenKey returning *phkResult x250
+18:51:33.009 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:51:33.070 
+(Date)25.11.2020 (Time)18:51.33,70
+hWndReg: 151100
+18:51:33.070 
+(Date)25.11.2020 (Time)18:51.33,70
+hWnd: 3907DA
+18:51:33.009 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:51:33.009 OpenKey returning *phkResult x258
+18:51:33.070 
+(Date)25.11.2020 (Time)18:51.33,70
+ReqID: 2
+18:51:33.070 
+(Date)25.11.2020 (Time)18:51.33,70
+WFPRegister Finalizado. hResult: 0
+18:51:46.831 
+(Date)25.11.2020 (Time)18:51.46,831
+Entrei na funcao WFPClose ...
+18:51:46.857 APICALL: WFSCleanUp: Entered
+18:51:46.858 APICALL: WFSCleanUp: Exit
+18:51:46.831 
+(Date)25.11.2020 (Time)18:51.46,831
+hService: 1
+18:51:46.831 
+(Date)25.11.2020 (Time)18:51.46,831
+hWnd: A904B0
+18:51:46.831 
+(Date)25.11.2020 (Time)18:51.46,831
+ReqID: 3
+18:51:46.831 
+(Date)25.11.2020 (Time)18:51.46,831
+WFPClose Finalizado. hResult: 0
+18:51:46.854 
+(Date)25.11.2020 (Time)18:51.46,854
+Entrei na funcao WFPUnloadService ...
+18:51:46.857 
+(Date)25.11.2020 (Time)18:51.46,857
+Entrei na funcao WFPUnloadService ...
+19:01:05.946 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+19:01:05.946 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+19:01:05.946 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+19:01:05.946 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+19:01:06.088 
+(Date)25.11.2020 (Time)19:01.06,88
+Executando o WFPOpen ...
+19:01:05.946 OpenKey returning *phkResult x24c
+19:01:06.088 
+(Date)25.11.2020 (Time)19:01.06,88
+lpszLogicalName (SIU): Sensores
+19:01:05.946 RegOpenKeyEx( x24c, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+19:01:06.088 
+(Date)25.11.2020 (Time)19:01.06,88
+hApp: 870A068
+19:01:05.946 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+19:01:06.088 
+(Date)25.11.2020 (Time)19:01.06,88
+lpszAppID: BRXFSTEST
+19:01:05.946 OpenKey returning *phkResult x250
+19:01:06.088 
+(Date)25.11.2020 (Time)19:01.06,88
+dwTraceLevel: 0
+19:01:05.947 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+19:01:06.088 
+(Date)25.11.2020 (Time)19:01.06,88
+dwTimeOut: 5000
+19:01:05.947 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+19:01:06.088 
+(Date)25.11.2020 (Time)19:01.06,88
+hWnd: A4051C
+19:01:05.947 OpenKey returning *phkResult x24c
+19:01:06.088 
+(Date)25.11.2020 (Time)19:01.06,88
+ReqID: 1
+19:01:05.947 RegOpenKeyEx( x24c, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+19:01:06.088 
+(Date)25.11.2020 (Time)19:01.06,88
+hProvider: 7800E018
+19:01:05.947 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+19:01:06.088 
+(Date)25.11.2020 (Time)19:01.06,88
+dwSPIVersionsRequired: 101FF03
+19:01:05.947 OpenKey returning *phkResult x254
+19:01:06.088 
+(Date)25.11.2020 (Time)19:01.06,88
+dwSPIVersionsRequired.MaiorVersao: FF03
+19:01:06.084 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+19:01:06.088 
+(Date)25.11.2020 (Time)19:01.06,88
+dwSPIVersionsRequired.MenorVersao: 101
+19:01:06.084 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+19:01:06.088 
+(Date)25.11.2020 (Time)19:01.06,88
+dwSrvcVersionsRequired.MaiorVersao: 03
+19:01:06.084 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+19:01:06.088 
+(Date)25.11.2020 (Time)19:01.06,88
+dwSrvcVersionsRequired.MenorVersao: 303
+19:01:06.084 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+19:01:06.126 
+(Date)25.11.2020 (Time)19:01.06,126
+WFPOpen Finalizado. hResult: 0
+19:01:06.084 OpenKey returning *phkResult x250
+19:01:06.173 
+(Date)25.11.2020 (Time)19:01.06,173
+Entrei na funcao WFPSetTraceLevel ...
+19:01:06.084 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+19:01:06.187 
+(Date)25.11.2020 (Time)19:01.06,187
+Executando o WFPRegister ...
+19:01:06.084 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+19:01:06.188 
+(Date)25.11.2020 (Time)19:01.06,188
+hService: 1
+19:01:06.084 OpenKey returning *phkResult x258
+19:01:06.188 
+(Date)25.11.2020 (Time)19:01.06,188
+dwEventClass: 0F
+19:01:06.188 
+(Date)25.11.2020 (Time)19:01.06,188
+hWndReg: A5051C
+19:01:06.188 
+(Date)25.11.2020 (Time)19:01.06,188
+hWnd: 4711F4
+19:01:06.188 
+(Date)25.11.2020 (Time)19:01.06,188
+ReqID: 2
+19:01:06.188 
+(Date)25.11.2020 (Time)19:01.06,188
+WFPRegister Finalizado. hResult: 0
+19:01:09.795 
+(Date)25.11.2020 (Time)19:01.09,795
+Entrei na funcao WFPExecute ...
+19:01:09.795 
+(Date)25.11.2020 (Time)19:01.09,795
+hService: 1
+19:01:09.795 
+(Date)25.11.2020 (Time)19:01.09,795
+dwCommand: 807
+19:01:32.963 
+(Date)25.11.2020 (Time)19:01.32,963
+Executando o WFPOpen ...
+19:01:32.934 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+19:01:32.934 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+19:01:32.964 
+(Date)25.11.2020 (Time)19:01.32,964
+lpszLogicalName (SIU): Sensores
+19:01:32.964 
+(Date)25.11.2020 (Time)19:01.32,964
+hApp: 870A068
+19:01:32.934 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+19:01:32.964 
+(Date)25.11.2020 (Time)19:01.32,964
+lpszAppID: BRXFSTEST
+19:01:32.934 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+19:01:32.934 OpenKey returning *phkResult x24c
+19:01:32.964 
+(Date)25.11.2020 (Time)19:01.32,964
+dwTraceLevel: 0
+19:01:32.934 RegOpenKeyEx( x24c, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+19:01:32.964 
+(Date)25.11.2020 (Time)19:01.32,964
+dwTimeOut: 5000
+19:01:32.934 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+19:01:32.964 
+(Date)25.11.2020 (Time)19:01.32,964
+hWnd: A6051C
+19:01:32.965 
+(Date)25.11.2020 (Time)19:01.32,965
+ReqID: 1
+19:01:32.934 OpenKey returning *phkResult x250
+19:01:32.935 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+19:01:32.965 
+(Date)25.11.2020 (Time)19:01.32,965
+hProvider: 7800E018
+19:01:32.935 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+19:01:32.965 
+(Date)25.11.2020 (Time)19:01.32,965
+dwSPIVersionsRequired: 101FF03
+19:01:32.965 
+(Date)25.11.2020 (Time)19:01.32,965
+dwSPIVersionsRequired.MaiorVersao: FF03
+19:01:32.935 OpenKey returning *phkResult x24c
+19:01:32.935 RegOpenKeyEx( x24c, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+19:01:32.965 
+(Date)25.11.2020 (Time)19:01.32,965
+dwSPIVersionsRequired.MenorVersao: 101
+19:01:32.966 
+(Date)25.11.2020 (Time)19:01.32,966
+dwSrvcVersionsRequired.MaiorVersao: 03
+19:01:32.935 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+19:01:32.935 OpenKey returning *phkResult x254
+19:01:32.966 
+(Date)25.11.2020 (Time)19:01.32,966
+dwSrvcVersionsRequired.MenorVersao: 303
+19:01:32.960 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+19:01:33.002 
+(Date)25.11.2020 (Time)19:01.33,02
+WFPOpen Finalizado. hResult: 0
+19:01:32.960 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+19:01:33.049 
+(Date)25.11.2020 (Time)19:01.33,49
+Entrei na funcao WFPSetTraceLevel ...
+19:01:32.960 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+19:01:33.066 
+(Date)25.11.2020 (Time)19:01.33,66
+Executando o WFPRegister ...
+19:01:33.067 
+(Date)25.11.2020 (Time)19:01.33,67
+hService: 1
+19:01:32.960 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+19:01:32.960 OpenKey returning *phkResult x250
+19:01:33.067 
+(Date)25.11.2020 (Time)19:01.33,67
+dwEventClass: 0F
+19:01:32.960 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+19:01:33.067 
+(Date)25.11.2020 (Time)19:01.33,67
+hWndReg: A7051C
+19:01:33.067 
+(Date)25.11.2020 (Time)19:01.33,67
+hWnd: B5104E
+19:01:32.960 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+19:01:32.960 OpenKey returning *phkResult x254
+19:01:33.067 
+(Date)25.11.2020 (Time)19:01.33,67
+ReqID: 2
+19:01:33.067 
+(Date)25.11.2020 (Time)19:01.33,67
+WFPRegister Finalizado. hResult: 0
+19:01:34.984 
+(Date)25.11.2020 (Time)19:01.34,984
+Entrei na funcao WFPExecute ...
+19:01:34.984 
+(Date)25.11.2020 (Time)19:01.34,984
+hService: 1
+19:01:34.985 
+(Date)25.11.2020 (Time)19:01.34,985
+dwCommand: 807
+19:02:03.897 
+(Date)25.11.2020 (Time)19:02.03,897
+Executando o WFPOpen ...
+19:02:03.848 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+19:02:03.848 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+19:02:03.897 
+(Date)25.11.2020 (Time)19:02.03,897
+lpszLogicalName (SIU): Sensores
+19:02:03.848 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+19:02:03.898 
+(Date)25.11.2020 (Time)19:02.03,898
+hApp: 870A068
+19:02:03.898 
+(Date)25.11.2020 (Time)19:02.03,898
+lpszAppID: BRXFSTEST
+19:02:03.848 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+19:02:03.898 
+(Date)25.11.2020 (Time)19:02.03,898
+dwTraceLevel: 0
+19:02:03.848 OpenKey returning *phkResult x25c
+19:02:03.848 RegOpenKeyEx( x25c, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+19:02:03.898 
+(Date)25.11.2020 (Time)19:02.03,898
+dwTimeOut: 5000
+19:02:03.898 
+(Date)25.11.2020 (Time)19:02.03,898
+hWnd: 280384
+19:02:03.848 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+19:02:03.848 OpenKey returning *phkResult x260
+19:02:03.898 
+(Date)25.11.2020 (Time)19:02.03,898
+ReqID: 1
+19:02:03.898 
+(Date)25.11.2020 (Time)19:02.03,898
+hProvider: 7800E018
+19:02:03.848 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+19:02:03.899 
+(Date)25.11.2020 (Time)19:02.03,899
+dwSPIVersionsRequired: 101FF03
+19:02:03.848 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+19:02:03.899 
+(Date)25.11.2020 (Time)19:02.03,899
+dwSPIVersionsRequired.MaiorVersao: FF03
+19:02:03.848 OpenKey returning *phkResult x25c
+19:02:03.848 RegOpenKeyEx( x25c, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+19:02:03.899 
+(Date)25.11.2020 (Time)19:02.03,899
+dwSPIVersionsRequired.MenorVersao: 101
+19:02:03.899 
+(Date)25.11.2020 (Time)19:02.03,899
+dwSrvcVersionsRequired.MaiorVersao: 03
+19:02:03.848 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+19:02:03.848 OpenKey returning *phkResult x264
+19:02:03.899 
+(Date)25.11.2020 (Time)19:02.03,899
+dwSrvcVersionsRequired.MenorVersao: 303
+19:02:03.940 
+(Date)25.11.2020 (Time)19:02.03,940
+WFPOpen Finalizado. hResult: 0
+19:02:03.894 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+19:02:03.894 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+19:02:03.989 
+(Date)25.11.2020 (Time)19:02.03,989
+Entrei na funcao WFPSetTraceLevel ...
+19:02:03.999 
+(Date)25.11.2020 (Time)19:02.03,999
+Executando o WFPRegister ...
+19:02:03.894 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+19:02:03.894 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+19:02:03.999 
+(Date)25.11.2020 (Time)19:02.03,999
+hService: 1
+19:02:04.000 
+(Date)25.11.2020 (Time)19:02.04,00
+dwEventClass: 0F
+19:02:03.894 OpenKey returning *phkResult x260
+19:02:04.000 
+(Date)25.11.2020 (Time)19:02.04,00
+hWndReg: 290384
+19:02:03.894 RegOpenKeyEx( x260, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+19:02:03.894 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+19:02:04.000 
+(Date)25.11.2020 (Time)19:02.04,00
+hWnd: 900638
+19:02:03.894 OpenKey returning *phkResult x234
+19:02:04.000 
+(Date)25.11.2020 (Time)19:02.04,00
+ReqID: 2
+19:02:04.000 
+(Date)25.11.2020 (Time)19:02.04,00
+WFPRegister Finalizado. hResult: 0
+19:02:08.908 
+(Date)25.11.2020 (Time)19:02.08,908
+Entrei na funcao WFPExecute ...
+19:02:09.378 
+(Date)25.11.2020 (Time)19:02.09,378
+hService: 1
+19:02:09.801 
+(Date)25.11.2020 (Time)19:02.09,801
+dwCommand: 807
+19:02:10.268 
+(Date)25.11.2020 (Time)19:02.10,268
+dwTimeOut: 30000
+19:02:10.689 
+(Date)25.11.2020 (Time)19:02.10,689
+hWnd: B10716
+19:02:11.158 
+(Date)25.11.2020 (Time)19:02.11,158
+ReqID: 3
+19:02:15.303 
+(Date)25.11.2020 (Time)19:02.15,303
+WFPExecute Finalizado. hResult: 0
+19:02:21.880 
+(Date)25.11.2020 (Time)19:02.21,880
+Entrei na funcao WFPClose ...
+19:02:30.381 APICALL: WFSCleanUp: Entered
+19:02:30.385 APICALL: WFSCleanUp: Exit
+19:02:21.881 
+(Date)25.11.2020 (Time)19:02.21,881
+hService: 1
+19:02:21.881 
+(Date)25.11.2020 (Time)19:02.21,881
+hWnd: 191100
+19:02:21.881 
+(Date)25.11.2020 (Time)19:02.21,881
+ReqID: 4
+19:02:26.329 
+(Date)25.11.2020 (Time)19:02.26,329
+WFPClose Finalizado. hResult: 0
+19:02:30.376 
+(Date)25.11.2020 (Time)19:02.30,376
+Entrei na funcao WFPUnloadService ...
+19:02:30.381 
+(Date)25.11.2020 (Time)19:02.30,381
+Entrei na funcao WFPUnloadService ...

@@ -6,11 +6,48 @@
 #include<vector>
 #include "CCommand.h"
 #include "CServiceProvider.h"
+#include "CObjectContainer.h"
 
 using namespace std;
 
-vector<HWND>janelas = {};
+bool initializeSP() {
+    bool ret = false;
 
+    try {
+        CServiceProvider* sp = NULL;
+        sp = CObjectContainer::getSP();
+        sp->start();
+
+        while (!sp->isRunning()) {
+            Sleep(32L);
+        }
+
+        ret = true;
+    }
+    catch (...) {
+        TRACE("Error initializeSP");
+    }
+
+    return ret;    
+}
+
+bool finalizeSP() {
+    bool ret = false;
+
+    try {
+        CServiceProvider* sp = CObjectContainer::getSP();
+        sp->stop();
+        sp->join();
+        CObjectContainer::clearSP();
+
+        ret = true;
+    }
+    catch (...) {
+        TRACE("Error finalizeSP");
+    }
+    
+    return ret;
+}
 
 BOOL APIENTRY DllMain( HMODULE hModule,
                        DWORD  ul_reason_for_call,
@@ -43,32 +80,22 @@ HRESULT extern WINAPI WFPClose(HSERVICE hService, HWND hWnd, REQUESTID ReqID) {
     
     HRESULT hResult = WFS_ERR_INTERNAL_ERROR;
 
-    //-->
-    Sleep(2000);//Simulado algum acesso a dispositivo
-    //TODO: fazer todo o que for preciso para desalocar recursos, fechando conexao com o Device Driver (dispositivo), 
-    // fechando threads, janelas, arquivos e etc.
-    //<--
+    CSession* session = CObjectContainer::findSession(hService);
 
-    hResult = WFS_SUCCESS;
+    if (session != NULL) {
+        CServiceProvider* sp = CObjectContainer::getSP();
+        hResult = sp->insertCommand(new CCommand(ReqID, hService, hWnd, WFS_CLOSE_COMPLETE, 0, 0, NULL, 0, NULL, 0, session));
 
-    WFSRESULT   wfsResLocal;
-    memset(&wfsResLocal, 0, sizeof(wfsResLocal));
+        //TODO: aguardar terminar de cancelar os comandos agendados
+        //while (sp->getWaitExecutionState() != WS_COMPLETE) {
+        //    Sleep(32L);
+        //}
 
-    wfsResLocal.hResult = hResult;
-    wfsResLocal.hService = hService;
-    wfsResLocal.RequestID = ReqID;
-    GetSystemTime((LPSYSTEMTIME)&wfsResLocal.tsTimestamp);
-
-    LPWFSRESULT lpPostRes;
-
-    if (WFMAllocateBuffer(sizeof(WFSRESULT), WFS_MEM_ZEROINIT | WFS_MEM_SHARE, (LPVOID*)&lpPostRes) != WFS_SUCCESS) {
-        TRACE("PostResult: ERROR WFMAllocateBuffer");
-        return WFS_ERR_INTERNAL_ERROR;
+        //TODO: terminar threads
+        //if (!finalizeSP()) {
+        //    return hResult;
+        //}
     }
-
-    memcpy(lpPostRes, &wfsResLocal, sizeof(WFSRESULT));
-
-    PostMessage(hWnd, WFS_CLOSE_COMPLETE, 0, (LPARAM)lpPostRes);//Envia mensagem para a window (hWnd) definida pelo XFS Manager
 
     TRACE("WFPClose Finalizado. hResult: %d", hResult);
     return hResult;
@@ -82,41 +109,21 @@ HRESULT extern WINAPI WFPDeregister(HSERVICE hService, DWORD dwEventClass, HWND 
 
 HRESULT extern WINAPI WFPExecute(HSERVICE hService, DWORD dwCommand, LPVOID lpCmdData, DWORD dwTimeOut, HWND hWnd, REQUESTID ReqID) {
     TRACE("Entrei na funcao WFPExecute ...");
-    // TODO: Logar parametros
-    //
-
+    TRACE("hService: %d", hService);
+    TRACE("dwCommand: %d", dwCommand);
+   // TRACE("lpCmdData: %b", (lpCmdData != NULL));//TODO verificar uma forma de logar somente para saber se é nulo ou não o lpCmdData
+    TRACE("dwTimeOut: %d", dwTimeOut);
+    TRACE("hWnd: %02X", hWnd);
+    TRACE("ReqID: %d", ReqID);
 
     HRESULT hResult = WFS_ERR_INTERNAL_ERROR;
 
-    //TODO: fazer o agendamento do comando dwCommand
-    //
-    Sleep(1000);
+    CServiceProvider* sp = CObjectContainer::getSP();
+    CSession* session = CObjectContainer::findSession(hService);
 
-    hResult = WFS_SUCCESS;
-
-    WFSRESULT   wfsResLocal;
-    memset(&wfsResLocal, 0, sizeof(wfsResLocal));
-
-    wfsResLocal.hResult = hResult;
-    wfsResLocal.hService = hService;
-    wfsResLocal.RequestID = ReqID;
-    GetSystemTime((LPSYSTEMTIME)&wfsResLocal.tsTimestamp);
-
-    LPWFSRESULT lpPostRes;
-
-    if (WFMAllocateBuffer(sizeof(WFSRESULT), WFS_MEM_ZEROINIT | WFS_MEM_SHARE, (LPVOID*)&lpPostRes) != WFS_SUCCESS) {
-        TRACE("PostResult: ERROR WFMAllocateBuffer");
-        return WFS_ERR_INTERNAL_ERROR;
+    if (sp != NULL && session != NULL) {
+        hResult = sp->insertCommand(new CCommand(ReqID, hService, hWnd, WFS_EXECUTE_COMPLETE, dwTimeOut, 0, NULL, dwCommand, lpCmdData, 0, session));
     }
-
-    memcpy(lpPostRes, &wfsResLocal, sizeof(WFSRESULT));
-
-    PostMessage(hWnd, WFS_EXECUTE_COMPLETE, 0, (LPARAM)lpPostRes);//Envia mensagem para a window (hWnd) definida pelo XFS Manager
-
-    //TESTE
-    for (HWND it : janelas)
-        PostMessage(it, WFS_SYSTEM_EVENT, 0, (LPARAM)lpPostRes);
-    //--TESTE
 
     TRACE("WFPExecute Finalizado. hResult: %d", hResult);
     return hResult;
@@ -180,11 +187,15 @@ HRESULT extern WINAPI WFPOpen(HSERVICE hService, LPSTR lpszLogicalName, HAPP hAp
 
     //
 
-    CServiceProvider* sp = new CServiceProvider();
-    sp->start();
+    if (!initializeSP())
+        return hResult;
+
+    CServiceProvider* sp = CObjectContainer::getSP();    
     sp->setLogicalName(lpszLogicalName);
+
     hResult = sp->insertCommand(new CCommand(ReqID, hService, hWnd, WFS_OPEN_COMPLETE, dwTimeOut, 0, NULL, 0));
 
+    TRACE("WFPOpen Finalizado. hResult: %d", hResult);
     return hResult;
 }
 
@@ -198,30 +209,13 @@ HRESULT extern WINAPI WFPRegister(HSERVICE hService, DWORD dwEventClass, HWND hW
     TRACE("hWnd: %02X", hWnd);
     TRACE("ReqID: %d", ReqID);
 
-    //Processamento inicia
-    janelas.push_back(hWndReg);
-    //Processamento termina
+    //
+    CServiceProvider* sp = CObjectContainer::getSP();
+    CSession* session = CObjectContainer::findSession(hService);
 
-    hResult = WFS_SUCCESS;
-
-    WFSRESULT   wfsResLocal;
-    memset(&wfsResLocal, 0, sizeof(wfsResLocal));
-
-    wfsResLocal.hResult = hResult;
-    wfsResLocal.hService = hService;
-    wfsResLocal.RequestID = ReqID;
-    GetSystemTime((LPSYSTEMTIME)&wfsResLocal.tsTimestamp);
-
-    LPWFSRESULT lpPostRes;
-
-    if (WFMAllocateBuffer(sizeof(WFSRESULT), WFS_MEM_ZEROINIT | WFS_MEM_SHARE, (LPVOID*)&lpPostRes) != WFS_SUCCESS) {
-        TRACE("PostResult: ERROR WFMAllocateBuffer");
-        return WFS_ERR_INTERNAL_ERROR;
+    if (sp != NULL && session != NULL) {
+        hResult = sp->insertCommand(new CCommand(ReqID, hService, hWnd, WFS_REGISTER_COMPLETE, 0, dwEventClass, hWndReg, 0, NULL, 0, session));       
     }
-
-    memcpy(lpPostRes, &wfsResLocal, sizeof(WFSRESULT));
-
-    PostMessage(hWnd, WFS_REGISTER_COMPLETE, 0, (LPARAM)lpPostRes);
 
     TRACE("WFPRegister Finalizado. hResult: %d", hResult);
     return hResult;

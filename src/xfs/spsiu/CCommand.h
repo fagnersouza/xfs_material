@@ -1,6 +1,7 @@
 #pragma once
 #include<Windows.h>
 #include<XFSSPI.H>
+#include "CSession.h"
 class CCommand
 {
 private:
@@ -14,6 +15,9 @@ private:
 	int m_bufferSize;	
 	LPVOID m_result;
 	char* m_BufferLszExtra;
+	DWORD m_EventClass;
+	HWND m_hWndReg;
+	CSession* m_session;
 	
 public:
 	CCommand(	REQUESTID reqId,
@@ -23,11 +27,24 @@ public:
 				long timeout,
 				DWORD command,
 				LPVOID buffer,
-				int size				
+				int size
 			);
 
-	REQUESTID getRedId();
-	HSERVICE getService();
+	CCommand(REQUESTID reqId,
+		HSERVICE hService,
+		HWND hWnd,
+		int spiFunction,
+		long timeout,
+		DWORD dEventClass,
+		HWND hWndReg,
+		DWORD command,
+		LPVOID buffer,
+		int size,
+		CSession* session
+	);
+
+	REQUESTID getReqId();
+	HSERVICE getHService();
 	HWND getHWND();
 	DWORD getTimeout();
 	DWORD getCommand();
@@ -36,6 +53,9 @@ public:
 	int getBufferSize();
 	LPVOID getResult();
 	char* getLpszExtra();
+	DWORD getEventClass();
+	HWND getWndReg();
+	CSession* getSession();
 
 	void setResult(LPVOID result);
 

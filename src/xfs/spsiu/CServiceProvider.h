@@ -1,17 +1,34 @@
 #pragma once
 #include<Windows.h>
+#include<deque>
+#include<vector>
 #include<XFSSPI.H>
 #include "CCommand.h"
 #include "CThread.h"
-#include<deque>
+#include "CMutex.h"
 
 using namespace std;
+
+struct RegisteredWindow {	
+	//ID unica do serviço sendo executado
+	HSERVICE Service;
+
+	//Tipo de evento registrado
+	DWORD EventClass;
+
+	//Janela que irá receber o evento
+	HWND WndReg;
+};
 
 class CServiceProvider : public CThread
 {
 private:
 	deque<CCommand*> m_wosaQueue;
 	char m_logicalName[128];
+	vector<RegisteredWindow*> m_registeredWindows;
+	
+	//mutext para organizar o acesso a estrutura de comandos
+	CMutex* m_mutCommands;
 
 public:
 	CServiceProvider();
@@ -23,6 +40,8 @@ public:
 	//Funções que resolvem os comandos WFP
 	HRESULT wfpOpen(CCommand* cmd);
 	HRESULT wfpClose(CCommand* cmd);
+	HRESULT wfpCancel(CCommand* cmd);
+	RegisteredWindow* findRegisteredWindowsByHandle(HWND Wnd);
 	HRESULT wfpRegister(CCommand* cmd);
 	HRESULT wfpDeregister(CCommand* cmd);
 	HRESULT wfpExecute(CCommand* cmd);

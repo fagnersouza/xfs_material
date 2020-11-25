@@ -4,17 +4,22 @@
 
 CServiceProvider::CServiceProvider()
 {
-    
+    running = false;
+    memset(m_logicalName, 0x00, sizeof(m_logicalName));
+    m_mutCommands = new CMutex();
 }
 
 HRESULT CServiceProvider::insertCommand(CCommand* cmd)
 {
     HRESULT hResult = WFS_ERR_INTERNAL_ERROR;
 
-    if (cmd != NULL) {
-        //TODO: implementar Mutex
+    if (cmd != NULL) {        
+        //acessa m_wosaQueue dentreo da região crítica para 
+        //garantir que nenhum comando será cancelado ou removido
+        //da lista e iniciado durante esta operação
+        m_mutCommands->request();
         m_wosaQueue.push_back(cmd);
-        //TODO
+        m_mutCommands->release();
         hResult = WFS_SUCCESS;
     }
 
@@ -44,7 +49,7 @@ const char* CServiceProvider::getLogicalName() {
 
 HRESULT CServiceProvider::wfpOpen(CCommand* cmd)
 {
-    CSession* session = new CSession(this->getLogicalName(), cmd->getService());
+    CSession* session = new CSession(this->getLogicalName(), cmd->getHService());
 
     CObjectContainer::addSession(session);
     
@@ -53,12 +58,97 @@ HRESULT CServiceProvider::wfpOpen(CCommand* cmd)
 
 HRESULT CServiceProvider::wfpClose(CCommand* cmd)
 {
-    return WFS_ERR_INTERNAL_ERROR;
+    CSession* session = cmd->getSession();
+
+    CCommand* cmdCancel = new CCommand(0, session->getHService(), NULL, WFS_ERR_CANCELED, 0, 0, NULL, 0, NULL, 0, session);
+    wfpCancel(cmdCancel);
+
+    delete session;
+    
+    return WFS_SUCCESS;
+}
+
+HRESULT CServiceProvider::wfpCancel(CCommand* cmd) {
+    HRESULT hResult = WFS_SUCCESS;
+
+    CCommand* cmdFromQueue = NULL;
+    HRESULT allocateBufferResult;
+    LPWFSRESULT res = NULL;
+
+    m_mutCommands->request();
+
+    for (unsigned int i = 0; i < m_wosaQueue.size(); i++) {
+        cmdFromQueue = (CCommand*)m_wosaQueue.at(i);
+
+        //Verifica se deve cancelar TODOS os comandos ou se deve cancelar
+        // um comando específico --> cmd->getReqId() == 0 (cancela TODOS os comandos que estão sendo varridos no loop)
+        if (cmd->getReqId() == 0 || cmd->getReqId() == cmdFromQueue->getReqId()) {
+            allocateBufferResult = this->allocateBuffer(&res);
+
+            if (allocateBufferResult == WFS_SUCCESS) {
+                setCommonData(res, cmdFromQueue);
+                res->hResult = WFS_ERR_CANCELED;
+                cmdFromQueue->setResult(res);
+            }
+        }
+    }
+
+    m_mutCommands->release();
+
+    //TODO: verificar se é preciso controlar quantidade de comando em execução
+
+    return hResult;
+}
+
+RegisteredWindow* CServiceProvider::findRegisteredWindowsByHandle(HWND Wnd) {
+    RegisteredWindow* ret = NULL;
+
+    //Iterator para percorrer a lista de handles
+    vector<RegisteredWindow*>::iterator it = m_registeredWindows.begin();
+
+
+    //Enquanto não chega ao fim da lista ...
+    while (it != m_registeredWindows.end()) {
+        
+        //Verifica se o handle da lista é o da janela do processo
+        if ((*it)->WndReg == Wnd) {
+            //Retorna a estrutura encontrada
+            ret = (*it);
+        }
+
+        //Avança o item atual da lista
+        it++;
+    }
+
+    return ret;
 }
 
 HRESULT CServiceProvider::wfpRegister(CCommand* cmd)
 {
-    return WFS_ERR_INTERNAL_ERROR;
+    RegisteredWindow* registeredWindow = NULL;
+
+    registeredWindow = this->findRegisteredWindowsByHandle(cmd->getWndReg());
+
+    //Se igual a NULL entaão janela ainda não se encontra na lista
+    if (registeredWindow == NULL) {
+        registeredWindow = new RegisteredWindow;
+        registeredWindow->Service = cmd->getHService();
+        registeredWindow->EventClass = cmd->getEventClass();
+        registeredWindow->WndReg = cmd->getWndReg();
+
+        this->m_registeredWindows.push_back(registeredWindow);
+    }
+    else {//se diferente de NULL, então atualizar o EventClass registrado
+        
+        //Verifica se a o EventClass não foi previamente inserido na estrutura
+        if ((registeredWindow->EventClass & cmd->getEventClass()) != cmd->getEventClass()) {
+            registeredWindow->EventClass = (registeredWindow->EventClass | cmd->getEventClass());
+        }
+    }
+
+    //TODO: verificar tratamento especial para SYSTEM_EVENT em relação ao Lock
+
+    return WFS_SUCCESS;
 }
 
 HRESULT CServiceProvider::wfpDeregister(CCommand* cmd)
@@ -104,9 +194,9 @@ void CServiceProvider::setCommonData(LPWFSRESULT result, CCommand* cmd)
         GetSystemTime(&time);
 
         result->hResult = WFS_SUCCESS;
-        result->hService = cmd->getService();
+        result->hService = cmd->getHService();
         result->lpBuffer = NULL;
-        result->RequestID = cmd->getRedId();
+        result->RequestID = cmd->getReqId();
         result->tsTimestamp = time;
         result->u.dwCommandCode = cmd->getCommand();
     }
@@ -121,17 +211,36 @@ void CServiceProvider::postMessageToWindow(CCommand* cmd)
 
 void* CServiceProvider::run()
 {
+    running = true;
     CCommand* pCmdExecuting;
 
     while (!this->isToExit()) {
         
+        this->m_mutCommands->request();
+
         pCmdExecuting = removeCommand();
 
         if (pCmdExecuting != NULL){
-            CCommandExecuter* executer = new CCommandExecuter(this, pCmdExecuting);
-            executer->start();
-        }       
+            LPWFSRESULT pWfsResult = (LPWFSRESULT)pCmdExecuting->getResult();
 
+            if (pWfsResult != NULL) {
+                
+                //Se comando foi marcado como cancelado, nem executamos
+                if (pWfsResult->hResult == WFS_ERR_CANCELED) {
+                    //Mandar postMessage com o retorno
+                    postMessageToWindow(pCmdExecuting);
+                    delete pCmdExecuting;
+                    pCmdExecuting = NULL;
+                }
+            }
+            
+            if (pCmdExecuting != NULL) {
+                CCommandExecuter* executer = new CCommandExecuter(this, pCmdExecuting);
+                executer->start();
+            }
+        }
+
+        this->m_mutCommands->release();
 
         Sleep(32L);
     }

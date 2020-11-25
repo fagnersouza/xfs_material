@@ -1,9 +1,10 @@
 #include "CObjectContainer.h"
 CObjectContainer::SessionList CObjectContainer::sessions;
+CObjectContainer::LPCServiceProvider CObjectContainer::sp;
 
 bool CObjectContainer::addSession(CSession* session)
 {
-    if (session != NULL && CObjectContainer::findSession(session->getHService() == NULL)) {
+    if (session != NULL && CObjectContainer::findSession(session->getHService()) == NULL) {
         CObjectContainer::sessions.push_back(session);
         return true;
     }
@@ -27,4 +28,17 @@ CSession* CObjectContainer::findSession(HSERVICE hService)
     }
 
     return ret;
+}
+
+CServiceProvider* CObjectContainer::getSP()
+{
+    if (sp == NULL)
+        sp = new CServiceProvider();
+
+    return sp;
+}
+
+void CObjectContainer::clearSP()
+{
+    sp = NULL;
 }

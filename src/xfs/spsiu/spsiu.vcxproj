@@ -163,6 +163,7 @@
   <ItemGroup>
     <ClInclude Include="..\common\brxutil.h" />
     <ClInclude Include="CCommand.h" />
+    <ClInclude Include="CMutex.h" />
     <ClInclude Include="CObjectContainer.h" />
     <ClInclude Include="CServiceProvider.h" />
     <ClInclude Include="CSession.h" />
@@ -173,6 +174,7 @@
   <ItemGroup>
     <ClCompile Include="..\common\brxutil.cpp" />
     <ClCompile Include="CCommand.cpp" />
+    <ClCompile Include="CMutex.cpp" />
     <ClCompile Include="CObjectContainer.cpp" />
     <ClCompile Include="CServiceProvider.cpp" />
     <ClCompile Include="CSession.cpp" />

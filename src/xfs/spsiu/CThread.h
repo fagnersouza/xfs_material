@@ -16,11 +16,11 @@ public:
 protected:
 	virtual void* run() = 0;
 	bool isToExit();
+	bool running = false;
 
 private:
 	HANDLE hThreadHandle;
-	DWORD dThreadId;
-	bool running = false;
+	DWORD dThreadId;	
 	bool exit = false;
 	static DWORD FAR PASCAL dispatch(void* threadObj);
 };
