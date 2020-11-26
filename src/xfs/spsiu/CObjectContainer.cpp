@@ -30,6 +30,18 @@ CSession* CObjectContainer::findSession(HSERVICE hService)
     return ret;
 }
 
+CSession* CObjectContainer::removeSession(HSERVICE hService)
+{
+    //Tenta localizar a session
+    CSession* session = CObjectContainer::findSession(hService);
+
+    if (session != NULL) {
+        CObjectContainer::sessions.remove(session);
+    }
+    
+    return session;
+}
+
 CServiceProvider* CObjectContainer::getSP()
 {
     if (sp == NULL)
@@ -40,5 +52,6 @@ CServiceProvider* CObjectContainer::getSP()
 
 void CObjectContainer::clearSP()
 {
+    delete sp;
     sp = NULL;
 }

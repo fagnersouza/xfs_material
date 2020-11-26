@@ -103,3 +103,13 @@ void CCommand::setResult(LPVOID result)
 {
 	this->m_result = result;
 }
+
+void CCommand::setTraceLevel(DWORD dwTraceLevel)
+{
+	this->m_TraceLevel = dwTraceLevel;
+}
+
+DWORD CCommand::getTraceLevel()
+{
+	return this->m_TraceLevel;
+}

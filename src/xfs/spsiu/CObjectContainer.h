@@ -12,6 +12,7 @@ class CObjectContainer
 public:
 	static bool addSession(CSession* session);
 	static CSession* findSession(HSERVICE hService);
+	static CSession* removeSession(HSERVICE hService);
 	static CServiceProvider* getSP();
 	static void clearSP();
 

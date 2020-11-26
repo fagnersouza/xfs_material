@@ -18,6 +18,7 @@ private:
 	DWORD m_EventClass;
 	HWND m_hWndReg;
 	CSession* m_session;
+	DWORD m_TraceLevel;
 	
 public:
 	CCommand(	REQUESTID reqId,
@@ -58,6 +59,9 @@ public:
 	CSession* getSession();
 
 	void setResult(LPVOID result);
+
+	void setTraceLevel(DWORD dwTraceLevel);
+	DWORD getTraceLevel();
 
 };
 

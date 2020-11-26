@@ -1,3 +1,2 @@
 ﻿  xfstest.cpp
-C:\Projetos\xfs_material\src\xfs\xfstest\xfstest.cpp(31,10): warning C4101: 'bOk': unreferenced local variable
   xfstest.vcxproj -> C:\Projetos\xfs_material\src\xfs\Debug\xfstest.exe

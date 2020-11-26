@@ -17,6 +17,7 @@ HINSTANCE hInst = NULL;
 
 HANDLE hModuleThread = NULL;
 HANDLE hRegEvent = NULL;
+HSERVICE hService;
 
 using namespace std;
 
@@ -24,11 +25,11 @@ boolean CreateXFSMonitor();
 boolean RegisterCallback();
 LRESULT CALLBACK  PostCallBack(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
 DWORD FAR PASCAL ThreadMonitor(string name);
+void executeReset();
 
 boolean CreateXFSMonitor() {
     cout << "---" << "Monitor de Eventos XFS" << "---" << endl;
 
-    BOOL bOk;
     DWORD IdThread;
 
     hModuleThread = CreateThread(
@@ -127,9 +128,7 @@ int main()
     cout << "HighVersion: " << hex << xfs_version.wHighVersion << endl;
     cout << "LowVersion: " << hex << xfs_version.wLowVersion << endl;
     cout << "Version: " << xfs_version.wVersion << endl;
-    cout << endl;
-
-    HSERVICE hService;
+    cout << endl;    
 
 
 
@@ -167,7 +166,7 @@ int main()
         CreateXFSMonitor();
 
         if (messageWindow != NULL) {
-            HRESULT hResult = WFSRegister(hService, SYSTEM_EVENTS | USER_EVENTS | SERVICE_EVENTS | EXECUTE_EVENTS, messageWindow);
+            HRESULT hResult = WFSRegister(hService, (SYSTEM_EVENTS | USER_EVENTS | SERVICE_EVENTS | EXECUTE_EVENTS), messageWindow);
             cout << "WFSRegister Result: " << dec << hResult << endl;
 
             if (hResult == WFS_SUCCESS) {
@@ -183,16 +182,17 @@ int main()
         }
     }
 
-    cin.ignore();
+    cin.ignore();//Exige um ENTER
 
     //Teste
-    LPWFSRESULT   wfsResPointer;
+/*    LPWFSRESULT   wfsResPointer;
     hResult = WFSExecute(hService, WFS_CMD_SIU_RESET, NULL, (30 * 1000), &wfsResPointer);
-    WFSFreeResult(wfsResPointer);
     cout << "WFSExecute Result: " << dec << hResult << endl;
+    WFSFreeResult(wfsResPointer); */   
     //<--
+    executeReset();
 
-    cin.ignore();
+    cin.ignore();//Exige um ENTER
 
     hResult = WFSClose(hService);
     cout << "WFSClose Result: " << dec << hResult << endl;
@@ -204,6 +204,22 @@ int main()
 
     if (hInst)
         UnregisterClass(lpszClass, hInst);
+}
+
+void executeReset() {
+    REQUESTID requestID;
+    HRESULT hResult;
+
+    for (int i = 0; i < 5; i++) {
+        if (i == 2) {
+            hResult = WFSCancelAsyncRequest(hService, 0);
+            cout << "Exec(cancel)->ReqID(" << dec << requestID << ") = " << hResult << endl;
+        }
+        else {
+            hResult = WFSAsyncExecute(hService, WFS_CMD_SIU_RESET, NULL, (30 * 1000), messageWindow, &requestID);
+            cout << "Exec(reset)->ReqID(" << dec << requestID << ") = " << hResult << endl;
+        }
+    }
 }
 
 LRESULT CALLBACK  PostCallBack(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
@@ -250,8 +266,20 @@ LRESULT CALLBACK  PostCallBack(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPara
         cout << "WFS_GETINFO_COMPLETE" << endl;
         return 0;
     case WFS_EXECUTE_COMPLETE:
-        cout << "WFS_EXECUTE_COMPLETE" << endl;
+    {
+        LPWFSRESULT res = (LPWFSRESULT)lParam;
+
+        if (res != NULL) {
+            char buf[1024];
+            sprintf_s(buf, "WFS_EXECUTE_COMPLETE(ReqID=%d)->hResult: %d", res->RequestID, res->hResult);            
+            cout << string(buf) << endl;
+            WFSFreeResult(res);
+        }
+        else {
+            cout << "WFS_EXECUTE_COMPLETE" << endl;
+        }
         return 0;
+    }
     }
 
     return DefWindowProc(hWnd, uMsg, wParam, lParam);

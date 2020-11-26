@@ -9,6 +9,7 @@
 #include "CObjectContainer.h"
 
 using namespace std;
+bool _SP_FINILIZED = false;
 
 bool initializeSP() {
     bool ret = false;
@@ -27,7 +28,8 @@ bool initializeSP() {
     catch (...) {
         TRACE("Error initializeSP");
     }
-
+    
+    _SP_FINILIZED = !ret;
     return ret;    
 }
 
@@ -46,6 +48,7 @@ bool finalizeSP() {
         TRACE("Error finalizeSP");
     }
     
+    _SP_FINILIZED = ret;
     return ret;
 }
 
@@ -67,8 +70,20 @@ BOOL APIENTRY DllMain( HMODULE hModule,
 
 HRESULT extern WINAPI WFPCancelAsyncRequest(HSERVICE hService, REQUESTID RequestID) {
     TRACE("Entrei na funcao WFPCancelAsyncRequest ...");
+    TRACE("hService: %d", hService);
+    TRACE("ReqID: %d", RequestID);
 
-    return WFS_ERR_INTERNAL_ERROR;
+    HRESULT hResult = WFS_ERR_INTERNAL_ERROR;
+
+    CServiceProvider* sp = CObjectContainer::getSP();
+    CSession* session = CObjectContainer::findSession(hService);
+
+    if ((sp != NULL) && (session != NULL)) {
+        hResult = sp->insertCommand(new CCommand(RequestID, hService, NULL, WFS_ERR_CANCELED, 0, 0, NULL, 0));
+    }
+
+    TRACE("WFPCancelAsyncRequest Finalizado. hResult: %d", hResult);
+    return hResult;
 }
 
 HRESULT extern WINAPI WFPClose(HSERVICE hService, HWND hWnd, REQUESTID ReqID) {
@@ -80,21 +95,21 @@ HRESULT extern WINAPI WFPClose(HSERVICE hService, HWND hWnd, REQUESTID ReqID) {
     
     HRESULT hResult = WFS_ERR_INTERNAL_ERROR;
 
-    CSession* session = CObjectContainer::findSession(hService);
+    CSession* session = CObjectContainer::removeSession(hService);
 
     if (session != NULL) {
         CServiceProvider* sp = CObjectContainer::getSP();
+
+        sp->startWaitExection(ReqID);
         hResult = sp->insertCommand(new CCommand(ReqID, hService, hWnd, WFS_CLOSE_COMPLETE, 0, 0, NULL, 0, NULL, 0, session));
 
-        //TODO: aguardar terminar de cancelar os comandos agendados
-        //while (sp->getWaitExecutionState() != WS_COMPLETE) {
-        //    Sleep(32L);
-        //}
+        while (sp->getWaitExecutionState() != EWaitState::WS_COMPLETED) {
+            Sleep(32L);
+        }
 
-        //TODO: terminar threads
-        //if (!finalizeSP()) {
-        //    return hResult;
-        //}
+        if (!finalizeSP()) {
+            return hResult;
+        }
     }
 
     TRACE("WFPClose Finalizado. hResult: %d", hResult);
@@ -103,8 +118,22 @@ HRESULT extern WINAPI WFPClose(HSERVICE hService, HWND hWnd, REQUESTID ReqID) {
 
 HRESULT extern WINAPI WFPDeregister(HSERVICE hService, DWORD dwEventClass, HWND hWndReg, HWND hWnd, REQUESTID ReqID) {
     TRACE("Entrei na funcao WFPDeregister ...");
+    TRACE("hService: %d", hService);
+    TRACE("dwCommand: %d", dwEventClass);
+    TRACE("hWndReg: %02X", hWndReg);
+    TRACE("hWnd: %02X", hWnd);
+    TRACE("ReqID: %d", ReqID);
 
-    return WFS_ERR_INTERNAL_ERROR;
+    HRESULT hResult = WFS_ERR_INTERNAL_ERROR;
+
+    CServiceProvider* sp = CObjectContainer::getSP();
+    CSession* session = CObjectContainer::findSession(hService);
+
+    if (sp != NULL && session != NULL) {
+        hResult = sp->insertCommand(new CCommand(ReqID, hService, hWnd, WFS_DEREGISTER_COMPLETE, 0, dwEventClass, hWndReg, 0, NULL, 0, session));
+    }
+
+    return hResult;
 }
 
 HRESULT extern WINAPI WFPExecute(HSERVICE hService, DWORD dwCommand, LPVOID lpCmdData, DWORD dwTimeOut, HWND hWnd, REQUESTID ReqID) {
@@ -131,15 +160,44 @@ HRESULT extern WINAPI WFPExecute(HSERVICE hService, DWORD dwCommand, LPVOID lpCm
 
 HRESULT extern WINAPI WFPGetInfo(HSERVICE hService, DWORD dwCategory, LPVOID lpQueryDetails, DWORD dwTimeOut, HWND hWnd, REQUESTID ReqID) {
     TRACE("Entrei na funcao WFPGetInfo");
+    TRACE("Entrei na funcao WFPExecute ...");
+    TRACE("hService: %d", hService);
+    TRACE("dwCategory: %d", dwCategory);
+    TRACE("dwTimeOut: %d", dwTimeOut);
+    TRACE("hWnd: %02X", hWnd);
+    TRACE("ReqID: %d", ReqID);
 
-    return WFS_ERR_INTERNAL_ERROR;
+    HRESULT hResult = WFS_ERR_INTERNAL_ERROR;
+
+    CServiceProvider* sp = CObjectContainer::getSP();
+    CSession* session = CObjectContainer::findSession(hService);
+
+    if (sp != NULL && session != NULL) {
+        hResult = sp->insertCommand(new CCommand(ReqID, hService, hWnd, WFS_GETINFO_COMPLETE, dwTimeOut, 0, NULL, dwCategory, lpQueryDetails, 0, session));
+    }
+
+    TRACE("WFPGetInfo Finalizado. hResult: %d", hResult);
+    return hResult;
 }
 
 HRESULT extern WINAPI WFPLock(HSERVICE hService, DWORD dwTimeOut, HWND hWnd, REQUESTID ReqID) {
     TRACE("Entrei na funcao WFPLock ...");
-    
+    TRACE("hService: %d", hService);
+    TRACE("dwTimeOut: %d", dwTimeOut);
+    TRACE("hWnd: %02X", hWnd);
+    TRACE("ReqID: %d", ReqID);
 
-    return WFS_ERR_INTERNAL_ERROR;
+    HRESULT hResult = WFS_ERR_INTERNAL_ERROR;
+    
+    CServiceProvider* sp = CObjectContainer::getSP();
+    CSession* session = CObjectContainer::findSession(hService);
+
+    if ((sp != NULL) && (session != NULL)) {
+        hResult = sp->insertCommand(new CCommand(ReqID, hService, hWnd, WFS_LOCK_COMPLETE, dwTimeOut, 0, NULL, 0, NULL, 0, session));
+    }
+
+    TRACE("WFPLock Finalizado. hResult: %d", hResult);
+    return hResult;
 }
 
 HRESULT extern WINAPI WFPOpen(HSERVICE hService, LPSTR lpszLogicalName, HAPP hApp, LPSTR lpszAppID, DWORD dwTraceLevel, DWORD dwTimeOut, HWND hWnd, REQUESTID ReqID, HPROVIDER hProvider, DWORD dwSPIVersionsRequired, LPWFSVERSION lpSPIVersion, DWORD dwSrvcVersionsRequired, LPWFSVERSION lpSrvcVersion) {
@@ -223,20 +281,51 @@ HRESULT extern WINAPI WFPRegister(HSERVICE hService, DWORD dwEventClass, HWND hW
 
 HRESULT extern WINAPI WFPSetTraceLevel(HSERVICE hService, DWORD dwTraceLevel) {
     TRACE("Entrei na funcao WFPSetTraceLevel ...");
+    TRACE("hService: %d", hService);
+    TRACE("dwTraceLevel: %d", dwTraceLevel);
 
-    return WFS_ERR_INTERNAL_ERROR;
+    HRESULT hResult = WFS_ERR_INTERNAL_ERROR;
+
+    CServiceProvider* sp = CObjectContainer::getSP();
+
+    CCommand* cmd = new CCommand(0, hService, NULL, 0, 0, 0, NULL, 0);
+    cmd->setTraceLevel(dwTraceLevel);
+
+    hResult = sp->wfpSetTraceLevel(cmd);
+
+    TRACE("WFPSetTraceLevel Finalizado. hResult: %d", hResult);
+    return hResult;
 }
 
 HRESULT extern WINAPI WFPUnloadService() {
     TRACE("Entrei na funcao WFPUnloadService ...");
+    HRESULT hResult = WFS_ERR_NOT_OK_TO_UNLOAD;
 
-    return WFS_ERR_INTERNAL_ERROR;
+    if (_SP_FINILIZED) {
+        hResult = WFS_SUCCESS;
+    }
+
+    TRACE("WFPUnloadService Finalizado. hResult: %d", hResult);
+    return hResult;
 }
 
-HRESULT extern WINAPI WFPUnlock(HSERVICE hService, HWND hWnd, REQUESTID) {
+HRESULT extern WINAPI WFPUnlock(HSERVICE hService, HWND hWnd, REQUESTID ReqID) {
     TRACE("Entrei na funcao WFPUnlock ...");
+    TRACE("hService: %d", hService);
+    TRACE("hWnd: %02X", hWnd);
+    TRACE("ReqID: %d", ReqID);
 
-    return WFS_ERR_INTERNAL_ERROR;
+    HRESULT hResult = WFS_ERR_INTERNAL_ERROR;
+
+    CServiceProvider* sp = CObjectContainer::getSP();
+    CSession* session = CObjectContainer::findSession(hService);
+
+    if ((sp != NULL) && (session != NULL)) {
+        hResult = sp->insertCommand(new CCommand(ReqID, hService, hWnd, WFS_UNLOCK_COMPLETE, 0, 0, NULL, 0, NULL, 0, session));
+    }
+
+    TRACE("WFPUnlock Finalizado. hResult: %d", hResult);
+    return hResult;
 }
 
 
