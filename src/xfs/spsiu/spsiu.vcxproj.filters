@@ -45,6 +45,12 @@
     <ClInclude Include="CLockController.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CDeviceAccess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\brxsismul\Sisemu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -75,6 +81,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CLockController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CDeviceAccess.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

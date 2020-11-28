@@ -43,6 +43,13 @@ public:
 		int size,
 		CSession* session
 	);
+	~CCommand();
+
+	void freeBuffer();
+
+	void copyInputBuffer(int spiFunction, DWORD command, LPVOID in_buffer);
+
+	unsigned int getLpszExtraSize(const char* lpszExtra);
 
 	REQUESTID getReqId();
 	HSERVICE getHService();

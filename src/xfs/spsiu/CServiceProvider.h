@@ -6,6 +6,7 @@
 #include "CCommand.h"
 #include "CThread.h"
 #include "CMutex.h"
+#include "CDeviceAccess.h"
 
 using namespace std;
 
@@ -35,6 +36,7 @@ private:
 	int m_numberOfCommandsExecuting;
 	EWaitState m_waitCommandState;
 	int m_waitCommmandReqId;
+	CDeviceAccess* m_device;
 
 public:
 	CServiceProvider();

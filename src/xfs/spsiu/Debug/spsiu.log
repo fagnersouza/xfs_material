@@ -1,6 +1,7 @@
 ﻿  pch.cpp
   brxutil.cpp
   CCommand.cpp
+  CDeviceAccess.cpp
   CLockController.cpp
   CMutex.cpp
   CObjectContainer.cpp

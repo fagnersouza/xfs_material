@@ -72,13 +72,13 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>..\common;..\XFSSDK\INCLUDE;$(IncludePath)</IncludePath>
-    <LibraryPath>..\XFSSDK\LIB;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\brxsisemu;..\common;..\XFSSDK\INCLUDE;$(IncludePath)</IncludePath>
+    <LibraryPath>..\Debug;..\XFSSDK\LIB;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>..\common;..\XFSSDK\INCLUDE;$(IncludePath)</IncludePath>
-    <LibraryPath>..\XFSSDK\LIB;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\brxsisemu;..\common;..\XFSSDK\INCLUDE;$(IncludePath)</IncludePath>
+    <LibraryPath>..\Debug;..\XFSSDK\LIB;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -99,7 +99,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalDependencies>xfs_conf.lib;xfs_supp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xfs_conf.lib;xfs_supp.lib;brxsisemu.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>spsiu.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
@@ -120,7 +120,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalDependencies>xfs_conf.lib;xfs_supp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xfs_conf.lib;xfs_supp.lib;brxsisemu.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>spsiu.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
@@ -161,8 +161,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\brxsismul\Sisemu.h" />
     <ClInclude Include="..\common\brxutil.h" />
     <ClInclude Include="CCommand.h" />
+    <ClInclude Include="CDeviceAccess.h" />
     <ClInclude Include="CLockController.h" />
     <ClInclude Include="CMutex.h" />
     <ClInclude Include="CObjectContainer.h" />
@@ -175,6 +177,7 @@
   <ItemGroup>
     <ClCompile Include="..\common\brxutil.cpp" />
     <ClCompile Include="CCommand.cpp" />
+    <ClCompile Include="CDeviceAccess.cpp" />
     <ClCompile Include="CLockController.cpp" />
     <ClCompile Include="CMutex.cpp" />
     <ClCompile Include="CObjectContainer.cpp" />

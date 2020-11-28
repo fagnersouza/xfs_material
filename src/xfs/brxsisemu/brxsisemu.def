@@ -1,0 +1,8 @@
+LIBRARY brxsisemu
+EXPORTS
+	SisOpen
+	SisClose
+	SisStatus
+	SisCap
+	SisReset
+	SisSet

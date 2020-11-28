@@ -14,6 +14,7 @@ CServiceProvider::CServiceProvider()
     m_waitCommandState = EWaitState::WS_NOTSTARTED;
     m_numberOfCommandsExecuting = 0;
     m_waitCommmandReqId = 0;
+    m_device = NULL;
 }
 
 HRESULT CServiceProvider::insertCommand(CCommand* cmd)
@@ -61,6 +62,16 @@ const char* CServiceProvider::getLogicalName() {
 
 HRESULT CServiceProvider::wfpOpen(CCommand* cmd)
 {
+    HRESULT hResult = WFS_ERR_INTERNAL_ERROR;
+
+    //Instancia interface de acesso ao device
+    //Abre comunicação com o device
+    this->m_device = new CDeviceAccess();
+    hResult = this->m_device->DoDeviceOpen(cmd);
+
+    if (hResult != WFS_SUCCESS)
+        return hResult;
+    
     CSession* session = new CSession(this->getLogicalName(), cmd->getHService());
 
     CObjectContainer::addSession(session);
@@ -72,6 +83,12 @@ HRESULT CServiceProvider::wfpClose(CCommand* cmd)
 {
     CSession* session = cmd->getSession();
 
+    if (CLockController::hasLock(cmd->getHService())) {
+        CLockController::unlock(cmd->getHService());
+    }
+
+    this->m_device->DoDeviceClose(cmd);
+
     CCommand* cmdCancel = new CCommand(0, session->getHService(), NULL, WFS_ERR_CANCELED, 0, 0, NULL, 0, NULL, 0, session);
     
     substractNumberOfCommandsExecuting();//diminui 1 do número de comandos em execução (pois este close está em execução e só fará descrecer o contador de comandos no seu fim)
@@ -81,7 +98,7 @@ HRESULT CServiceProvider::wfpClose(CCommand* cmd)
 
     delete session;
 
-    //cancelar o registro de todas as janelas do serviçe que solicitou o close
+    //TODO: cancelar o registro de todas as janelas do serviçe que solicitou o close
     
     return WFS_SUCCESS;
 }
@@ -187,7 +204,15 @@ HRESULT CServiceProvider::wfpRegister(CCommand* cmd)
         }
     }
 
-    //TODO: verificar tratamento especial para SYSTEM_EVENT em relação ao Lock
+    //Verifica se entre os eventos registrados há SYSTEM_EVENTS
+    if ((registeredWindow->EventClass & SYSTEM_EVENTS) == SYSTEM_EVENTS) {
+        //Caso processo requisitante do registro também possuir a trava
+        //seu handle deverá ser armazenado, para que seja notificado
+        //de outros processos que tentem efetuar a trava
+        if ((CLockController::hasLock(cmd->getHService())) && (CLockController::getLockerWindowHandle(cmd->getHService()) != cmd->getWndReg())) {
+            CLockController::setLockerWindowHandle(cmd->getHService(), cmd->getWndReg());
+        }
+    }
 
     return WFS_SUCCESS;
 }
@@ -220,8 +245,8 @@ HRESULT CServiceProvider::wfpDeregister(CCommand* cmd)
                 it++;
             }
 
-            m_registeredWindows.erase(it);
-            freeArea = true;
+m_registeredWindows.erase(it);
+freeArea = true;
         }
 
         //TODO: verificar complicacoes do LOCK/UNLOCK
@@ -229,72 +254,69 @@ HRESULT CServiceProvider::wfpDeregister(CCommand* cmd)
         if (freeArea) {
             delete registeredWindow;
         }
-    }    
-    
+    }
+
     return WFS_SUCCESS;
 }
 
 HRESULT CServiceProvider::wfpExecute(CCommand* cmd)
 {
     HRESULT hResult = WFS_ERR_INTERNAL_ERROR;
-    
-    switch (cmd->getCommand()) {
+
+    //Verifica se o pode ser executado em face do Lock Policy
+    if (!CLockController::canExecute(cmd->getHService())) {
+        hResult = WFS_ERR_LOCKED;
+    }
+    else {
+
+        switch (cmd->getCommand()) {
         case WFS_CMD_SIU_ENABLE_EVENTS:
-            //chamar quem possa executar este comando
+            hResult = this->m_device->DoEnableEvents(cmd);
             break;
         case WFS_CMD_SIU_SET_PORTS:
-            //chamar quem possa executar este comando
+            hResult = this->m_device->DoDeviceSetPorts(cmd);
             break;
         case WFS_CMD_SIU_SET_DOOR:
+            hResult = this->m_device->DoDeviceSetDoor(cmd);
             break;
         case WFS_CMD_SIU_SET_INDICATOR:
+            hResult = this->m_device->DoDeviceSetIndicator(cmd);
             break;
         case WFS_CMD_SIU_SET_AUXILIARY:
+            hResult = this->m_device->DoDeviceSetAuxiliary(cmd);
             break;
         case WFS_CMD_SIU_SET_GUIDLIGHT:
+            hResult = this->m_device->DoDeviceSetGuidLight(cmd);
             break;
         case WFS_CMD_SIU_RESET:
-        {
-            //Procedure de Reset
-            TRACE("Executar RESET");
-            //faz o trampo que precisa junto ao dispositivo
-            Sleep(1000);
-
-            LPWFSRESULT res = NULL;
-
-            if (allocateBuffer(&res) == WFS_SUCCESS) {
-                setCommonData(res, cmd);
-                hResult = WFS_SUCCESS;
-                res->hResult = hResult;
-
-                cmd->setResult(res);
-            }
-            //
-        }
+            hResult = this->m_device->DoDeviceReset(cmd);
             break;
+        break;
         case WFS_CMD_SIU_POWER_SAVE_CONTROL:
+            hResult = WFS_ERR_UNSUPP_COMMAND;
             break;
         default:
             hResult = WFS_ERR_INVALID_COMMAND;
             break;
+        }
     }
-    
+
     return hResult;
 }
 
 HRESULT CServiceProvider::wfpGetInfo(CCommand* cmd)
 {
     HRESULT hResult = WFS_ERR_INTERNAL_ERROR;
-    
+
     switch (cmd->getCommand()) {
-        case WFS_INF_SIU_STATUS:
-            //Delegar para DeviceAccess função que resolva status de dispositivo SIU
-            break;
-        case WFS_INF_SIU_CAPABILITIES:
-            //Delegar para DeviceAccess função que resolva capabilities de dispositivo SIU
-            break;
-        default:
-            hResult = WFS_ERR_INVALID_CATEGORY;
+    case WFS_INF_SIU_STATUS:
+        hResult = this->m_device->GetDeviceStatus(cmd);
+        break;
+    case WFS_INF_SIU_CAPABILITIES:
+        hResult = this->m_device->GetDeviceCapabilities(cmd);
+        break;
+    default:
+        hResult = WFS_ERR_INVALID_CATEGORY;
     }
 
     return hResult;
@@ -302,10 +324,12 @@ HRESULT CServiceProvider::wfpGetInfo(CCommand* cmd)
 
 HRESULT CServiceProvider::wfpLock(CCommand* cmd)
 {
+    HRESULT hResult = WFS_ERR_INTERNAL_ERROR;
+
     //Verifica se o processa já não possui a trava
     if (!CLockController::hasLock(cmd->getHService())) {
         ///////WFS_SYSE_LOCK_REQUESTED
-        
+
         //Tenta obter a janela registrada pelo serviço
         RegisteredWindow* tmpRegisteredWindow = findRegisteredWindowsByService(cmd->getHService());
 
@@ -317,16 +341,49 @@ HRESULT CServiceProvider::wfpLock(CCommand* cmd)
             notifyEvent(lockerWindowHandle, cmd->getHService(), WFS_SYSTEM_EVENT, WFS_SYSE_LOCK_REQUESTED, NULL);
         }
 
-        //TODO: 
-
+        //Verifica se a classe de eventos SYSTEM_EVENTS está ligada para determinar como notificar o lock
+        if ((tmpRegisteredWindow != NULL) && ((tmpRegisteredWindow->EventClass & SYSTEM_EVENTS) == SYSTEM_EVENTS)){
+            return CLockController::lock(cmd->getHService(), tmpRegisteredWindow->WndReg, cmd->getTimeout());
+        }
+        else {
+            return CLockController::lock(cmd->getHService(), NULL, cmd->getTimeout());
+        }
+    }
+    else {
+        hResult = WFS_SUCCESS;
     }
     
-    return WFS_ERR_INTERNAL_ERROR;
+    return hResult;
 }
 
 HRESULT CServiceProvider::wfpUnlock(CCommand* cmd)
 {
-    return WFS_ERR_INTERNAL_ERROR;
+    HRESULT hResult = WFS_ERR_INTERNAL_ERROR;
+
+    //Verificar se o processo corrente é que detém a trava
+    if (CLockController::hasLock(cmd->getHService())) {
+        //Libera a trava
+        CLockController::unlock(cmd->getHService());
+
+        //Verifica se existe janela registrada pelo serviço
+        RegisteredWindow* registeredWindow = findRegisteredWindowsByService(cmd->getHService());
+
+        //No momento da liberacao da trava deve-se verificar se
+        //a janela do processo havia sido registrada para receber
+        //eventos no periodo que detia a trava para si.
+        //Neste caso devemos setar o valor de lockerWindowHandle
+        //para NULL, porque a trava foi liberada
+        if ((registeredWindow != NULL) && (CLockController::getLockerWindowHandle(cmd->getHService()) == registeredWindow->WndReg)) {
+            CLockController::setLockerWindowHandle(cmd->getHService(), NULL);
+        }
+
+        hResult = WFS_SUCCESS;
+    }
+    else {
+        hResult = WFS_ERR_NOT_LOCKED;
+    }
+    
+    return hResult;
 }
 
 HRESULT CServiceProvider::wfpSetTraceLevel(CCommand* cmd)

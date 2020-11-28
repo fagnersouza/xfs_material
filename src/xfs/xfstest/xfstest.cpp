@@ -3,12 +3,15 @@
 
 #include <windows.h>
 #include <iostream>
+#include <string>
 #include <thread>
 #include "XFSAPI.H"
 #include "XFSADMIN.H"
 #include "XFSCONF.H"
 #include <XFSSIU.H>
 #include <brxutil.h>
+
+#define CONSOLE_TAB "\t\t\t\t\t\t"
 
 boolean bStopThread = false;
 HWND messageWindow = NULL;
@@ -18,6 +21,7 @@ HINSTANCE hInst = NULL;
 HANDLE hModuleThread = NULL;
 HANDLE hRegEvent = NULL;
 HSERVICE hService;
+bool OpenOK = false;
 
 using namespace std;
 
@@ -25,7 +29,12 @@ boolean CreateXFSMonitor();
 boolean RegisterCallback();
 LRESULT CALLBACK  PostCallBack(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
 DWORD FAR PASCAL ThreadMonitor(string name);
-void executeReset();
+void ExecuteCommands();
+void ExecuteGetInfo();
+void ExecuteCloseAndClening();
+void PrintSiuStatus(LPWFSSIUSTATUS stats);
+void PrintSiuPortEvent(LPWFSSIUPORTEVENT event);
+void PrintSiuCaps(LPWFSSIUCAPS caps);
 
 boolean CreateXFSMonitor() {
     cout << "---" << "Monitor de Eventos XFS" << "---" << endl;
@@ -163,6 +172,8 @@ int main()
 
 
     if (hResult == WFS_SUCCESS) {
+        OpenOK = true;
+
         CreateXFSMonitor();
 
         if (messageWindow != NULL) {
@@ -182,34 +193,22 @@ int main()
         }
     }
 
-    cin.ignore();//Exige um ENTER
-
-    //Teste
-/*    LPWFSRESULT   wfsResPointer;
-    hResult = WFSExecute(hService, WFS_CMD_SIU_RESET, NULL, (30 * 1000), &wfsResPointer);
-    cout << "WFSExecute Result: " << dec << hResult << endl;
-    WFSFreeResult(wfsResPointer); */   
-    //<--
-    executeReset();
-
-    cin.ignore();//Exige um ENTER
-
-    hResult = WFSClose(hService);
-    cout << "WFSClose Result: " << dec << hResult << endl;
-    WFSCleanUp();
-    cout << "WFSCleanUp Result: " << dec << hResult << endl;
-
-    if (messageWindow)
-        DestroyWindow(messageWindow);
-
-    if (hInst)
-        UnregisterClass(lpszClass, hInst);
+    if (OpenOK) {
+        ExecuteCommands();
+        ExecuteGetInfo();
+        ExecuteCloseAndClening();
+    }
 }
 
-void executeReset() {
+void ExecuteCommands() {
+    cout << "Press ENTER>>>>>>>>" << endl;
+    cin.ignore();
+    cout << "Executing SIU Commands..." << endl;
+    
     REQUESTID requestID;
     HRESULT hResult;
 
+    //Resets
     for (int i = 0; i < 5; i++) {
         if (i == 2) {
             hResult = WFSCancelAsyncRequest(hService, 0);
@@ -220,6 +219,198 @@ void executeReset() {
             cout << "Exec(reset)->ReqID(" << dec << requestID << ") = " << hResult << endl;
         }
     }
+
+    //Power Save
+    WFSSIUPOWERSAVECONTROL PowerSaveControl;
+    memset(&PowerSaveControl, 0x00, sizeof(WFSSIUPOWERSAVECONTROL));
+    PowerSaveControl.usMaxPowerSaveRecoveryTime = 10;
+    hResult = WFSAsyncExecute(hService, WFS_CMD_SIU_POWER_SAVE_CONTROL, &PowerSaveControl, (30 * 1000), messageWindow, &requestID);
+    cout << "Exec(power_save)->ReqID(" << dec << requestID << ") = " << hResult << endl;
+
+    //Set(Door)
+    WFSSIUSETDOOR SetDoor;
+    memset(&SetDoor, 0x00, sizeof(WFSSIUSETDOOR));
+    SetDoor.wDoor       = WFS_SIU_SAFE;
+    SetDoor.fwCommand   = WFS_SIU_UNBOLT;
+    hResult = WFSAsyncExecute(hService, WFS_CMD_SIU_SET_DOOR, &SetDoor, (30 * 1000), messageWindow, &requestID);
+    cout << "Exec(set_door)->ReqID(" << dec << requestID << ") = " << hResult << endl;
+
+    //EnableEvents
+    WFSSIUENABLE Enable;
+    memset(&Enable, 0x00, sizeof(WFSSIUENABLE));
+    Enable.fwDoors[WFS_SIU_SAFE]        = WFS_SIU_ENABLE_EVENT;
+    Enable.fwSensors[WFS_SIU_TAMPER]    = WFS_SIU_ENABLE_EVENT;
+    hResult = WFSAsyncExecute(hService, WFS_CMD_SIU_ENABLE_EVENTS, &Enable, (30 * 1000), messageWindow, &requestID);
+    cout << "Exec(enable)->ReqID(" << dec << requestID << ") = " << hResult << endl;
+}
+
+void ExecuteGetInfo()
+{
+    cout << "Press ENTER>>>>>>>>" << endl;
+    cin.ignore();
+    cout << "Executing GetInfo..." << endl;
+
+    REQUESTID requestID;
+    HRESULT hResult;
+
+    hResult = WFSAsyncGetInfo(hService, WFS_INF_SIU_STATUS, NULL, (30 * 1000), messageWindow, &requestID);
+    cout << "Info(status)->ReqID(" << dec << requestID << ") = " << hResult << endl;
+
+    hResult = WFSAsyncGetInfo(hService, WFS_INF_SIU_CAPABILITIES, NULL, (30 * 1000), messageWindow, &requestID);
+    cout << "Info(caps)->ReqID(" << dec << requestID << ") = " << hResult << endl;
+}
+
+void ExecuteCloseAndClening()
+{
+    cout << "Press ENTER>>>>>>>>" << endl;
+    cin.ignore();
+    cout << "Executing Close and Cleaning..." << endl;
+
+    HRESULT hResult;
+
+    hResult = WFSClose(hService);
+    cout << "WFSClose Result: " << dec << hResult << endl;
+
+    hResult = WFSCleanUp();
+    cout << "WFSCleanUp Result: " << dec << hResult << endl;
+
+    if (messageWindow)
+        DestroyWindow(messageWindow);
+
+    if (hInst)
+        UnregisterClass(lpszClass, hInst);
+}
+
+void PrintSiuStatus(LPWFSSIUSTATUS status)
+{
+    if (status == NULL)
+        return;
+
+    char buf[1024];
+    string aux;
+
+    sprintf_s(buf, "%s WFSSIUSTATUS:", CONSOLE_TAB);
+    cout << string(buf) << endl;
+    sprintf_s(buf, "%s dwDevice: %d", CONSOLE_TAB, status->fwDevice);
+    cout << string(buf) << endl;
+
+    //Sensors
+    aux.clear();
+    for (int i = 0; i <= WFS_SIU_SENSORS_MAX; i++) {
+        int st = (int)status->fwSensors[i] - 48;
+        aux.append(to_string(st));
+    }
+    sprintf_s(buf, "%s fwSensors: %s", CONSOLE_TAB, aux.c_str());
+    cout << string(buf) << endl;
+
+    //Doors
+    aux.clear();
+    for (int i = 0; i <= WFS_SIU_DOORS_MAX; i++) {
+        int st = (int)status->fwDoors[i] - 48;
+        aux.append(to_string(st));
+    }
+    sprintf_s(buf, "%s fwDoors: %s", CONSOLE_TAB, aux.c_str());
+    cout << string(buf) << endl;
+
+    //Auxiliaries
+    aux.clear();
+    for (int i = 0; i <= WFS_SIU_AUXILIARIES_MAX; i++) {
+        int st = (int)status->fwAuxiliaries[i] - 48;
+        aux.append(to_string(st));
+    }
+    sprintf_s(buf, "%s fwAuxiliaries: %s", CONSOLE_TAB, aux.c_str());
+    cout << string(buf) << endl;
+
+    //GuidLights
+    aux.clear();
+    for (int i = 0; i <= WFS_SIU_GUIDLIGHTS_MAX; i++) {
+        int st = (int)status->fwGuidLights[i] - 48;
+        aux.append(to_string(st));
+    }
+    sprintf_s(buf, "%s fwGuidLights: %s", CONSOLE_TAB, aux.c_str());
+    cout << string(buf) << endl;
+
+    //Indicators
+    aux.clear();
+    for (int i = 0; i <= WFS_SIU_INDICATORS_MAX; i++) {
+        int st = (int)status->fwIndicators[i] - 48;
+        aux.append(to_string(st));
+    }
+    sprintf_s(buf, "%s fwIndicators: %s", CONSOLE_TAB, aux.c_str());
+    cout << string(buf) << endl;
+}
+
+void PrintSiuPortEvent(LPWFSSIUPORTEVENT event)
+{
+    if (event == NULL)
+        return;
+
+    char buf[1024];
+    string aux;
+
+    sprintf_s(buf, "%s WFSSIUPORTEVENT:", CONSOLE_TAB);
+    cout << string(buf) << endl;
+    sprintf_s(buf, "%s wPortType: %d, wPortIndex: %d, wPortStatus: %d", CONSOLE_TAB, event->wPortType, event->wPortIndex, event->wPortStatus);
+    cout << string(buf) << endl;
+}
+
+void PrintSiuCaps(LPWFSSIUCAPS caps)
+{
+    if (caps == NULL)
+        return;
+
+    char buf[1024];
+    string aux;
+
+    sprintf_s(buf, "%s WFSSIUCAPS:", CONSOLE_TAB);
+    cout << string(buf) << endl;
+    sprintf_s(buf, "%s fwType: %d", CONSOLE_TAB, caps->fwType);
+    cout << string(buf) << endl;
+
+    //Sensors
+    aux.clear();
+    for (int i = 0; i <= WFS_SIU_SENSORS_MAX; i++) {
+        int st = (int)caps->fwSensors[i] - 48;
+        aux.append(to_string(st));
+    }
+    sprintf_s(buf, "%s fwSensors: %s", CONSOLE_TAB, aux.c_str());
+    cout << string(buf) << endl;
+
+    //Doors
+    aux.clear();
+    for (int i = 0; i <= WFS_SIU_DOORS_MAX; i++) {
+        int st = (int)caps->fwDoors[i] - 48;
+        aux.append(to_string(st));
+    }
+    sprintf_s(buf, "%s fwDoors: %s", CONSOLE_TAB, aux.c_str());
+    cout << string(buf) << endl;
+
+    //Auxiliaries
+    aux.clear();
+    for (int i = 0; i <= WFS_SIU_AUXILIARIES_MAX; i++) {
+        int st = (int)caps->fwAuxiliaries[i] - 48;
+        aux.append(to_string(st));
+    }
+    sprintf_s(buf, "%s fwAuxiliaries: %s", CONSOLE_TAB, aux.c_str());
+    cout << string(buf) << endl;
+
+    //GuidLights
+    aux.clear();
+    for (int i = 0; i <= WFS_SIU_GUIDLIGHTS_MAX; i++) {
+        int st = (int)caps->fwGuidLights[i] - 48;
+        aux.append(to_string(st));
+    }
+    sprintf_s(buf, "%s fwGuidLights: %s", CONSOLE_TAB, aux.c_str());
+    cout << string(buf) << endl;
+
+    //Indicators
+    aux.clear();
+    for (int i = 0; i <= WFS_SIU_INDICATORS_MAX; i++) {
+        int st = (int)caps->fwIndicators[i] - 48;
+        aux.append(to_string(st));
+    }
+    sprintf_s(buf, "%s fwIndicators: %s", CONSOLE_TAB, aux.c_str());
+    cout << string(buf) << endl;
 }
 
 LRESULT CALLBACK  PostCallBack(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
@@ -236,7 +427,26 @@ LRESULT CALLBACK  PostCallBack(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPara
         cout << "WFS_EXECUTE_EVENT" << endl;
         return 0;
     case WFS_SERVICE_EVENT:
-        cout << "WFS_SERVICE_EVENT" << endl;
+    {
+        LPWFSRESULT res = (LPWFSRESULT)lParam;
+
+        if (res != NULL) {
+            char buf[1024];
+            sprintf_s(buf, "%s WFS_SERVICE_EVENT(ReqID=%d)->hResult: %d", CONSOLE_TAB, res->RequestID, res->hResult);
+            cout << string(buf) << endl;
+
+            switch (res->u.dwEventID) {
+            case WFS_SRVE_SIU_PORT_STATUS:
+                PrintSiuPortEvent((LPWFSSIUPORTEVENT)res->lpBuffer);
+                break;
+            }
+
+            WFSFreeResult(res);
+        }
+        else {
+            cout << "WFS_SERVICE_EVENT" << endl;
+        }
+    }
         return 0;
     case WFS_USER_EVENT:
         cout << "WFS_USER_EVENT" << endl;
@@ -263,7 +473,33 @@ LRESULT CALLBACK  PostCallBack(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPara
         cout << "WFS_DEREGISTER_COMPLETE" << endl;
         return 0;
     case WFS_GETINFO_COMPLETE:
-        cout << "WFS_GETINFO_COMPLETE" << endl;
+    {
+        LPWFSRESULT res = (LPWFSRESULT)lParam;
+
+        if (res != NULL) {
+            char buf[1024];
+            sprintf_s(buf, "%s WFS_GETINFO_COMPLETE(ReqID=%d)->hResult: %d", CONSOLE_TAB, res->RequestID, res->hResult);
+            cout << string(buf) << endl;
+
+            switch (res->u.dwCommandCode) {
+            case WFS_INF_SIU_STATUS:
+                if (res->lpBuffer != NULL) {
+                    PrintSiuStatus((LPWFSSIUSTATUS)res->lpBuffer);
+                }
+                break;
+            case WFS_INF_SIU_CAPABILITIES:
+                if (res->lpBuffer != NULL) {
+                    PrintSiuCaps((LPWFSSIUCAPS)res->lpBuffer);
+                }
+                break;
+            }
+
+            WFSFreeResult(res);
+        }
+        else {
+            cout << "WFS_GETINFO_COMPLETE" << endl;
+        }
+    }
         return 0;
     case WFS_EXECUTE_COMPLETE:
     {
@@ -271,7 +507,7 @@ LRESULT CALLBACK  PostCallBack(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPara
 
         if (res != NULL) {
             char buf[1024];
-            sprintf_s(buf, "WFS_EXECUTE_COMPLETE(ReqID=%d)->hResult: %d", res->RequestID, res->hResult);            
+            sprintf_s(buf, "%s WFS_EXECUTE_COMPLETE(ReqID=%d)->hResult: %d", CONSOLE_TAB, res->RequestID, res->hResult);            
             cout << string(buf) << endl;
             WFSFreeResult(res);
         }
