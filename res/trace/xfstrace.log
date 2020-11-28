@@ -57336,3 +57336,2444 @@ Entrei na funcao WFPUnloadService ...
 18:05:38.812 
 (Date)28.11.2020 (Time)18:05.38,812
 WFPUnloadService Finalizado. hResult: 0
+18:10:04.625 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:10:04.625 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:10:04.625 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:10:04.625 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:10:04.625 OpenKey returning *phkResult x250
+18:10:04.858 
+(Date)28.11.2020 (Time)18:10.04,858
+Executando o WFPOpen ...
+18:10:04.625 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:10:04.858 
+(Date)28.11.2020 (Time)18:10.04,858
+lpszLogicalName (SIU): Sensores
+18:10:04.625 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:14:18.124 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:14:18.152 
+(Date)28.11.2020 (Time)18:14.18,152
+Executando o WFPOpen ...
+18:14:18.125 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:14:18.152 
+(Date)28.11.2020 (Time)18:14.18,152
+lpszLogicalName (SIU): Sensores
+18:14:18.125 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:21:59.084 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:21:59.084 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:21:59.084 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:21:59.084 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:21:59.084 OpenKey returning *phkResult x254
+18:21:59.084 RegOpenKeyEx( x254, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:21:59.084 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:21:59.085 OpenKey returning *phkResult x258
+18:21:59.085 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:21:59.085 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+18:21:59.085 OpenKey returning *phkResult x254
+18:21:59.085 RegOpenKeyEx( x254, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:21:59.085 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:21:59.085 OpenKey returning *phkResult x25c
+18:22:01.193 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:22:01.196 
+(Date)28.11.2020 (Time)18:22.01,196
+Executando o WFPOpen ...
+18:22:01.196 
+(Date)28.11.2020 (Time)18:22.01,196
+lpszLogicalName (SIU): Sensores
+18:22:01.193 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:22:01.193 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:22:01.196 
+(Date)28.11.2020 (Time)18:22.01,196
+hApp: 870A068
+18:22:01.196 
+(Date)28.11.2020 (Time)18:22.01,196
+lpszAppID: BRXFSTEST
+18:22:01.193 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:22:01.193 OpenKey returning *phkResult x258
+18:22:01.196 
+(Date)28.11.2020 (Time)18:22.01,196
+dwTraceLevel: 0
+18:22:01.196 
+(Date)28.11.2020 (Time)18:22.01,196
+dwTimeOut: 5000
+18:22:01.193 RegOpenKeyEx( x258, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:22:01.196 
+(Date)28.11.2020 (Time)18:22.01,196
+hWnd: 1608F8
+18:22:01.193 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:22:01.193 OpenKey returning *phkResult xdc
+18:22:01.196 
+(Date)28.11.2020 (Time)18:22.01,196
+ReqID: 1
+18:22:01.196 
+(Date)28.11.2020 (Time)18:22.01,196
+hProvider: 7800E018
+18:22:01.196 
+(Date)28.11.2020 (Time)18:22.01,196
+dwSPIVersionsRequired: 101FF03
+18:22:01.196 
+(Date)28.11.2020 (Time)18:22.01,196
+dwSPIVersionsRequired.MaiorVersao: FF03
+18:22:01.196 
+(Date)28.11.2020 (Time)18:22.01,196
+dwSPIVersionsRequired.MenorVersao: 101
+18:22:01.196 
+(Date)28.11.2020 (Time)18:22.01,196
+dwSrvcVersionsRequired.MaiorVersao: 03
+18:22:01.196 
+(Date)28.11.2020 (Time)18:22.01,196
+dwSrvcVersionsRequired.MenorVersao: 303
+18:22:01.237 
+(Date)28.11.2020 (Time)18:22.01,237
+WFPOpen Finalizado. hResult: 0
+18:22:01.285 
+(Date)28.11.2020 (Time)18:22.01,285
+Entrei na funcao WFPSetTraceLevel ...
+18:22:01.285 
+(Date)28.11.2020 (Time)18:22.01,285
+hService: 1
+18:22:01.285 
+(Date)28.11.2020 (Time)18:22.01,285
+dwTraceLevel: 0
+18:22:01.285 
+(Date)28.11.2020 (Time)18:22.01,285
+WFPSetTraceLevel Finalizado. hResult: 0
+18:22:01.296 
+(Date)28.11.2020 (Time)18:22.01,296
+Executando o WFPRegister ...
+18:22:01.297 
+(Date)28.11.2020 (Time)18:22.01,296
+hService: 1
+18:22:01.297 
+(Date)28.11.2020 (Time)18:22.01,297
+dwEventClass: 0F
+18:22:01.297 
+(Date)28.11.2020 (Time)18:22.01,297
+hWndReg: 1708F8
+18:22:01.297 
+(Date)28.11.2020 (Time)18:22.01,297
+hWnd: 1404FE
+18:22:01.297 
+(Date)28.11.2020 (Time)18:22.01,297
+ReqID: 2
+18:22:01.297 
+(Date)28.11.2020 (Time)18:22.01,297
+WFPRegister Finalizado. hResult: 0
+18:22:01.335 
+(Date)28.11.2020 (Time)18:22.01,335
+Entrei na funcao WFPExecute ...
+18:22:01.335 
+(Date)28.11.2020 (Time)18:22.01,335
+hService: 1
+18:22:01.336 
+(Date)28.11.2020 (Time)18:22.01,336
+dwCommand: 807
+18:22:01.336 
+(Date)28.11.2020 (Time)18:22.01,336
+dwTimeOut: 30000
+18:22:01.336 
+(Date)28.11.2020 (Time)18:22.01,336
+hWnd: 1708F8
+18:22:01.336 
+(Date)28.11.2020 (Time)18:22.01,336
+ReqID: 3
+18:22:01.336 
+(Date)28.11.2020 (Time)18:22.01,336
+WFPExecute Finalizado. hResult: 0
+18:22:01.337 
+(Date)28.11.2020 (Time)18:22.01,337
+Entrei na funcao WFPExecute ...
+18:22:01.337 
+(Date)28.11.2020 (Time)18:22.01,337
+hService: 1
+18:22:01.338 
+(Date)28.11.2020 (Time)18:22.01,338
+dwCommand: 807
+18:22:01.338 
+(Date)28.11.2020 (Time)18:22.01,338
+dwTimeOut: 30000
+18:22:01.338 
+(Date)28.11.2020 (Time)18:22.01,338
+hWnd: 1708F8
+18:22:01.338 
+(Date)28.11.2020 (Time)18:22.01,338
+ReqID: 4
+18:22:01.338 
+(Date)28.11.2020 (Time)18:22.01,338
+WFPExecute Finalizado. hResult: 0
+18:22:01.339 
+(Date)28.11.2020 (Time)18:22.01,339
+Entrei na funcao WFPCancelAsyncRequest ...
+18:22:01.339 
+(Date)28.11.2020 (Time)18:22.01,339
+hService: 1
+18:22:01.339 
+(Date)28.11.2020 (Time)18:22.01,339
+ReqID: 0
+18:22:01.339 
+(Date)28.11.2020 (Time)18:22.01,339
+WFPCancelAsyncRequest Finalizado. hResult: 0
+18:22:01.340 
+(Date)28.11.2020 (Time)18:22.01,340
+Entrei na funcao WFPExecute ...
+18:22:01.340 
+(Date)28.11.2020 (Time)18:22.01,340
+hService: 1
+18:22:01.340 
+(Date)28.11.2020 (Time)18:22.01,340
+dwCommand: 807
+18:22:01.340 
+(Date)28.11.2020 (Time)18:22.01,340
+dwTimeOut: 30000
+18:22:01.340 
+(Date)28.11.2020 (Time)18:22.01,340
+hWnd: 1708F8
+18:22:01.340 
+(Date)28.11.2020 (Time)18:22.01,340
+ReqID: 5
+18:22:01.340 
+(Date)28.11.2020 (Time)18:22.01,340
+WFPExecute Finalizado. hResult: 0
+18:22:01.341 
+(Date)28.11.2020 (Time)18:22.01,341
+Entrei na funcao WFPExecute ...
+18:22:01.341 
+(Date)28.11.2020 (Time)18:22.01,341
+hService: 1
+18:22:01.341 
+(Date)28.11.2020 (Time)18:22.01,341
+dwCommand: 807
+18:22:01.341 
+(Date)28.11.2020 (Time)18:22.01,341
+dwTimeOut: 30000
+18:22:01.341 
+(Date)28.11.2020 (Time)18:22.01,341
+hWnd: 1708F8
+18:22:01.341 
+(Date)28.11.2020 (Time)18:22.01,341
+ReqID: 6
+18:22:01.341 
+(Date)28.11.2020 (Time)18:22.01,341
+WFPExecute Finalizado. hResult: 0
+18:22:01.342 
+(Date)28.11.2020 (Time)18:22.01,342
+Entrei na funcao WFPExecute ...
+18:22:01.342 
+(Date)28.11.2020 (Time)18:22.01,342
+hService: 1
+18:22:01.342 
+(Date)28.11.2020 (Time)18:22.01,342
+dwCommand: 808
+18:22:01.342 
+(Date)28.11.2020 (Time)18:22.01,342
+dwTimeOut: 30000
+18:22:01.342 
+(Date)28.11.2020 (Time)18:22.01,342
+hWnd: 1708F8
+18:22:01.342 
+(Date)28.11.2020 (Time)18:22.01,342
+ReqID: 7
+18:22:01.342 
+(Date)28.11.2020 (Time)18:22.01,342
+WFPExecute Finalizado. hResult: 0
+18:22:01.343 
+(Date)28.11.2020 (Time)18:22.01,343
+Entrei na funcao WFPExecute ...
+18:22:01.343 
+(Date)28.11.2020 (Time)18:22.01,343
+hService: 1
+18:22:01.343 
+(Date)28.11.2020 (Time)18:22.01,343
+dwCommand: 803
+18:22:01.343 
+(Date)28.11.2020 (Time)18:22.01,343
+dwTimeOut: 30000
+18:22:01.343 
+(Date)28.11.2020 (Time)18:22.01,343
+hWnd: 1708F8
+18:22:01.343 
+(Date)28.11.2020 (Time)18:22.01,343
+ReqID: 8
+18:22:01.343 
+(Date)28.11.2020 (Time)18:22.01,343
+WFPExecute Finalizado. hResult: 0
+18:22:01.343 
+(Date)28.11.2020 (Time)18:22.01,343
+Entrei na funcao WFPExecute ...
+18:22:01.343 
+(Date)28.11.2020 (Time)18:22.01,343
+hService: 1
+18:22:01.343 
+(Date)28.11.2020 (Time)18:22.01,343
+dwCommand: 801
+18:22:01.343 
+(Date)28.11.2020 (Time)18:22.01,343
+dwTimeOut: 30000
+18:22:01.343 
+(Date)28.11.2020 (Time)18:22.01,343
+hWnd: 1708F8
+18:22:01.343 
+(Date)28.11.2020 (Time)18:22.01,343
+ReqID: 9
+18:22:01.343 
+(Date)28.11.2020 (Time)18:22.01,343
+WFPExecute Finalizado. hResult: 0
+18:22:19.908 
+(Date)28.11.2020 (Time)18:22.19,908
+Entrei na funcao WFPGetInfo
+18:22:19.908 
+(Date)28.11.2020 (Time)18:22.19,908
+Entrei na funcao WFPExecute ...
+18:22:19.908 
+(Date)28.11.2020 (Time)18:22.19,908
+hService: 1
+18:22:19.908 
+(Date)28.11.2020 (Time)18:22.19,908
+dwCategory: 801
+18:22:19.908 
+(Date)28.11.2020 (Time)18:22.19,908
+dwTimeOut: 30000
+18:22:19.908 
+(Date)28.11.2020 (Time)18:22.19,908
+hWnd: 1708F8
+18:22:19.908 
+(Date)28.11.2020 (Time)18:22.19,908
+ReqID: 10
+18:22:19.908 
+(Date)28.11.2020 (Time)18:22.19,908
+WFPGetInfo Finalizado. hResult: 0
+18:22:19.909 
+(Date)28.11.2020 (Time)18:22.19,909
+Entrei na funcao WFPGetInfo
+18:22:19.909 
+(Date)28.11.2020 (Time)18:22.19,909
+Entrei na funcao WFPExecute ...
+18:22:19.909 
+(Date)28.11.2020 (Time)18:22.19,909
+hService: 1
+18:22:19.909 
+(Date)28.11.2020 (Time)18:22.19,909
+dwCategory: 802
+18:22:19.909 
+(Date)28.11.2020 (Time)18:22.19,909
+dwTimeOut: 30000
+18:22:19.909 
+(Date)28.11.2020 (Time)18:22.19,909
+hWnd: 1708F8
+18:22:19.909 
+(Date)28.11.2020 (Time)18:22.19,909
+ReqID: 11
+18:22:19.909 
+(Date)28.11.2020 (Time)18:22.19,909
+WFPGetInfo Finalizado. hResult: 0
+18:22:20.939 
+(Date)28.11.2020 (Time)18:22.20,939
+Entrei na funcao WFPClose ...
+18:22:20.939 
+(Date)28.11.2020 (Time)18:22.20,939
+hService: 1
+18:22:20.998 APICALL: WFSCleanUp: Entered
+18:22:20.998 APICALL: WFSCleanUp: Exit
+18:22:20.939 
+(Date)28.11.2020 (Time)18:22.20,939
+hWnd: 80906
+18:22:20.939 
+(Date)28.11.2020 (Time)18:22.20,939
+ReqID: 12
+18:22:20.994 
+(Date)28.11.2020 (Time)18:22.20,994
+WFPClose Finalizado. hResult: 0
+18:22:20.994 
+(Date)28.11.2020 (Time)18:22.20,994
+Entrei na funcao WFPUnloadService ...
+18:22:20.994 
+(Date)28.11.2020 (Time)18:22.20,994
+WFPUnloadService Finalizado. hResult: 0
+18:26:09.611 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:26:09.612 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:26:09.612 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:26:09.612 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:26:09.612 OpenKey returning *phkResult x25c
+18:26:09.612 RegOpenKeyEx( x25c, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:26:09.612 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:26:09.612 OpenKey returning *phkResult x260
+18:26:09.612 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:26:09.612 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+18:26:09.612 OpenKey returning *phkResult x25c
+18:26:09.612 RegOpenKeyEx( x25c, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:26:09.612 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:26:09.612 OpenKey returning *phkResult x264
+18:26:11.477 
+(Date)28.11.2020 (Time)18:26.11,477
+Executando o WFPOpen ...
+18:26:11.472 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:26:11.472 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:26:11.477 
+(Date)28.11.2020 (Time)18:26.11,477
+lpszLogicalName (SIU): Sensores
+18:26:11.477 
+(Date)28.11.2020 (Time)18:26.11,477
+hApp: 870A068
+18:26:11.472 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:26:11.477 
+(Date)28.11.2020 (Time)18:26.11,477
+lpszAppID: BRXFSTEST
+18:26:11.472 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:26:11.472 OpenKey returning *phkResult x260
+18:26:11.478 
+(Date)28.11.2020 (Time)18:26.11,478
+dwTraceLevel: 0
+18:26:11.472 RegOpenKeyEx( x260, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:26:11.478 
+(Date)28.11.2020 (Time)18:26.11,478
+dwTimeOut: 5000
+18:26:11.478 
+(Date)28.11.2020 (Time)18:26.11,478
+hWnd: 80A88
+18:26:11.472 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:26:11.472 OpenKey returning *phkResult xdc
+18:26:11.478 
+(Date)28.11.2020 (Time)18:26.11,478
+ReqID: 1
+18:26:11.478 
+(Date)28.11.2020 (Time)18:26.11,478
+hProvider: 7800E018
+18:26:11.478 
+(Date)28.11.2020 (Time)18:26.11,478
+dwSPIVersionsRequired: 101FF03
+18:26:11.478 
+(Date)28.11.2020 (Time)18:26.11,478
+dwSPIVersionsRequired.MaiorVersao: FF03
+18:26:11.478 
+(Date)28.11.2020 (Time)18:26.11,478
+dwSPIVersionsRequired.MenorVersao: 101
+18:26:11.478 
+(Date)28.11.2020 (Time)18:26.11,478
+dwSrvcVersionsRequired.MaiorVersao: 03
+18:26:11.478 
+(Date)28.11.2020 (Time)18:26.11,478
+dwSrvcVersionsRequired.MenorVersao: 303
+18:26:11.518 
+(Date)28.11.2020 (Time)18:26.11,518
+WFPOpen Finalizado. hResult: 0
+18:26:11.567 
+(Date)28.11.2020 (Time)18:26.11,567
+Entrei na funcao WFPSetTraceLevel ...
+18:26:11.567 
+(Date)28.11.2020 (Time)18:26.11,567
+hService: 1
+18:26:11.567 
+(Date)28.11.2020 (Time)18:26.11,567
+dwTraceLevel: 0
+18:26:11.567 
+(Date)28.11.2020 (Time)18:26.11,567
+WFPSetTraceLevel Finalizado. hResult: 0
+18:26:11.579 
+(Date)28.11.2020 (Time)18:26.11,579
+Executando o WFPRegister ...
+18:26:11.579 
+(Date)28.11.2020 (Time)18:26.11,579
+hService: 1
+18:26:11.579 
+(Date)28.11.2020 (Time)18:26.11,579
+dwEventClass: 0F
+18:26:11.579 
+(Date)28.11.2020 (Time)18:26.11,579
+hWndReg: 90A88
+18:26:11.579 
+(Date)28.11.2020 (Time)18:26.11,579
+hWnd: 607F0
+18:26:11.579 
+(Date)28.11.2020 (Time)18:26.11,579
+ReqID: 2
+18:26:11.579 
+(Date)28.11.2020 (Time)18:26.11,579
+WFPRegister Finalizado. hResult: 0
+18:26:12.852 
+(Date)28.11.2020 (Time)18:26.12,852
+Entrei na funcao WFPExecute ...
+18:26:12.852 
+(Date)28.11.2020 (Time)18:26.12,852
+hService: 1
+18:26:12.852 
+(Date)28.11.2020 (Time)18:26.12,852
+dwCommand: 807
+18:26:12.852 
+(Date)28.11.2020 (Time)18:26.12,852
+dwTimeOut: 30000
+18:26:12.852 
+(Date)28.11.2020 (Time)18:26.12,852
+hWnd: 90A88
+18:26:12.852 
+(Date)28.11.2020 (Time)18:26.12,852
+ReqID: 3
+18:26:12.852 
+(Date)28.11.2020 (Time)18:26.12,852
+WFPExecute Finalizado. hResult: 0
+18:26:12.854 
+(Date)28.11.2020 (Time)18:26.12,854
+Entrei na funcao WFPExecute ...
+18:26:12.854 
+(Date)28.11.2020 (Time)18:26.12,854
+hService: 1
+18:26:12.854 
+(Date)28.11.2020 (Time)18:26.12,854
+dwCommand: 807
+18:26:12.854 
+(Date)28.11.2020 (Time)18:26.12,854
+dwTimeOut: 30000
+18:26:12.854 
+(Date)28.11.2020 (Time)18:26.12,854
+hWnd: 90A88
+18:26:12.854 
+(Date)28.11.2020 (Time)18:26.12,854
+ReqID: 4
+18:26:12.854 
+(Date)28.11.2020 (Time)18:26.12,854
+WFPExecute Finalizado. hResult: 0
+18:26:12.855 
+(Date)28.11.2020 (Time)18:26.12,855
+Entrei na funcao WFPCancelAsyncRequest ...
+18:26:12.855 
+(Date)28.11.2020 (Time)18:26.12,855
+hService: 1
+18:26:12.855 
+(Date)28.11.2020 (Time)18:26.12,855
+ReqID: 0
+18:26:12.855 
+(Date)28.11.2020 (Time)18:26.12,855
+WFPCancelAsyncRequest Finalizado. hResult: 0
+18:26:12.856 
+(Date)28.11.2020 (Time)18:26.12,856
+Entrei na funcao WFPExecute ...
+18:26:12.856 
+(Date)28.11.2020 (Time)18:26.12,856
+hService: 1
+18:26:12.856 
+(Date)28.11.2020 (Time)18:26.12,856
+dwCommand: 807
+18:26:12.856 
+(Date)28.11.2020 (Time)18:26.12,856
+dwTimeOut: 30000
+18:26:12.856 
+(Date)28.11.2020 (Time)18:26.12,856
+hWnd: 90A88
+18:26:12.856 
+(Date)28.11.2020 (Time)18:26.12,856
+ReqID: 5
+18:26:12.856 
+(Date)28.11.2020 (Time)18:26.12,856
+WFPExecute Finalizado. hResult: 0
+18:26:12.857 
+(Date)28.11.2020 (Time)18:26.12,857
+Entrei na funcao WFPExecute ...
+18:26:12.857 
+(Date)28.11.2020 (Time)18:26.12,857
+hService: 1
+18:26:12.857 
+(Date)28.11.2020 (Time)18:26.12,857
+dwCommand: 807
+18:26:12.857 
+(Date)28.11.2020 (Time)18:26.12,857
+dwTimeOut: 30000
+18:26:12.857 
+(Date)28.11.2020 (Time)18:26.12,857
+hWnd: 90A88
+18:26:12.857 
+(Date)28.11.2020 (Time)18:26.12,857
+ReqID: 6
+18:26:12.857 
+(Date)28.11.2020 (Time)18:26.12,857
+WFPExecute Finalizado. hResult: 0
+18:26:12.858 
+(Date)28.11.2020 (Time)18:26.12,858
+Entrei na funcao WFPExecute ...
+18:26:12.858 
+(Date)28.11.2020 (Time)18:26.12,858
+hService: 1
+18:26:12.859 
+(Date)28.11.2020 (Time)18:26.12,859
+dwCommand: 808
+18:26:12.859 
+(Date)28.11.2020 (Time)18:26.12,859
+dwTimeOut: 30000
+18:26:12.859 
+(Date)28.11.2020 (Time)18:26.12,859
+hWnd: 90A88
+18:26:12.859 
+(Date)28.11.2020 (Time)18:26.12,859
+ReqID: 7
+18:26:12.859 
+(Date)28.11.2020 (Time)18:26.12,859
+WFPExecute Finalizado. hResult: 0
+18:26:12.859 
+(Date)28.11.2020 (Time)18:26.12,859
+Entrei na funcao WFPExecute ...
+18:26:12.860 
+(Date)28.11.2020 (Time)18:26.12,859
+hService: 1
+18:26:12.860 
+(Date)28.11.2020 (Time)18:26.12,860
+dwCommand: 803
+18:26:12.860 
+(Date)28.11.2020 (Time)18:26.12,860
+dwTimeOut: 30000
+18:26:12.860 
+(Date)28.11.2020 (Time)18:26.12,860
+hWnd: 90A88
+18:26:12.860 
+(Date)28.11.2020 (Time)18:26.12,860
+ReqID: 8
+18:26:12.860 
+(Date)28.11.2020 (Time)18:26.12,860
+WFPExecute Finalizado. hResult: 0
+18:26:12.861 
+(Date)28.11.2020 (Time)18:26.12,861
+Entrei na funcao WFPExecute ...
+18:26:12.861 
+(Date)28.11.2020 (Time)18:26.12,861
+hService: 1
+18:26:12.861 
+(Date)28.11.2020 (Time)18:26.12,861
+dwCommand: 801
+18:26:12.861 
+(Date)28.11.2020 (Time)18:26.12,861
+dwTimeOut: 30000
+18:26:12.861 
+(Date)28.11.2020 (Time)18:26.12,861
+hWnd: 90A88
+18:26:12.861 
+(Date)28.11.2020 (Time)18:26.12,861
+ReqID: 9
+18:26:12.861 
+(Date)28.11.2020 (Time)18:26.12,861
+WFPExecute Finalizado. hResult: 0
+18:26:18.328 
+(Date)28.11.2020 (Time)18:26.18,328
+Entrei na funcao WFPGetInfo
+18:26:18.328 
+(Date)28.11.2020 (Time)18:26.18,328
+Entrei na funcao WFPExecute ...
+18:26:18.328 
+(Date)28.11.2020 (Time)18:26.18,328
+hService: 1
+18:26:18.328 
+(Date)28.11.2020 (Time)18:26.18,328
+dwCategory: 801
+18:26:18.328 
+(Date)28.11.2020 (Time)18:26.18,328
+dwTimeOut: 30000
+18:26:18.328 
+(Date)28.11.2020 (Time)18:26.18,328
+hWnd: 90A88
+18:26:18.328 
+(Date)28.11.2020 (Time)18:26.18,328
+ReqID: 10
+18:26:18.328 
+(Date)28.11.2020 (Time)18:26.18,328
+WFPGetInfo Finalizado. hResult: 0
+18:26:18.329 
+(Date)28.11.2020 (Time)18:26.18,329
+Entrei na funcao WFPGetInfo
+18:26:18.329 
+(Date)28.11.2020 (Time)18:26.18,329
+Entrei na funcao WFPExecute ...
+18:26:18.329 
+(Date)28.11.2020 (Time)18:26.18,329
+hService: 1
+18:26:18.329 
+(Date)28.11.2020 (Time)18:26.18,329
+dwCategory: 802
+18:26:18.329 
+(Date)28.11.2020 (Time)18:26.18,329
+dwTimeOut: 30000
+18:26:18.329 
+(Date)28.11.2020 (Time)18:26.18,329
+hWnd: 90A88
+18:26:18.329 
+(Date)28.11.2020 (Time)18:26.18,329
+ReqID: 11
+18:26:18.329 
+(Date)28.11.2020 (Time)18:26.18,329
+WFPGetInfo Finalizado. hResult: 0
+18:26:20.861 
+(Date)28.11.2020 (Time)18:26.20,861
+Entrei na funcao WFPClose ...
+18:26:20.862 
+(Date)28.11.2020 (Time)18:26.20,862
+hService: 1
+18:26:20.862 
+(Date)28.11.2020 (Time)18:26.20,862
+hWnd: 908EE
+18:26:20.862 
+(Date)28.11.2020 (Time)18:26.20,862
+ReqID: 12
+18:26:20.997 APICALL: WFSCleanUp: Entered
+18:26:20.998 APICALL: WFSCleanUp: Exit
+18:26:20.993 
+(Date)28.11.2020 (Time)18:26.20,993
+WFPClose Finalizado. hResult: 0
+18:26:20.994 
+(Date)28.11.2020 (Time)18:26.20,994
+Entrei na funcao WFPUnloadService ...
+18:26:20.994 
+(Date)28.11.2020 (Time)18:26.20,994
+WFPUnloadService Finalizado. hResult: 0
+18:29:37.569 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:29:37.569 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:29:37.569 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:29:37.569 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:29:37.569 OpenKey returning *phkResult x24c
+18:29:37.570 RegOpenKeyEx( x24c, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:29:37.570 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:29:37.570 OpenKey returning *phkResult x250
+18:29:37.570 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:29:37.570 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+18:29:37.570 OpenKey returning *phkResult x24c
+18:29:37.570 RegOpenKeyEx( x24c, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:29:37.570 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:29:37.570 OpenKey returning *phkResult x254
+18:29:39.483 
+(Date)28.11.2020 (Time)18:29.39,483
+Executando o WFPOpen ...
+18:29:39.479 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:29:39.479 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:29:39.483 
+(Date)28.11.2020 (Time)18:29.39,483
+lpszLogicalName (SIU): Sensores
+18:29:39.483 
+(Date)28.11.2020 (Time)18:29.39,483
+hApp: 870A068
+18:29:39.479 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:29:39.479 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:29:39.483 
+(Date)28.11.2020 (Time)18:29.39,483
+lpszAppID: BRXFSTEST
+18:29:39.483 
+(Date)28.11.2020 (Time)18:29.39,483
+dwTraceLevel: 0
+18:29:39.479 OpenKey returning *phkResult x250
+18:29:39.479 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:29:39.484 
+(Date)28.11.2020 (Time)18:29.39,484
+dwTimeOut: 5000
+18:29:39.484 
+(Date)28.11.2020 (Time)18:29.39,484
+hWnd: 2806D4
+18:29:39.479 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:29:39.484 
+(Date)28.11.2020 (Time)18:29.39,484
+ReqID: 1
+18:29:39.479 OpenKey returning *phkResult x24c
+18:29:39.484 
+(Date)28.11.2020 (Time)18:29.39,484
+hProvider: 7800E018
+18:29:39.484 
+(Date)28.11.2020 (Time)18:29.39,484
+dwSPIVersionsRequired: 101FF03
+18:29:39.484 
+(Date)28.11.2020 (Time)18:29.39,484
+dwSPIVersionsRequired.MaiorVersao: FF03
+18:29:39.484 
+(Date)28.11.2020 (Time)18:29.39,484
+dwSPIVersionsRequired.MenorVersao: 101
+18:29:39.484 
+(Date)28.11.2020 (Time)18:29.39,484
+dwSrvcVersionsRequired.MaiorVersao: 03
+18:29:39.484 
+(Date)28.11.2020 (Time)18:29.39,484
+dwSrvcVersionsRequired.MenorVersao: 303
+18:29:39.517 
+(Date)28.11.2020 (Time)18:29.39,517
+WFPOpen Finalizado. hResult: 0
+18:29:39.565 
+(Date)28.11.2020 (Time)18:29.39,565
+Entrei na funcao WFPSetTraceLevel ...
+18:29:39.566 
+(Date)28.11.2020 (Time)18:29.39,565
+hService: 1
+18:29:39.566 
+(Date)28.11.2020 (Time)18:29.39,566
+dwTraceLevel: 0
+18:29:39.566 
+(Date)28.11.2020 (Time)18:29.39,566
+WFPSetTraceLevel Finalizado. hResult: 0
+18:29:39.574 
+(Date)28.11.2020 (Time)18:29.39,574
+Executando o WFPRegister ...
+18:29:39.574 
+(Date)28.11.2020 (Time)18:29.39,574
+hService: 1
+18:29:39.574 
+(Date)28.11.2020 (Time)18:29.39,574
+dwEventClass: 0F
+18:29:39.574 
+(Date)28.11.2020 (Time)18:29.39,574
+hWndReg: 2906D4
+18:29:39.574 
+(Date)28.11.2020 (Time)18:29.39,574
+hWnd: 3906F2
+18:29:39.574 
+(Date)28.11.2020 (Time)18:29.39,574
+ReqID: 2
+18:29:39.574 
+(Date)28.11.2020 (Time)18:29.39,574
+WFPRegister Finalizado. hResult: 0
+18:29:40.522 
+(Date)28.11.2020 (Time)18:29.40,522
+Entrei na funcao WFPExecute ...
+18:29:40.522 
+(Date)28.11.2020 (Time)18:29.40,522
+hService: 1
+18:29:40.522 
+(Date)28.11.2020 (Time)18:29.40,522
+dwCommand: 807
+18:29:40.522 
+(Date)28.11.2020 (Time)18:29.40,522
+dwTimeOut: 30000
+18:29:40.522 
+(Date)28.11.2020 (Time)18:29.40,522
+hWnd: 2906D4
+18:29:40.523 
+(Date)28.11.2020 (Time)18:29.40,523
+ReqID: 3
+18:29:40.523 
+(Date)28.11.2020 (Time)18:29.40,523
+WFPExecute Finalizado. hResult: 0
+18:29:40.523 
+(Date)28.11.2020 (Time)18:29.40,523
+Entrei na funcao WFPExecute ...
+18:29:40.523 
+(Date)28.11.2020 (Time)18:29.40,523
+hService: 1
+18:29:40.523 
+(Date)28.11.2020 (Time)18:29.40,523
+dwCommand: 807
+18:29:40.523 
+(Date)28.11.2020 (Time)18:29.40,523
+dwTimeOut: 30000
+18:29:40.523 
+(Date)28.11.2020 (Time)18:29.40,523
+hWnd: 2906D4
+18:29:40.523 
+(Date)28.11.2020 (Time)18:29.40,523
+ReqID: 4
+18:29:40.523 
+(Date)28.11.2020 (Time)18:29.40,523
+WFPExecute Finalizado. hResult: 0
+18:29:40.524 
+(Date)28.11.2020 (Time)18:29.40,524
+Entrei na funcao WFPCancelAsyncRequest ...
+18:29:40.524 
+(Date)28.11.2020 (Time)18:29.40,524
+hService: 1
+18:29:40.524 
+(Date)28.11.2020 (Time)18:29.40,524
+ReqID: 0
+18:29:40.524 
+(Date)28.11.2020 (Time)18:29.40,524
+WFPCancelAsyncRequest Finalizado. hResult: 0
+18:29:40.525 
+(Date)28.11.2020 (Time)18:29.40,525
+Entrei na funcao WFPExecute ...
+18:29:40.525 
+(Date)28.11.2020 (Time)18:29.40,525
+hService: 1
+18:29:40.525 
+(Date)28.11.2020 (Time)18:29.40,525
+dwCommand: 807
+18:29:40.525 
+(Date)28.11.2020 (Time)18:29.40,525
+dwTimeOut: 30000
+18:29:40.525 
+(Date)28.11.2020 (Time)18:29.40,525
+hWnd: 2906D4
+18:29:40.525 
+(Date)28.11.2020 (Time)18:29.40,525
+ReqID: 5
+18:29:40.525 
+(Date)28.11.2020 (Time)18:29.40,525
+WFPExecute Finalizado. hResult: 0
+18:29:40.526 
+(Date)28.11.2020 (Time)18:29.40,526
+Entrei na funcao WFPExecute ...
+18:29:40.526 
+(Date)28.11.2020 (Time)18:29.40,526
+hService: 1
+18:29:40.526 
+(Date)28.11.2020 (Time)18:29.40,526
+dwCommand: 807
+18:29:40.526 
+(Date)28.11.2020 (Time)18:29.40,526
+dwTimeOut: 30000
+18:29:40.526 
+(Date)28.11.2020 (Time)18:29.40,526
+hWnd: 2906D4
+18:29:40.526 
+(Date)28.11.2020 (Time)18:29.40,526
+ReqID: 6
+18:29:40.526 
+(Date)28.11.2020 (Time)18:29.40,526
+WFPExecute Finalizado. hResult: 0
+18:29:40.528 
+(Date)28.11.2020 (Time)18:29.40,528
+Entrei na funcao WFPExecute ...
+18:29:40.528 
+(Date)28.11.2020 (Time)18:29.40,528
+hService: 1
+18:29:40.528 
+(Date)28.11.2020 (Time)18:29.40,528
+dwCommand: 808
+18:29:40.528 
+(Date)28.11.2020 (Time)18:29.40,528
+dwTimeOut: 30000
+18:29:40.528 
+(Date)28.11.2020 (Time)18:29.40,528
+hWnd: 2906D4
+18:29:40.528 
+(Date)28.11.2020 (Time)18:29.40,528
+ReqID: 7
+18:29:40.528 
+(Date)28.11.2020 (Time)18:29.40,528
+WFPExecute Finalizado. hResult: 0
+18:29:40.529 
+(Date)28.11.2020 (Time)18:29.40,529
+Entrei na funcao WFPExecute ...
+18:29:40.529 
+(Date)28.11.2020 (Time)18:29.40,529
+hService: 1
+18:29:40.529 
+(Date)28.11.2020 (Time)18:29.40,529
+dwCommand: 803
+18:29:40.529 
+(Date)28.11.2020 (Time)18:29.40,529
+dwTimeOut: 30000
+18:29:40.529 
+(Date)28.11.2020 (Time)18:29.40,529
+hWnd: 2906D4
+18:29:40.529 
+(Date)28.11.2020 (Time)18:29.40,529
+ReqID: 8
+18:29:40.529 
+(Date)28.11.2020 (Time)18:29.40,529
+WFPExecute Finalizado. hResult: 0
+18:29:40.529 
+(Date)28.11.2020 (Time)18:29.40,529
+Entrei na funcao WFPExecute ...
+18:29:40.529 
+(Date)28.11.2020 (Time)18:29.40,529
+hService: 1
+18:29:40.530 
+(Date)28.11.2020 (Time)18:29.40,530
+dwCommand: 801
+18:29:40.530 
+(Date)28.11.2020 (Time)18:29.40,530
+dwTimeOut: 30000
+18:29:40.530 
+(Date)28.11.2020 (Time)18:29.40,530
+hWnd: 2906D4
+18:29:40.530 
+(Date)28.11.2020 (Time)18:29.40,530
+ReqID: 9
+18:29:40.530 
+(Date)28.11.2020 (Time)18:29.40,530
+WFPExecute Finalizado. hResult: 0
+18:29:46.293 
+(Date)28.11.2020 (Time)18:29.46,293
+Entrei na funcao WFPGetInfo
+18:29:46.293 
+(Date)28.11.2020 (Time)18:29.46,293
+Entrei na funcao WFPExecute ...
+18:29:46.293 
+(Date)28.11.2020 (Time)18:29.46,293
+hService: 1
+18:29:46.293 
+(Date)28.11.2020 (Time)18:29.46,293
+dwCategory: 801
+18:29:46.293 
+(Date)28.11.2020 (Time)18:29.46,293
+dwTimeOut: 30000
+18:29:46.293 
+(Date)28.11.2020 (Time)18:29.46,293
+hWnd: 2906D4
+18:29:46.293 
+(Date)28.11.2020 (Time)18:29.46,293
+ReqID: 10
+18:29:46.293 
+(Date)28.11.2020 (Time)18:29.46,293
+WFPGetInfo Finalizado. hResult: 0
+18:29:46.294 
+(Date)28.11.2020 (Time)18:29.46,294
+Entrei na funcao WFPGetInfo
+18:29:46.294 
+(Date)28.11.2020 (Time)18:29.46,294
+Entrei na funcao WFPExecute ...
+18:29:46.294 
+(Date)28.11.2020 (Time)18:29.46,294
+hService: 1
+18:29:46.294 
+(Date)28.11.2020 (Time)18:29.46,294
+dwCategory: 802
+18:29:46.294 
+(Date)28.11.2020 (Time)18:29.46,294
+dwTimeOut: 30000
+18:29:46.294 
+(Date)28.11.2020 (Time)18:29.46,294
+hWnd: 2906D4
+18:29:46.294 
+(Date)28.11.2020 (Time)18:29.46,294
+ReqID: 11
+18:29:46.294 
+(Date)28.11.2020 (Time)18:29.46,294
+WFPGetInfo Finalizado. hResult: 0
+18:29:47.904 
+(Date)28.11.2020 (Time)18:29.47,904
+Entrei na funcao WFPClose ...
+18:29:47.904 
+(Date)28.11.2020 (Time)18:29.47,904
+hService: 1
+18:29:47.904 
+(Date)28.11.2020 (Time)18:29.47,904
+hWnd: B0A88
+18:29:47.904 
+(Date)28.11.2020 (Time)18:29.47,904
+ReqID: 12
+18:29:48.039 APICALL: WFSCleanUp: Entered
+18:29:48.040 APICALL: WFSCleanUp: Exit
+18:29:48.034 
+(Date)28.11.2020 (Time)18:29.48,34
+WFPClose Finalizado. hResult: 0
+18:29:48.034 
+(Date)28.11.2020 (Time)18:29.48,34
+Entrei na funcao WFPUnloadService ...
+18:29:48.034 
+(Date)28.11.2020 (Time)18:29.48,34
+WFPUnloadService Finalizado. hResult: 0
+18:29:58.411 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:29:58.421 
+(Date)28.11.2020 (Time)18:29.58,421
+Executando o WFPOpen ...
+18:29:58.421 
+(Date)28.11.2020 (Time)18:29.58,421
+lpszLogicalName (SIU): Sensores
+18:29:58.411 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:29:58.411 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:29:58.421 
+(Date)28.11.2020 (Time)18:29.58,421
+hApp: 870A068
+18:29:58.421 
+(Date)28.11.2020 (Time)18:29.58,421
+lpszAppID: BRXFSTEST
+18:29:58.411 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:29:58.411 OpenKey returning *phkResult x258
+18:29:58.421 
+(Date)28.11.2020 (Time)18:29.58,421
+dwTraceLevel: 0
+18:29:58.421 
+(Date)28.11.2020 (Time)18:29.58,421
+dwTimeOut: 5000
+18:29:58.411 RegOpenKeyEx( x258, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:29:58.411 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:29:58.421 
+(Date)28.11.2020 (Time)18:29.58,421
+hWnd: 1B0A50
+18:29:58.421 
+(Date)28.11.2020 (Time)18:29.58,421
+ReqID: 1
+18:29:58.411 OpenKey returning *phkResult x25c
+18:29:58.411 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:29:58.421 
+(Date)28.11.2020 (Time)18:29.58,421
+hProvider: 7800E018
+18:29:58.411 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+18:29:58.421 
+(Date)28.11.2020 (Time)18:29.58,421
+dwSPIVersionsRequired: 101FF03
+18:29:58.411 OpenKey returning *phkResult x258
+18:29:58.421 
+(Date)28.11.2020 (Time)18:29.58,421
+dwSPIVersionsRequired.MaiorVersao: FF03
+18:29:58.411 RegOpenKeyEx( x258, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:29:58.421 
+(Date)28.11.2020 (Time)18:29.58,421
+dwSPIVersionsRequired.MenorVersao: 101
+18:29:58.421 
+(Date)28.11.2020 (Time)18:29.58,421
+dwSrvcVersionsRequired.MaiorVersao: 03
+18:29:58.411 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:29:58.411 OpenKey returning *phkResult x260
+18:29:58.421 
+(Date)28.11.2020 (Time)18:29.58,421
+dwSrvcVersionsRequired.MenorVersao: 303
+18:29:58.465 
+(Date)28.11.2020 (Time)18:29.58,465
+WFPOpen Finalizado. hResult: 0
+18:29:58.418 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:29:58.418 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:29:58.514 
+(Date)28.11.2020 (Time)18:29.58,514
+Entrei na funcao WFPSetTraceLevel ...
+18:29:58.514 
+(Date)28.11.2020 (Time)18:29.58,514
+hService: 1
+18:29:58.418 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:29:58.418 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:29:58.514 
+(Date)28.11.2020 (Time)18:29.58,514
+dwTraceLevel: 0
+18:29:58.418 OpenKey returning *phkResult x260
+18:29:58.515 
+(Date)28.11.2020 (Time)18:29.58,515
+WFPSetTraceLevel Finalizado. hResult: 0
+18:29:58.524 
+(Date)28.11.2020 (Time)18:29.58,524
+Executando o WFPRegister ...
+18:29:58.418 RegOpenKeyEx( x260, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:29:58.418 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:29:58.524 
+(Date)28.11.2020 (Time)18:29.58,524
+hService: 1
+18:29:58.524 
+(Date)28.11.2020 (Time)18:29.58,524
+dwEventClass: 0F
+18:29:58.418 OpenKey returning *phkResult x258
+18:29:58.524 
+(Date)28.11.2020 (Time)18:29.58,524
+hWndReg: 1C0A50
+18:29:58.524 
+(Date)28.11.2020 (Time)18:29.58,524
+hWnd: A07F0
+18:29:58.524 
+(Date)28.11.2020 (Time)18:29.58,524
+ReqID: 2
+18:29:58.524 
+(Date)28.11.2020 (Time)18:29.58,524
+WFPRegister Finalizado. hResult: 0
+18:29:59.934 
+(Date)28.11.2020 (Time)18:29.59,934
+Entrei na funcao WFPExecute ...
+18:29:59.935 
+(Date)28.11.2020 (Time)18:29.59,935
+hService: 1
+18:29:59.935 
+(Date)28.11.2020 (Time)18:29.59,935
+dwCommand: 807
+18:29:59.935 
+(Date)28.11.2020 (Time)18:29.59,935
+dwTimeOut: 30000
+18:29:59.935 
+(Date)28.11.2020 (Time)18:29.59,935
+hWnd: 1C0A50
+18:29:59.935 
+(Date)28.11.2020 (Time)18:29.59,935
+ReqID: 3
+18:29:59.935 
+(Date)28.11.2020 (Time)18:29.59,935
+WFPExecute Finalizado. hResult: 0
+18:29:59.936 
+(Date)28.11.2020 (Time)18:29.59,936
+Entrei na funcao WFPExecute ...
+18:29:59.936 
+(Date)28.11.2020 (Time)18:29.59,936
+hService: 1
+18:29:59.936 
+(Date)28.11.2020 (Time)18:29.59,936
+dwCommand: 807
+18:29:59.936 
+(Date)28.11.2020 (Time)18:29.59,936
+dwTimeOut: 30000
+18:29:59.936 
+(Date)28.11.2020 (Time)18:29.59,936
+hWnd: 1C0A50
+18:29:59.936 
+(Date)28.11.2020 (Time)18:29.59,936
+ReqID: 4
+18:29:59.936 
+(Date)28.11.2020 (Time)18:29.59,936
+WFPExecute Finalizado. hResult: 0
+18:29:59.937 
+(Date)28.11.2020 (Time)18:29.59,937
+Entrei na funcao WFPCancelAsyncRequest ...
+18:29:59.937 
+(Date)28.11.2020 (Time)18:29.59,937
+hService: 1
+18:29:59.937 
+(Date)28.11.2020 (Time)18:29.59,937
+ReqID: 0
+18:29:59.937 
+(Date)28.11.2020 (Time)18:29.59,937
+WFPCancelAsyncRequest Finalizado. hResult: 0
+18:29:59.938 
+(Date)28.11.2020 (Time)18:29.59,938
+Entrei na funcao WFPExecute ...
+18:29:59.938 
+(Date)28.11.2020 (Time)18:29.59,938
+hService: 1
+18:29:59.938 
+(Date)28.11.2020 (Time)18:29.59,938
+dwCommand: 807
+18:29:59.938 
+(Date)28.11.2020 (Time)18:29.59,938
+dwTimeOut: 30000
+18:29:59.938 
+(Date)28.11.2020 (Time)18:29.59,938
+hWnd: 1C0A50
+18:29:59.938 
+(Date)28.11.2020 (Time)18:29.59,938
+ReqID: 5
+18:29:59.938 
+(Date)28.11.2020 (Time)18:29.59,938
+WFPExecute Finalizado. hResult: 0
+18:29:59.939 
+(Date)28.11.2020 (Time)18:29.59,939
+Entrei na funcao WFPExecute ...
+18:29:59.939 
+(Date)28.11.2020 (Time)18:29.59,939
+hService: 1
+18:29:59.939 
+(Date)28.11.2020 (Time)18:29.59,939
+dwCommand: 807
+18:29:59.939 
+(Date)28.11.2020 (Time)18:29.59,939
+dwTimeOut: 30000
+18:29:59.939 
+(Date)28.11.2020 (Time)18:29.59,939
+hWnd: 1C0A50
+18:29:59.939 
+(Date)28.11.2020 (Time)18:29.59,939
+ReqID: 6
+18:29:59.939 
+(Date)28.11.2020 (Time)18:29.59,939
+WFPExecute Finalizado. hResult: 0
+18:29:59.939 
+(Date)28.11.2020 (Time)18:29.59,939
+Entrei na funcao WFPExecute ...
+18:29:59.939 
+(Date)28.11.2020 (Time)18:29.59,939
+hService: 1
+18:29:59.939 
+(Date)28.11.2020 (Time)18:29.59,939
+dwCommand: 808
+18:29:59.939 
+(Date)28.11.2020 (Time)18:29.59,939
+dwTimeOut: 30000
+18:29:59.940 
+(Date)28.11.2020 (Time)18:29.59,940
+hWnd: 1C0A50
+18:29:59.940 
+(Date)28.11.2020 (Time)18:29.59,940
+ReqID: 7
+18:29:59.940 
+(Date)28.11.2020 (Time)18:29.59,940
+WFPExecute Finalizado. hResult: 0
+18:29:59.940 
+(Date)28.11.2020 (Time)18:29.59,940
+Entrei na funcao WFPExecute ...
+18:29:59.940 
+(Date)28.11.2020 (Time)18:29.59,940
+hService: 1
+18:29:59.940 
+(Date)28.11.2020 (Time)18:29.59,940
+dwCommand: 803
+18:29:59.940 
+(Date)28.11.2020 (Time)18:29.59,940
+dwTimeOut: 30000
+18:29:59.940 
+(Date)28.11.2020 (Time)18:29.59,940
+hWnd: 1C0A50
+18:29:59.940 
+(Date)28.11.2020 (Time)18:29.59,940
+ReqID: 8
+18:29:59.940 
+(Date)28.11.2020 (Time)18:29.59,940
+WFPExecute Finalizado. hResult: 0
+18:29:59.941 
+(Date)28.11.2020 (Time)18:29.59,941
+Entrei na funcao WFPExecute ...
+18:29:59.941 
+(Date)28.11.2020 (Time)18:29.59,941
+hService: 1
+18:29:59.941 
+(Date)28.11.2020 (Time)18:29.59,941
+dwCommand: 801
+18:29:59.941 
+(Date)28.11.2020 (Time)18:29.59,941
+dwTimeOut: 30000
+18:29:59.941 
+(Date)28.11.2020 (Time)18:29.59,941
+hWnd: 1C0A50
+18:29:59.941 
+(Date)28.11.2020 (Time)18:29.59,941
+ReqID: 9
+18:29:59.941 
+(Date)28.11.2020 (Time)18:29.59,941
+WFPExecute Finalizado. hResult: 0
+18:30:03.431 
+(Date)28.11.2020 (Time)18:30.03,431
+Entrei na funcao WFPGetInfo
+18:30:03.432 
+(Date)28.11.2020 (Time)18:30.03,432
+Entrei na funcao WFPExecute ...
+18:30:03.432 
+(Date)28.11.2020 (Time)18:30.03,432
+hService: 1
+18:30:03.432 
+(Date)28.11.2020 (Time)18:30.03,432
+dwCategory: 801
+18:30:03.432 
+(Date)28.11.2020 (Time)18:30.03,432
+dwTimeOut: 30000
+18:30:03.432 
+(Date)28.11.2020 (Time)18:30.03,432
+hWnd: 1C0A50
+18:30:03.432 
+(Date)28.11.2020 (Time)18:30.03,432
+ReqID: 10
+18:30:03.432 
+(Date)28.11.2020 (Time)18:30.03,432
+WFPGetInfo Finalizado. hResult: 0
+18:30:03.433 
+(Date)28.11.2020 (Time)18:30.03,433
+Entrei na funcao WFPGetInfo
+18:30:03.433 
+(Date)28.11.2020 (Time)18:30.03,433
+Entrei na funcao WFPExecute ...
+18:30:03.433 
+(Date)28.11.2020 (Time)18:30.03,433
+hService: 1
+18:30:03.433 
+(Date)28.11.2020 (Time)18:30.03,433
+dwCategory: 802
+18:30:03.433 
+(Date)28.11.2020 (Time)18:30.03,433
+dwTimeOut: 30000
+18:30:03.433 
+(Date)28.11.2020 (Time)18:30.03,433
+hWnd: 1C0A50
+18:30:03.433 
+(Date)28.11.2020 (Time)18:30.03,433
+ReqID: 11
+18:30:03.433 
+(Date)28.11.2020 (Time)18:30.03,433
+WFPGetInfo Finalizado. hResult: 0
+18:30:25.063 
+(Date)28.11.2020 (Time)18:30.25,63
+Entrei na funcao WFPClose ...
+18:30:25.063 
+(Date)28.11.2020 (Time)18:30.25,63
+hService: 1
+18:30:25.137 APICALL: WFSCleanUp: Entered
+18:30:25.137 APICALL: WFSCleanUp: Exit
+18:30:25.063 
+(Date)28.11.2020 (Time)18:30.25,63
+hWnd: 390A14
+18:30:25.063 
+(Date)28.11.2020 (Time)18:30.25,63
+ReqID: 12
+18:30:25.130 
+(Date)28.11.2020 (Time)18:30.25,130
+WFPClose Finalizado. hResult: 0
+18:30:25.131 
+(Date)28.11.2020 (Time)18:30.25,131
+Entrei na funcao WFPUnloadService ...
+18:30:25.131 
+(Date)28.11.2020 (Time)18:30.25,131
+WFPUnloadService Finalizado. hResult: 0
+18:30:31.355 
+(Date)28.11.2020 (Time)18:30.31,355
+Executando o WFPOpen ...
+18:30:31.326 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:31.355 
+(Date)28.11.2020 (Time)18:30.31,355
+lpszLogicalName (SIU): Sensores
+18:30:31.326 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:30:31.355 
+(Date)28.11.2020 (Time)18:30.31,355
+hApp: 870A068
+18:30:31.326 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:31.326 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:30:31.355 
+(Date)28.11.2020 (Time)18:30.31,355
+lpszAppID: BRXFSTEST
+18:30:31.356 
+(Date)28.11.2020 (Time)18:30.31,356
+dwTraceLevel: 0
+18:30:31.326 OpenKey returning *phkResult x250
+18:30:31.356 
+(Date)28.11.2020 (Time)18:30.31,356
+dwTimeOut: 5000
+18:30:31.326 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:31.326 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:30:31.356 
+(Date)28.11.2020 (Time)18:30.31,356
+hWnd: E07E2
+18:30:31.356 
+(Date)28.11.2020 (Time)18:30.31,356
+ReqID: 1
+18:30:31.326 OpenKey returning *phkResult x254
+18:30:31.326 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:31.356 
+(Date)28.11.2020 (Time)18:30.31,356
+hProvider: 7800E018
+18:30:31.326 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+18:30:31.356 
+(Date)28.11.2020 (Time)18:30.31,356
+dwSPIVersionsRequired: 101FF03
+18:30:31.326 OpenKey returning *phkResult x250
+18:30:31.356 
+(Date)28.11.2020 (Time)18:30.31,356
+dwSPIVersionsRequired.MaiorVersao: FF03
+18:30:31.356 
+(Date)28.11.2020 (Time)18:30.31,356
+dwSPIVersionsRequired.MenorVersao: 101
+18:30:31.326 RegOpenKeyEx( x250, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:31.326 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:30:31.357 
+(Date)28.11.2020 (Time)18:30.31,357
+dwSrvcVersionsRequired.MaiorVersao: 03
+18:30:31.326 OpenKey returning *phkResult x258
+18:30:31.357 
+(Date)28.11.2020 (Time)18:30.31,357
+dwSrvcVersionsRequired.MenorVersao: 303
+18:30:31.400 
+(Date)28.11.2020 (Time)18:30.31,400
+WFPOpen Finalizado. hResult: 0
+18:30:31.351 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:31.351 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:30:39.627 
+(Date)28.11.2020 (Time)18:30.39,627
+Entrei na funcao WFPSetTraceLevel ...
+18:30:39.627 
+(Date)28.11.2020 (Time)18:30.39,627
+hService: 1
+18:30:31.351 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:31.351 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:30:39.628 
+(Date)28.11.2020 (Time)18:30.39,628
+dwTraceLevel: 0
+18:30:31.351 OpenKey returning *phkResult x264
+18:30:39.628 
+(Date)28.11.2020 (Time)18:30.39,628
+WFPSetTraceLevel Finalizado. hResult: 0
+18:30:39.647 
+(Date)28.11.2020 (Time)18:30.39,647
+Executando o WFPRegister ...
+18:30:31.351 RegOpenKeyEx( x264, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:30:31.351 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:30:39.647 
+(Date)28.11.2020 (Time)18:30.39,647
+hService: 1
+18:30:39.648 
+(Date)28.11.2020 (Time)18:30.39,648
+dwEventClass: 0F
+18:30:31.351 OpenKey returning *phkResult x268
+18:30:39.648 
+(Date)28.11.2020 (Time)18:30.39,648
+hWndReg: F07E2
+18:30:39.648 
+(Date)28.11.2020 (Time)18:30.39,648
+hWnd: F0906
+18:30:39.649 
+(Date)28.11.2020 (Time)18:30.39,649
+ReqID: 2
+18:30:39.649 
+(Date)28.11.2020 (Time)18:30.39,649
+WFPRegister Finalizado. hResult: 0
+18:30:42.067 
+(Date)28.11.2020 (Time)18:30.42,67
+Entrei na funcao WFPExecute ...
+18:30:42.067 
+(Date)28.11.2020 (Time)18:30.42,67
+hService: 1
+18:30:42.067 
+(Date)28.11.2020 (Time)18:30.42,67
+dwCommand: 807
+18:31:35.756 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:31:35.756 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:31:35.756 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:31:35.756 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:31:35.907 
+(Date)28.11.2020 (Time)18:31.35,907
+Executando o WFPOpen ...
+18:31:35.907 
+(Date)28.11.2020 (Time)18:31.35,907
+lpszLogicalName (SIU): Sensores
+18:31:35.756 OpenKey returning *phkResult x150
+18:31:35.907 
+(Date)28.11.2020 (Time)18:31.35,907
+hApp: 870A068
+18:31:35.756 RegOpenKeyEx( x150, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:31:35.756 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:31:35.907 
+(Date)28.11.2020 (Time)18:31.35,907
+lpszAppID: BRXFSTEST
+18:31:35.756 OpenKey returning *phkResult x14c
+18:31:35.907 
+(Date)28.11.2020 (Time)18:31.35,907
+dwTraceLevel: 0
+18:31:35.907 
+(Date)28.11.2020 (Time)18:31.35,907
+dwTimeOut: 5000
+18:31:35.756 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:31:35.756 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+18:31:35.907 
+(Date)28.11.2020 (Time)18:31.35,907
+hWnd: 870830
+18:31:35.756 OpenKey returning *phkResult x150
+18:31:35.907 
+(Date)28.11.2020 (Time)18:31.35,907
+ReqID: 1
+18:31:35.907 
+(Date)28.11.2020 (Time)18:31.35,907
+hProvider: 7800E018
+18:31:35.756 RegOpenKeyEx( x150, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:31:35.907 
+(Date)28.11.2020 (Time)18:31.35,907
+dwSPIVersionsRequired: 101FF03
+18:31:35.756 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:31:35.907 
+(Date)28.11.2020 (Time)18:31.35,907
+dwSPIVersionsRequired.MaiorVersao: FF03
+18:31:35.756 OpenKey returning *phkResult x254
+18:31:35.907 
+(Date)28.11.2020 (Time)18:31.35,907
+dwSPIVersionsRequired.MenorVersao: 101
+18:31:35.903 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:31:35.907 
+(Date)28.11.2020 (Time)18:31.35,907
+dwSrvcVersionsRequired.MaiorVersao: 03
+18:31:35.903 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:31:35.907 
+(Date)28.11.2020 (Time)18:31.35,907
+dwSrvcVersionsRequired.MenorVersao: 303
+18:31:35.903 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:31:35.950 
+(Date)28.11.2020 (Time)18:31.35,950
+WFPOpen Finalizado. hResult: 0
+18:31:35.903 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:31:35.903 OpenKey returning *phkResult x260
+18:31:35.998 
+(Date)28.11.2020 (Time)18:31.35,998
+Entrei na funcao WFPSetTraceLevel ...
+18:31:35.998 
+(Date)28.11.2020 (Time)18:31.35,998
+hService: 1
+18:31:35.903 RegOpenKeyEx( x260, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:31:35.903 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:31:35.998 
+(Date)28.11.2020 (Time)18:31.35,998
+dwTraceLevel: 0
+18:31:35.903 OpenKey returning *phkResult x264
+18:31:35.998 
+(Date)28.11.2020 (Time)18:31.35,998
+WFPSetTraceLevel Finalizado. hResult: 0
+18:31:36.006 
+(Date)28.11.2020 (Time)18:31.36,06
+Executando o WFPRegister ...
+18:31:36.006 
+(Date)28.11.2020 (Time)18:31.36,06
+hService: 1
+18:31:36.006 
+(Date)28.11.2020 (Time)18:31.36,06
+dwEventClass: 0F
+18:31:36.006 
+(Date)28.11.2020 (Time)18:31.36,06
+hWndReg: 880830
+18:31:36.006 
+(Date)28.11.2020 (Time)18:31.36,06
+hWnd: 807FE
+18:31:36.006 
+(Date)28.11.2020 (Time)18:31.36,06
+ReqID: 2
+18:31:36.006 
+(Date)28.11.2020 (Time)18:31.36,06
+WFPRegister Finalizado. hResult: 0
+18:31:36.884 
+(Date)28.11.2020 (Time)18:31.36,884
+Entrei na funcao WFPExecute ...
+18:31:36.884 
+(Date)28.11.2020 (Time)18:31.36,884
+hService: 1
+18:31:36.884 
+(Date)28.11.2020 (Time)18:31.36,884
+dwCommand: 807
+18:31:36.884 
+(Date)28.11.2020 (Time)18:31.36,884
+dwTimeOut: 30000
+18:31:36.884 
+(Date)28.11.2020 (Time)18:31.36,884
+hWnd: 880830
+18:31:36.884 
+(Date)28.11.2020 (Time)18:31.36,884
+ReqID: 3
+18:31:36.884 
+(Date)28.11.2020 (Time)18:31.36,884
+WFPExecute Finalizado. hResult: 0
+18:31:36.885 
+(Date)28.11.2020 (Time)18:31.36,885
+Entrei na funcao WFPExecute ...
+18:31:36.885 
+(Date)28.11.2020 (Time)18:31.36,885
+hService: 1
+18:31:36.885 
+(Date)28.11.2020 (Time)18:31.36,885
+dwCommand: 807
+18:31:36.885 
+(Date)28.11.2020 (Time)18:31.36,885
+dwTimeOut: 30000
+18:31:36.885 
+(Date)28.11.2020 (Time)18:31.36,885
+hWnd: 880830
+18:31:36.885 
+(Date)28.11.2020 (Time)18:31.36,885
+ReqID: 4
+18:31:36.885 
+(Date)28.11.2020 (Time)18:31.36,885
+WFPExecute Finalizado. hResult: 0
+18:31:36.886 
+(Date)28.11.2020 (Time)18:31.36,886
+Entrei na funcao WFPCancelAsyncRequest ...
+18:31:36.886 
+(Date)28.11.2020 (Time)18:31.36,886
+hService: 1
+18:31:36.886 
+(Date)28.11.2020 (Time)18:31.36,886
+ReqID: 0
+18:31:36.886 
+(Date)28.11.2020 (Time)18:31.36,886
+WFPCancelAsyncRequest Finalizado. hResult: 0
+18:31:36.888 
+(Date)28.11.2020 (Time)18:31.36,888
+Entrei na funcao WFPExecute ...
+18:31:36.888 
+(Date)28.11.2020 (Time)18:31.36,888
+hService: 1
+18:31:36.888 
+(Date)28.11.2020 (Time)18:31.36,888
+dwCommand: 807
+18:31:36.888 
+(Date)28.11.2020 (Time)18:31.36,888
+dwTimeOut: 30000
+18:31:36.888 
+(Date)28.11.2020 (Time)18:31.36,888
+hWnd: 880830
+18:31:36.888 
+(Date)28.11.2020 (Time)18:31.36,888
+ReqID: 5
+18:31:36.888 
+(Date)28.11.2020 (Time)18:31.36,888
+WFPExecute Finalizado. hResult: 0
+18:31:36.889 
+(Date)28.11.2020 (Time)18:31.36,889
+Entrei na funcao WFPExecute ...
+18:31:36.889 
+(Date)28.11.2020 (Time)18:31.36,889
+hService: 1
+18:31:36.889 
+(Date)28.11.2020 (Time)18:31.36,889
+dwCommand: 807
+18:31:36.889 
+(Date)28.11.2020 (Time)18:31.36,889
+dwTimeOut: 30000
+18:31:36.889 
+(Date)28.11.2020 (Time)18:31.36,889
+hWnd: 880830
+18:31:36.890 
+(Date)28.11.2020 (Time)18:31.36,890
+ReqID: 6
+18:31:36.890 
+(Date)28.11.2020 (Time)18:31.36,890
+WFPExecute Finalizado. hResult: 0
+18:31:36.890 
+(Date)28.11.2020 (Time)18:31.36,890
+Entrei na funcao WFPExecute ...
+18:31:36.890 
+(Date)28.11.2020 (Time)18:31.36,890
+hService: 1
+18:31:36.890 
+(Date)28.11.2020 (Time)18:31.36,890
+dwCommand: 808
+18:31:36.890 
+(Date)28.11.2020 (Time)18:31.36,890
+dwTimeOut: 30000
+18:31:36.890 
+(Date)28.11.2020 (Time)18:31.36,890
+hWnd: 880830
+18:31:36.890 
+(Date)28.11.2020 (Time)18:31.36,890
+ReqID: 7
+18:31:36.890 
+(Date)28.11.2020 (Time)18:31.36,890
+WFPExecute Finalizado. hResult: 0
+18:31:36.891 
+(Date)28.11.2020 (Time)18:31.36,891
+Entrei na funcao WFPExecute ...
+18:31:36.891 
+(Date)28.11.2020 (Time)18:31.36,891
+hService: 1
+18:31:36.891 
+(Date)28.11.2020 (Time)18:31.36,891
+dwCommand: 803
+18:31:36.891 
+(Date)28.11.2020 (Time)18:31.36,891
+dwTimeOut: 30000
+18:31:36.891 
+(Date)28.11.2020 (Time)18:31.36,891
+hWnd: 880830
+18:31:36.891 
+(Date)28.11.2020 (Time)18:31.36,891
+ReqID: 8
+18:31:36.891 
+(Date)28.11.2020 (Time)18:31.36,891
+WFPExecute Finalizado. hResult: 0
+18:31:36.891 
+(Date)28.11.2020 (Time)18:31.36,891
+Entrei na funcao WFPExecute ...
+18:31:36.892 
+(Date)28.11.2020 (Time)18:31.36,891
+hService: 1
+18:31:36.892 
+(Date)28.11.2020 (Time)18:31.36,892
+dwCommand: 801
+18:31:36.892 
+(Date)28.11.2020 (Time)18:31.36,892
+dwTimeOut: 30000
+18:31:36.892 
+(Date)28.11.2020 (Time)18:31.36,892
+hWnd: 880830
+18:31:36.892 
+(Date)28.11.2020 (Time)18:31.36,892
+ReqID: 9
+18:31:36.892 
+(Date)28.11.2020 (Time)18:31.36,892
+WFPExecute Finalizado. hResult: 0
+18:31:46.251 
+(Date)28.11.2020 (Time)18:31.46,251
+Entrei na funcao WFPGetInfo
+18:31:46.251 
+(Date)28.11.2020 (Time)18:31.46,251
+Entrei na funcao WFPExecute ...
+18:31:46.251 
+(Date)28.11.2020 (Time)18:31.46,251
+hService: 1
+18:31:46.251 
+(Date)28.11.2020 (Time)18:31.46,251
+dwCategory: 801
+18:31:46.251 
+(Date)28.11.2020 (Time)18:31.46,251
+dwTimeOut: 30000
+18:31:46.251 
+(Date)28.11.2020 (Time)18:31.46,251
+hWnd: 880830
+18:31:46.251 
+(Date)28.11.2020 (Time)18:31.46,251
+ReqID: 10
+18:31:46.251 
+(Date)28.11.2020 (Time)18:31.46,251
+WFPGetInfo Finalizado. hResult: 0
+18:31:46.252 
+(Date)28.11.2020 (Time)18:31.46,252
+Entrei na funcao WFPGetInfo
+18:31:46.252 
+(Date)28.11.2020 (Time)18:31.46,252
+Entrei na funcao WFPExecute ...
+18:31:46.252 
+(Date)28.11.2020 (Time)18:31.46,252
+hService: 1
+18:31:46.252 
+(Date)28.11.2020 (Time)18:31.46,252
+dwCategory: 802
+18:31:46.252 
+(Date)28.11.2020 (Time)18:31.46,252
+dwTimeOut: 30000
+18:31:46.252 
+(Date)28.11.2020 (Time)18:31.46,252
+hWnd: 880830
+18:31:46.252 
+(Date)28.11.2020 (Time)18:31.46,252
+ReqID: 11
+18:31:46.252 
+(Date)28.11.2020 (Time)18:31.46,252
+WFPGetInfo Finalizado. hResult: 0
+18:31:48.701 
+(Date)28.11.2020 (Time)18:31.48,701
+Entrei na funcao WFPClose ...
+18:31:48.701 
+(Date)28.11.2020 (Time)18:31.48,701
+hService: 1
+18:31:48.701 
+(Date)28.11.2020 (Time)18:31.48,701
+hWnd: 5309F8
+18:31:48.848 APICALL: WFSCleanUp: Entered
+18:31:48.848 APICALL: WFSCleanUp: Exit
+18:31:48.701 
+(Date)28.11.2020 (Time)18:31.48,701
+ReqID: 12
+18:31:48.841 
+(Date)28.11.2020 (Time)18:31.48,841
+WFPClose Finalizado. hResult: 0
+18:31:48.842 
+(Date)28.11.2020 (Time)18:31.48,842
+Entrei na funcao WFPUnloadService ...
+18:31:48.842 
+(Date)28.11.2020 (Time)18:31.48,842
+WFPUnloadService Finalizado. hResult: 0
+18:51:39.336 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:51:39.336 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:51:39.336 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:51:39.336 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:51:39.336 OpenKey returning *phkResult x14c
+18:51:39.336 RegOpenKeyEx( x14c, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:51:39.336 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:51:39.336 OpenKey returning *phkResult x254
+18:51:39.336 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:51:39.336 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+18:51:39.336 OpenKey returning *phkResult x14c
+18:51:39.336 RegOpenKeyEx( x14c, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:51:39.336 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:51:39.336 OpenKey returning *phkResult x258
+18:51:41.299 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:51:41.303 
+(Date)28.11.2020 (Time)18:51.41,303
+Executando o WFPOpen ...
+18:51:41.299 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:51:41.303 
+(Date)28.11.2020 (Time)18:51.41,303
+lpszLogicalName (SIU): Sensores
+18:51:41.303 
+(Date)28.11.2020 (Time)18:51.41,303
+hApp: 870A068
+18:51:41.299 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:51:41.303 
+(Date)28.11.2020 (Time)18:51.41,303
+lpszAppID: BRXFSTEST
+18:51:41.299 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:51:41.299 OpenKey returning *phkResult x258
+18:51:41.303 
+(Date)28.11.2020 (Time)18:51.41,303
+dwTraceLevel: 0
+18:51:41.299 RegOpenKeyEx( x258, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:51:41.303 
+(Date)28.11.2020 (Time)18:51.41,303
+dwTimeOut: 5000
+18:51:41.299 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:51:41.303 
+(Date)28.11.2020 (Time)18:51.41,303
+hWnd: 90900
+18:51:41.303 
+(Date)28.11.2020 (Time)18:51.41,303
+ReqID: 1
+18:51:41.299 OpenKey returning *phkResult x14c
+18:51:41.303 
+(Date)28.11.2020 (Time)18:51.41,303
+hProvider: 7800E018
+18:51:41.303 
+(Date)28.11.2020 (Time)18:51.41,303
+dwSPIVersionsRequired: 101FF03
+18:51:41.303 
+(Date)28.11.2020 (Time)18:51.41,303
+dwSPIVersionsRequired.MaiorVersao: FF03
+18:51:41.303 
+(Date)28.11.2020 (Time)18:51.41,303
+dwSPIVersionsRequired.MenorVersao: 101
+18:51:41.303 
+(Date)28.11.2020 (Time)18:51.41,303
+dwSrvcVersionsRequired.MaiorVersao: 03
+18:51:41.303 
+(Date)28.11.2020 (Time)18:51.41,303
+dwSrvcVersionsRequired.MenorVersao: 303
+18:51:41.342 
+(Date)28.11.2020 (Time)18:51.41,342
+WFPOpen Finalizado. hResult: 0
+18:51:41.390 
+(Date)28.11.2020 (Time)18:51.41,390
+Entrei na funcao WFPSetTraceLevel ...
+18:51:41.390 
+(Date)28.11.2020 (Time)18:51.41,390
+hService: 1
+18:51:41.390 
+(Date)28.11.2020 (Time)18:51.41,390
+dwTraceLevel: 0
+18:51:41.390 
+(Date)28.11.2020 (Time)18:51.41,390
+WFPSetTraceLevel Finalizado. hResult: 0
+18:51:41.400 
+(Date)28.11.2020 (Time)18:51.41,400
+Executando o WFPRegister ...
+18:51:41.400 
+(Date)28.11.2020 (Time)18:51.41,400
+hService: 1
+18:51:41.400 
+(Date)28.11.2020 (Time)18:51.41,400
+dwEventClass: 0F
+18:51:41.400 
+(Date)28.11.2020 (Time)18:51.41,400
+hWndReg: A0900
+18:51:41.400 
+(Date)28.11.2020 (Time)18:51.41,400
+hWnd: A059C
+18:51:41.400 
+(Date)28.11.2020 (Time)18:51.41,400
+ReqID: 2
+18:51:41.400 
+(Date)28.11.2020 (Time)18:51.41,400
+WFPRegister Finalizado. hResult: 0
+18:51:44.379 
+(Date)28.11.2020 (Time)18:51.44,379
+Entrei na funcao WFPExecute ...
+18:51:44.379 
+(Date)28.11.2020 (Time)18:51.44,379
+hService: 1
+18:51:44.380 
+(Date)28.11.2020 (Time)18:51.44,380
+dwCommand: 807
+18:51:44.380 
+(Date)28.11.2020 (Time)18:51.44,380
+dwTimeOut: 30000
+18:51:44.380 
+(Date)28.11.2020 (Time)18:51.44,380
+hWnd: A0900
+18:51:44.380 
+(Date)28.11.2020 (Time)18:51.44,380
+ReqID: 3
+18:51:44.380 
+(Date)28.11.2020 (Time)18:51.44,380
+WFPExecute Finalizado. hResult: 0
+18:51:44.381 
+(Date)28.11.2020 (Time)18:51.44,381
+Entrei na funcao WFPExecute ...
+18:51:44.381 
+(Date)28.11.2020 (Time)18:51.44,381
+hService: 1
+18:51:44.381 
+(Date)28.11.2020 (Time)18:51.44,381
+dwCommand: 807
+18:51:44.381 
+(Date)28.11.2020 (Time)18:51.44,381
+dwTimeOut: 30000
+18:51:44.381 
+(Date)28.11.2020 (Time)18:51.44,381
+hWnd: A0900
+18:51:44.381 
+(Date)28.11.2020 (Time)18:51.44,381
+ReqID: 4
+18:51:44.381 
+(Date)28.11.2020 (Time)18:51.44,381
+WFPExecute Finalizado. hResult: 0
+18:51:44.381 
+(Date)28.11.2020 (Time)18:51.44,381
+Entrei na funcao WFPCancelAsyncRequest ...
+18:51:44.381 
+(Date)28.11.2020 (Time)18:51.44,381
+hService: 1
+18:51:44.382 
+(Date)28.11.2020 (Time)18:51.44,382
+ReqID: 0
+18:51:44.382 
+(Date)28.11.2020 (Time)18:51.44,382
+WFPCancelAsyncRequest Finalizado. hResult: 0
+18:51:44.383 
+(Date)28.11.2020 (Time)18:51.44,383
+Entrei na funcao WFPExecute ...
+18:51:44.383 
+(Date)28.11.2020 (Time)18:51.44,383
+hService: 1
+18:51:44.383 
+(Date)28.11.2020 (Time)18:51.44,383
+dwCommand: 807
+18:51:44.383 
+(Date)28.11.2020 (Time)18:51.44,383
+dwTimeOut: 30000
+18:51:44.383 
+(Date)28.11.2020 (Time)18:51.44,383
+hWnd: A0900
+18:51:44.383 
+(Date)28.11.2020 (Time)18:51.44,383
+ReqID: 5
+18:51:44.383 
+(Date)28.11.2020 (Time)18:51.44,383
+WFPExecute Finalizado. hResult: 0
+18:51:44.384 
+(Date)28.11.2020 (Time)18:51.44,384
+Entrei na funcao WFPExecute ...
+18:51:44.384 
+(Date)28.11.2020 (Time)18:51.44,384
+hService: 1
+18:51:44.384 
+(Date)28.11.2020 (Time)18:51.44,384
+dwCommand: 807
+18:51:44.384 
+(Date)28.11.2020 (Time)18:51.44,384
+dwTimeOut: 30000
+18:51:44.384 
+(Date)28.11.2020 (Time)18:51.44,384
+hWnd: A0900
+18:51:44.384 
+(Date)28.11.2020 (Time)18:51.44,384
+ReqID: 6
+18:51:44.384 
+(Date)28.11.2020 (Time)18:51.44,384
+WFPExecute Finalizado. hResult: 0
+18:51:44.385 
+(Date)28.11.2020 (Time)18:51.44,385
+Entrei na funcao WFPExecute ...
+18:51:44.385 
+(Date)28.11.2020 (Time)18:51.44,385
+hService: 1
+18:51:44.385 
+(Date)28.11.2020 (Time)18:51.44,385
+dwCommand: 808
+18:51:44.385 
+(Date)28.11.2020 (Time)18:51.44,385
+dwTimeOut: 30000
+18:51:44.385 
+(Date)28.11.2020 (Time)18:51.44,385
+hWnd: A0900
+18:51:44.385 
+(Date)28.11.2020 (Time)18:51.44,385
+ReqID: 7
+18:51:44.385 
+(Date)28.11.2020 (Time)18:51.44,385
+WFPExecute Finalizado. hResult: 0
+18:51:44.386 
+(Date)28.11.2020 (Time)18:51.44,386
+Entrei na funcao WFPExecute ...
+18:51:44.386 
+(Date)28.11.2020 (Time)18:51.44,386
+hService: 1
+18:51:44.386 
+(Date)28.11.2020 (Time)18:51.44,386
+dwCommand: 803
+18:51:44.386 
+(Date)28.11.2020 (Time)18:51.44,386
+dwTimeOut: 30000
+18:51:44.386 
+(Date)28.11.2020 (Time)18:51.44,386
+hWnd: A0900
+18:51:44.386 
+(Date)28.11.2020 (Time)18:51.44,386
+ReqID: 8
+18:51:44.386 
+(Date)28.11.2020 (Time)18:51.44,386
+WFPExecute Finalizado. hResult: 0
+18:51:44.387 
+(Date)28.11.2020 (Time)18:51.44,387
+Entrei na funcao WFPExecute ...
+18:51:44.387 
+(Date)28.11.2020 (Time)18:51.44,387
+hService: 1
+18:51:44.387 
+(Date)28.11.2020 (Time)18:51.44,387
+dwCommand: 801
+18:51:44.387 
+(Date)28.11.2020 (Time)18:51.44,387
+dwTimeOut: 30000
+18:51:44.387 
+(Date)28.11.2020 (Time)18:51.44,387
+hWnd: A0900
+18:51:44.387 
+(Date)28.11.2020 (Time)18:51.44,387
+ReqID: 9
+18:51:44.387 
+(Date)28.11.2020 (Time)18:51.44,387
+WFPExecute Finalizado. hResult: 0
+18:51:49.786 
+(Date)28.11.2020 (Time)18:51.49,786
+Entrei na funcao WFPGetInfo
+18:51:49.786 
+(Date)28.11.2020 (Time)18:51.49,786
+Entrei na funcao WFPExecute ...
+18:51:49.786 
+(Date)28.11.2020 (Time)18:51.49,786
+hService: 1
+18:51:49.786 
+(Date)28.11.2020 (Time)18:51.49,786
+dwCategory: 801
+18:51:49.786 
+(Date)28.11.2020 (Time)18:51.49,786
+dwTimeOut: 30000
+18:51:49.786 
+(Date)28.11.2020 (Time)18:51.49,786
+hWnd: A0900
+18:51:49.786 
+(Date)28.11.2020 (Time)18:51.49,786
+ReqID: 10
+18:51:49.786 
+(Date)28.11.2020 (Time)18:51.49,786
+WFPGetInfo Finalizado. hResult: 0
+18:51:49.787 
+(Date)28.11.2020 (Time)18:51.49,787
+Entrei na funcao WFPGetInfo
+18:51:49.787 
+(Date)28.11.2020 (Time)18:51.49,787
+Entrei na funcao WFPExecute ...
+18:51:49.787 
+(Date)28.11.2020 (Time)18:51.49,787
+hService: 1
+18:51:49.787 
+(Date)28.11.2020 (Time)18:51.49,787
+dwCategory: 802
+18:51:49.787 
+(Date)28.11.2020 (Time)18:51.49,787
+dwTimeOut: 30000
+18:51:49.787 
+(Date)28.11.2020 (Time)18:51.49,787
+hWnd: A0900
+18:51:49.787 
+(Date)28.11.2020 (Time)18:51.49,787
+ReqID: 11
+18:51:49.787 
+(Date)28.11.2020 (Time)18:51.49,787
+WFPGetInfo Finalizado. hResult: 0
+18:53:12.950 
+(Date)28.11.2020 (Time)18:53.12,950
+Entrei na funcao WFPClose ...
+18:53:12.950 
+(Date)28.11.2020 (Time)18:53.12,950
+hService: 1
+18:53:13.011 APICALL: WFSCleanUp: Entered
+18:53:13.011 APICALL: WFSCleanUp: Exit
+18:53:12.950 
+(Date)28.11.2020 (Time)18:53.12,950
+hWnd: C7071A
+18:53:12.950 
+(Date)28.11.2020 (Time)18:53.12,950
+ReqID: 12
+18:53:13.006 
+(Date)28.11.2020 (Time)18:53.13,06
+WFPClose Finalizado. hResult: 0
+18:53:13.006 
+(Date)28.11.2020 (Time)18:53.13,06
+Entrei na funcao WFPUnloadService ...
+18:53:13.006 
+(Date)28.11.2020 (Time)18:53.13,06
+WFPUnloadService Finalizado. hResult: 0
+18:54:48.231 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:54:48.231 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:54:48.231 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:54:48.231 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:54:48.231 OpenKey returning *phkResult x24c
+18:54:48.231 RegOpenKeyEx( x24c, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:54:48.231 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:54:48.231 OpenKey returning *phkResult x250
+18:54:48.231 RegOpenKeyEx( x80000002, SOFTWARE\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:54:48.231 OpenKey(HKEY_LOCAL_MACHINE,WOSA_LOCAL_MACHINE_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2253)
+18:54:48.231 OpenKey returning *phkResult x24c
+18:54:48.231 RegOpenKeyEx( x24c, SERVICE_PROVIDERS\Sensores_Conceito )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:54:48.231 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:54:48.231 OpenKey returning *phkResult x254
+18:54:50.121 
+(Date)28.11.2020 (Time)18:54.50,121
+Executando o WFPOpen ...
+18:54:50.116 RegOpenKeyEx( x80000001, XFS )) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:54:50.116 OpenKey( HKEY_CURRENT_USER,WOSA_CURRENT_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot) failed (reason=2,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2168)
+18:54:50.121 
+(Date)28.11.2020 (Time)18:54.50,121
+lpszLogicalName (SIU): Sensores
+18:54:50.121 
+(Date)28.11.2020 (Time)18:54.50,121
+hApp: 870A068
+18:54:50.116 RegOpenKeyEx( x80000003, .DEFAULT\XFS )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:54:50.116 OpenKey(HKEY_USERS,WOSA_USER_KEY_NAME,0,KEY_READ | KEY_WRITE,&hKeyWosaRoot ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2210)
+18:54:50.121 
+(Date)28.11.2020 (Time)18:54.50,121
+lpszAppID: BRXFSTEST
+18:54:50.121 
+(Date)28.11.2020 (Time)18:54.50,121
+dwTraceLevel: 0
+18:54:50.116 OpenKey returning *phkResult x250
+18:54:50.121 
+(Date)28.11.2020 (Time)18:54.50,121
+dwTimeOut: 5000
+18:54:50.117 RegOpenKeyEx( x250, LOGICAL_SERVICES\Sensores )) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=384)
+18:54:50.121 
+(Date)28.11.2020 (Time)18:54.50,121
+hWnd: 1D04FE
+18:54:50.117 OpenKey( hKeyT,lpszSubKey,0,KEY_READ | KEY_WRITE,phkResult ) failed (reason=5,file=d:\buffington\development\cen xfs manager\source\xfs_conf.cpp,line=2341)
+18:54:50.117 OpenKey returning *phkResult x24c
+18:54:50.121 
+(Date)28.11.2020 (Time)18:54.50,121
+ReqID: 1
+18:54:50.121 
+(Date)28.11.2020 (Time)18:54.50,121
+hProvider: 7800E018
+18:54:50.121 
+(Date)28.11.2020 (Time)18:54.50,121
+dwSPIVersionsRequired: 101FF03
+18:54:50.121 
+(Date)28.11.2020 (Time)18:54.50,121
+dwSPIVersionsRequired.MaiorVersao: FF03
+18:54:50.121 
+(Date)28.11.2020 (Time)18:54.50,121
+dwSPIVersionsRequired.MenorVersao: 101
+18:54:50.121 
+(Date)28.11.2020 (Time)18:54.50,121
+dwSrvcVersionsRequired.MaiorVersao: 03
+18:54:50.121 
+(Date)28.11.2020 (Time)18:54.50,121
+dwSrvcVersionsRequired.MenorVersao: 303
+18:54:50.154 
+(Date)28.11.2020 (Time)18:54.50,154
+WFPOpen Finalizado. hResult: 0
+18:54:50.171 
+(Date)28.11.2020 (Time)18:54.50,171
+Entrei na funcao WFPSetTraceLevel ...
+18:54:50.171 
+(Date)28.11.2020 (Time)18:54.50,171
+hService: 1
+18:54:50.171 
+(Date)28.11.2020 (Time)18:54.50,171
+dwTraceLevel: 0
+18:54:50.171 
+(Date)28.11.2020 (Time)18:54.50,171
+WFPSetTraceLevel Finalizado. hResult: 0
+18:54:50.181 
+(Date)28.11.2020 (Time)18:54.50,181
+Executando o WFPRegister ...
+18:54:50.181 
+(Date)28.11.2020 (Time)18:54.50,181
+hService: 1
+18:54:50.181 
+(Date)28.11.2020 (Time)18:54.50,181
+dwEventClass: 0F
+18:54:50.181 
+(Date)28.11.2020 (Time)18:54.50,181
+hWndReg: 1E04FE
+18:54:50.181 
+(Date)28.11.2020 (Time)18:54.50,181
+hWnd: 390A88
+18:54:50.181 
+(Date)28.11.2020 (Time)18:54.50,181
+ReqID: 2
+18:54:50.181 
+(Date)28.11.2020 (Time)18:54.50,181
+WFPRegister Finalizado. hResult: 0
+18:54:51.420 
+(Date)28.11.2020 (Time)18:54.51,420
+Entrei na funcao WFPExecute ...
+18:54:51.421 
+(Date)28.11.2020 (Time)18:54.51,421
+hService: 1
+18:54:51.421 
+(Date)28.11.2020 (Time)18:54.51,421
+dwCommand: 807
+18:54:51.421 
+(Date)28.11.2020 (Time)18:54.51,421
+dwTimeOut: 30000
+18:54:51.421 
+(Date)28.11.2020 (Time)18:54.51,421
+hWnd: 1E04FE
+18:54:51.421 
+(Date)28.11.2020 (Time)18:54.51,421
+ReqID: 3
+18:54:51.421 
+(Date)28.11.2020 (Time)18:54.51,421
+WFPExecute Finalizado. hResult: 0
+18:54:51.421 
+(Date)28.11.2020 (Time)18:54.51,421
+Entrei na funcao WFPExecute ...
+18:54:51.421 
+(Date)28.11.2020 (Time)18:54.51,421
+hService: 1
+18:54:51.422 
+(Date)28.11.2020 (Time)18:54.51,422
+dwCommand: 807
+18:54:51.422 
+(Date)28.11.2020 (Time)18:54.51,422
+dwTimeOut: 30000
+18:54:51.422 
+(Date)28.11.2020 (Time)18:54.51,422
+hWnd: 1E04FE
+18:54:51.422 
+(Date)28.11.2020 (Time)18:54.51,422
+ReqID: 4
+18:54:51.422 
+(Date)28.11.2020 (Time)18:54.51,422
+WFPExecute Finalizado. hResult: 0
+18:54:51.422 
+(Date)28.11.2020 (Time)18:54.51,422
+Entrei na funcao WFPCancelAsyncRequest ...
+18:54:51.422 
+(Date)28.11.2020 (Time)18:54.51,422
+hService: 1
+18:54:51.422 
+(Date)28.11.2020 (Time)18:54.51,422
+ReqID: 0
+18:54:51.422 
+(Date)28.11.2020 (Time)18:54.51,422
+WFPCancelAsyncRequest Finalizado. hResult: 0
+18:54:51.423 
+(Date)28.11.2020 (Time)18:54.51,423
+Entrei na funcao WFPExecute ...
+18:54:51.423 
+(Date)28.11.2020 (Time)18:54.51,423
+hService: 1
+18:54:51.423 
+(Date)28.11.2020 (Time)18:54.51,423
+dwCommand: 807
+18:54:51.423 
+(Date)28.11.2020 (Time)18:54.51,423
+dwTimeOut: 30000
+18:54:51.423 
+(Date)28.11.2020 (Time)18:54.51,423
+hWnd: 1E04FE
+18:54:51.423 
+(Date)28.11.2020 (Time)18:54.51,423
+ReqID: 5
+18:54:51.423 
+(Date)28.11.2020 (Time)18:54.51,423
+WFPExecute Finalizado. hResult: 0
+18:54:51.424 
+(Date)28.11.2020 (Time)18:54.51,424
+Entrei na funcao WFPExecute ...
+18:54:51.424 
+(Date)28.11.2020 (Time)18:54.51,424
+hService: 1
+18:54:51.424 
+(Date)28.11.2020 (Time)18:54.51,424
+dwCommand: 807
+18:54:51.424 
+(Date)28.11.2020 (Time)18:54.51,424
+dwTimeOut: 30000
+18:54:51.424 
+(Date)28.11.2020 (Time)18:54.51,424
+hWnd: 1E04FE
+18:54:51.424 
+(Date)28.11.2020 (Time)18:54.51,424
+ReqID: 6
+18:54:51.424 
+(Date)28.11.2020 (Time)18:54.51,424
+WFPExecute Finalizado. hResult: 0
+18:54:51.424 
+(Date)28.11.2020 (Time)18:54.51,424
+Entrei na funcao WFPExecute ...
+18:54:51.424 
+(Date)28.11.2020 (Time)18:54.51,424
+hService: 1
+18:54:51.424 
+(Date)28.11.2020 (Time)18:54.51,424
+dwCommand: 808
+18:54:51.424 
+(Date)28.11.2020 (Time)18:54.51,424
+dwTimeOut: 30000
+18:54:51.424 
+(Date)28.11.2020 (Time)18:54.51,424
+hWnd: 1E04FE
+18:54:51.424 
+(Date)28.11.2020 (Time)18:54.51,424
+ReqID: 7
+18:54:51.425 
+(Date)28.11.2020 (Time)18:54.51,425
+WFPExecute Finalizado. hResult: 0
+18:54:51.425 
+(Date)28.11.2020 (Time)18:54.51,425
+Entrei na funcao WFPExecute ...
+18:54:51.425 
+(Date)28.11.2020 (Time)18:54.51,425
+hService: 1
+18:54:51.425 
+(Date)28.11.2020 (Time)18:54.51,425
+dwCommand: 803
+18:54:51.425 
+(Date)28.11.2020 (Time)18:54.51,425
+dwTimeOut: 30000
+18:54:51.425 
+(Date)28.11.2020 (Time)18:54.51,425
+hWnd: 1E04FE
+18:54:51.425 
+(Date)28.11.2020 (Time)18:54.51,425
+ReqID: 8
+18:54:51.425 
+(Date)28.11.2020 (Time)18:54.51,425
+WFPExecute Finalizado. hResult: 0
+18:54:51.426 
+(Date)28.11.2020 (Time)18:54.51,426
+Entrei na funcao WFPExecute ...
+18:54:51.426 
+(Date)28.11.2020 (Time)18:54.51,426
+hService: 1
+18:54:51.426 
+(Date)28.11.2020 (Time)18:54.51,426
+dwCommand: 801
+18:54:51.426 
+(Date)28.11.2020 (Time)18:54.51,426
+dwTimeOut: 30000
+18:54:51.426 
+(Date)28.11.2020 (Time)18:54.51,426
+hWnd: 1E04FE
+18:54:51.426 
+(Date)28.11.2020 (Time)18:54.51,426
+ReqID: 9
+18:54:51.426 
+(Date)28.11.2020 (Time)18:54.51,426
+WFPExecute Finalizado. hResult: 0
+18:54:57.128 
+(Date)28.11.2020 (Time)18:54.57,128
+Entrei na funcao WFPGetInfo
+18:54:57.128 
+(Date)28.11.2020 (Time)18:54.57,128
+Entrei na funcao WFPExecute ...
+18:54:57.128 
+(Date)28.11.2020 (Time)18:54.57,128
+hService: 1
+18:54:57.128 
+(Date)28.11.2020 (Time)18:54.57,128
+dwCategory: 801
+18:54:57.128 
+(Date)28.11.2020 (Time)18:54.57,128
+dwTimeOut: 30000
+18:54:57.128 
+(Date)28.11.2020 (Time)18:54.57,128
+hWnd: 1E04FE
+18:54:57.128 
+(Date)28.11.2020 (Time)18:54.57,128
+ReqID: 10
+18:54:57.128 
+(Date)28.11.2020 (Time)18:54.57,128
+WFPGetInfo Finalizado. hResult: 0
+18:54:57.129 
+(Date)28.11.2020 (Time)18:54.57,129
+Entrei na funcao WFPGetInfo
+18:54:57.129 
+(Date)28.11.2020 (Time)18:54.57,129
+Entrei na funcao WFPExecute ...
+18:54:57.129 
+(Date)28.11.2020 (Time)18:54.57,129
+hService: 1
+18:54:57.129 
+(Date)28.11.2020 (Time)18:54.57,129
+dwCategory: 802
+18:54:57.129 
+(Date)28.11.2020 (Time)18:54.57,129
+dwTimeOut: 30000
+18:54:57.129 
+(Date)28.11.2020 (Time)18:54.57,129
+hWnd: 1E04FE
+18:54:57.129 
+(Date)28.11.2020 (Time)18:54.57,129
+ReqID: 11
+18:54:57.129 
+(Date)28.11.2020 (Time)18:54.57,129
+WFPGetInfo Finalizado. hResult: 0
+18:55:46.776 
+(Date)28.11.2020 (Time)18:55.46,776
+Entrei na funcao WFPClose ...
+18:55:46.776 
+(Date)28.11.2020 (Time)18:55.46,776
+hService: 1
+18:55:46.844 APICALL: WFSCleanUp: Entered
+18:55:46.844 APICALL: WFSCleanUp: Exit
+18:55:46.776 
+(Date)28.11.2020 (Time)18:55.46,776
+hWnd: 5A09F8
+18:55:46.776 
+(Date)28.11.2020 (Time)18:55.46,776
+ReqID: 12
+18:55:46.839 
+(Date)28.11.2020 (Time)18:55.46,839
+WFPClose Finalizado. hResult: 0
+18:55:46.839 
+(Date)28.11.2020 (Time)18:55.46,839
+Entrei na funcao WFPUnloadService ...
+18:55:46.839 
+(Date)28.11.2020 (Time)18:55.46,839
+WFPUnloadService Finalizado. hResult: 0

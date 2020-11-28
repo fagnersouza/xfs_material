@@ -1,17 +1,32 @@
 #include "CDeviceAccess.h"
 #include <XFSSIU.H>
-#include <Sisemu.h>
 
 HRESULT CDeviceAccess::DoDeviceOpen(CCommand* cmd)
 {
     HRESULT hResult = WFS_ERR_HARDWARE_ERROR;
 
-    DWORD res = SisOpen(const_cast <LPSTR>("Simulador"));
+    DWORD deviceResult = SisOpen(const_cast <LPSTR>("Simulador"));
 
-    if (res != SISEMU_OK)
+    if (deviceResult != SISEMU_OK)
         return hResult;
 
-    //TODO:
+    
+    deviceResult = SisCap(&m_caps);
+
+    if (deviceResult != SISEMU_OK) {
+        SisClose();
+        return hResult;
+    }
+
+    SISEMUSTATUS status;
+    deviceResult = SisStatus(&status);
+
+    if (deviceResult != SISEMU_OK) {
+        SisClose();
+        return hResult;
+    }
+
+    //TODO: criar thread para resolver EnableEvents
 
     hResult = WFS_SUCCESS;
 
@@ -21,8 +36,21 @@ HRESULT CDeviceAccess::DoDeviceOpen(CCommand* cmd)
 HRESULT CDeviceAccess::DoDeviceClose(CCommand* cmd)
 {
     HRESULT hResult = WFS_ERR_HARDWARE_ERROR;
+    //TODO: párar thread
 
-    hResult = WFS_SUCCESS;
+    DWORD deviceResult = SisClose();
+
+    if (deviceResult == SISEMU_OK)
+        hResult = WFS_SUCCESS;
+
+    LPWFSRESULT res = NULL;
+    HRESULT allocateBufferResult = allocateBuffer(&res);
+
+    if (allocateBufferResult == WFS_SUCCESS) {
+        setCommonData(res, cmd);
+        cmd->setResult(res);
+        res->hResult = hResult;
+    }
 
     return hResult;
 }
@@ -30,18 +58,18 @@ HRESULT CDeviceAccess::DoDeviceClose(CCommand* cmd)
 HRESULT CDeviceAccess::DoDeviceReset(CCommand* cmd)
 {
     HRESULT hResult = WFS_ERR_HARDWARE_ERROR;
+    
+    DWORD deviceResult = SisReset();
 
-    //faz o trampo que precisa junto ao dispositivo
-    Sleep(1000);
+    if (deviceResult == SISEMU_OK)
+        hResult = WFS_SUCCESS;
 
     LPWFSRESULT res = NULL;
 
     if (allocateBuffer(&res) == WFS_SUCCESS) {
         setCommonData(res, cmd);
-        hResult = WFS_SUCCESS;
-        res->hResult = hResult;
-
         cmd->setResult(res);
+        res->hResult = hResult;        
     }
 
     return hResult;
@@ -122,6 +150,66 @@ HRESULT CDeviceAccess::DoDeviceSetGuidLight(CCommand* cmd)
 HRESULT CDeviceAccess::GetDeviceStatus(CCommand* cmd)
 {
     HRESULT hResult = WFS_ERR_HARDWARE_ERROR;
+    LPWFSRESULT res = NULL;
+
+    //Aloca area de resultado e seta informacoes default
+    HRESULT allocateBufferResult = this->allocateBuffer(&res);
+
+    if (allocateBufferResult != WFS_SUCCESS)
+        return hResult;
+
+    setCommonData(res, cmd);
+
+    //Consulta dispositivo
+    SISEMUSTATUS status;
+    memset(&status, 0x00, sizeof(SISEMUSTATUS));
+    DWORD deviceResult = SisStatus(&status);
+
+    if (deviceResult != SISEMU_OK) {
+        cmd->setResult(res);
+        res->hResult = hResult;
+        
+        return hResult;
+    }
+
+    //Monta área de resposta
+    WFSSIUSTATUS xfsStatus;
+    memset(&xfsStatus, 0x00, sizeof(WFSSIUSTATUS));
+
+    //Sensors
+    for (int i = 0; i <= WFS_SIU_SENSORS_MAX;i++) {
+        xfsStatus.fwSensors[i] = status.Sensors[i];
+    }
+
+    //Doors
+    for (int i = 0; i <= WFS_SIU_DOORS_MAX; i++) {
+        xfsStatus.fwDoors[i] = status.Doors[i];
+    }
+
+    //Auxiliaries
+    for (int i = 0; i <= WFS_SIU_AUXILIARIES_MAX; i++) {
+        xfsStatus.fwAuxiliaries[i] = status.Auxiliaries[i];
+    }
+
+    //GuidLights
+    for (int i = 0; i <= WFS_SIU_GUIDLIGHTS_MAX; i++) {
+        xfsStatus.fwGuidLights[i] = status.Guidlights[i];
+    }
+
+    //Indicators
+    for (int i = 0; i <= WFS_SIU_INDICATORS_MAX; i++) {
+        xfsStatus.fwIndicators[i] = status.Indicators[i];
+    }
+    
+    //Aloca area de dados adicionais
+    allocateBufferResult = allocateMoreBuffer(sizeof(WFSSIUSTATUS), res, &res->lpBuffer);
+
+    if (allocateBufferResult == WFS_SUCCESS) {
+        memcpy(res->lpBuffer, &xfsStatus, sizeof(WFSSIUSTATUS));
+        cmd->setResult(res);
+        hResult = WFS_SUCCESS;
+        res->hResult = hResult;
+    }
 
     return hResult;
 }
@@ -129,6 +217,66 @@ HRESULT CDeviceAccess::GetDeviceStatus(CCommand* cmd)
 HRESULT CDeviceAccess::GetDeviceCapabilities(CCommand* cmd)
 {
     HRESULT hResult = WFS_ERR_HARDWARE_ERROR;
+    LPWFSRESULT res = NULL;
+
+    //Aloca area de resultado e seta informacoes default
+    HRESULT allocateBufferResult = this->allocateBuffer(&res);
+
+    if (allocateBufferResult != WFS_SUCCESS)
+        return hResult;
+
+    setCommonData(res, cmd);
+
+    //Consulta dispositivo
+    SISEMUCAP cap;
+    memset(&cap, 0x00, sizeof(SISEMUCAP));
+    DWORD deviceResult = SisCap(&cap);
+
+    if (deviceResult != SISEMU_OK) {
+        cmd->setResult(res);
+        res->hResult = hResult;
+
+        return hResult;
+    }
+
+    //Monta área de resposta
+    WFSSIUSTATUS xfsStatus;
+    memset(&xfsStatus, 0x00, sizeof(WFSSIUSTATUS));
+
+    //Sensors
+    for (int i = 0; i <= WFS_SIU_SENSORS_MAX; i++) {
+        xfsStatus.fwSensors[i] = cap.Sensors[i];
+    }
+
+    //Doors
+    for (int i = 0; i <= WFS_SIU_DOORS_MAX; i++) {
+        xfsStatus.fwDoors[i] = cap.Doors[i];
+    }
+
+    //Auxiliaries
+    for (int i = 0; i <= WFS_SIU_AUXILIARIES_MAX; i++) {
+        xfsStatus.fwAuxiliaries[i] = cap.Auxiliaries[i];
+    }
+
+    //GuidLights
+    for (int i = 0; i <= WFS_SIU_GUIDLIGHTS_MAX; i++) {
+        xfsStatus.fwGuidLights[i] = cap.Guidlights[i];
+    }
+
+    //Indicators
+    for (int i = 0; i <= WFS_SIU_INDICATORS_MAX; i++) {
+        xfsStatus.fwIndicators[i] = cap.Indicators[i];
+    }
+
+    //Aloca area de dados adicionais
+    allocateBufferResult = allocateMoreBuffer(sizeof(WFSSIUSTATUS), res, &res->lpBuffer);
+
+    if (allocateBufferResult == WFS_SUCCESS) {
+        memcpy(res->lpBuffer, &xfsStatus, sizeof(WFSSIUSTATUS));
+        cmd->setResult(res);
+        hResult = WFS_SUCCESS;
+        res->hResult = hResult;
+    }
 
     return hResult;
 }
@@ -140,6 +288,12 @@ HRESULT CDeviceAccess::allocateBuffer(LPWFSRESULT* bufferPointer)
     if (res != WFS_SUCCESS) {
         (*bufferPointer) = NULL;
     }
+
+    return res;
+}
+
+HRESULT CDeviceAccess::allocateMoreBuffer(ULONG size, LPVOID parent, LPVOID* buffer) {
+    HRESULT res = WFMAllocateMore(size, parent, buffer);
 
     return res;
 }

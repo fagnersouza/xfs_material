@@ -1,6 +1,8 @@
 #pragma once
 #include <Windows.h>
 #include "CCommand.h"
+#include <Sisemu.h>
+
 class CDeviceAccess
 {
 public:
@@ -18,8 +20,12 @@ public:
 
 	//Funções utilitárias / suporte
 	HRESULT allocateBuffer(LPWFSRESULT* bufferPointer);
+	HRESULT allocateMoreBuffer(ULONG size, LPVOID parent, LPVOID* buffer);
 	void setCommonData(LPWFSRESULT result, CCommand* cmd);
 	void postMessageToWindow(CCommand* cmd);
 	void notifyEvent(HWND Wnd, HSERVICE hService, int typeEvent, int eventID, WORD wBuffer);
+
+private:
+	SISEMUCAP m_caps;
 };
 
