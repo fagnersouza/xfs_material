@@ -98,9 +98,28 @@ HRESULT CServiceProvider::wfpClose(CCommand* cmd)
 
     delete session;
 
-    //TODO: cancelar o registro de todas as janelas do serviçe que solicitou o close
+    deregisterAllWindows(cmd->getHService());
     
     return WFS_SUCCESS;
+}
+
+void CServiceProvider::deregisterAllWindows(HSERVICE hService) {
+    //Percorrer a lista de handles
+    vector<RegisteredWindow*>::iterator it = m_registeredWindows.begin();
+    RegisteredWindow* regWnd;
+
+    while (it != m_registeredWindows.end()) {
+        //Se a janela foi registrada pelo serviço informado
+        if ((*it)->Service == hService) {
+            //remove janela registrada da lista
+            regWnd = (*it);
+            it = m_registeredWindows.erase(it);
+            delete regWnd;
+        }
+        else {
+            it++;
+        }
+    }
 }
 
 HRESULT CServiceProvider::wfpCancel(CCommand* cmd) {
@@ -129,13 +148,6 @@ HRESULT CServiceProvider::wfpCancel(CCommand* cmd) {
     }
 
     m_mutCommands->release();
-
-    //TODO: verificar se é preciso controlar quantidade de comando em execução
-    //if (cmd->getReqId() == 0) {
-    //    while (getNumberOfCommandsExecuting() > 0) {
-    //        Sleep(32L);
-    //    }
-    //}
 
     return hResult;
 }
@@ -245,11 +257,9 @@ HRESULT CServiceProvider::wfpDeregister(CCommand* cmd)
                 it++;
             }
 
-m_registeredWindows.erase(it);
-freeArea = true;
-        }
-
-        //TODO: verificar complicacoes do LOCK/UNLOCK
+            m_registeredWindows.erase(it);
+            freeArea = true;
+        }        
 
         if (freeArea) {
             delete registeredWindow;
@@ -583,6 +593,7 @@ void* CCommandExecuter::run()
         break;
     }
 
+    //Aloca WFSRESULT se necessário
     if (this->m_command->getResult() == NULL) {
         LPWFSRESULT res = NULL;
         
@@ -616,4 +627,81 @@ void CCommandExecuter::start()
 {
     m_sp->addNumberOfCommandsExecuting();
     CThread::start();
+}
+
+void CServiceProvider::notifyEvent(HRESULT hResult, int typeEvent, int eventID, LPVOID lpBuffer, int bufferSize) {
+    SYSTEMTIME time;
+    GetSystemTime(&time);
+    DWORD eventClass = mapEvent(typeEvent);
+
+    if (!this->m_registeredWindows.empty()) {
+        vector<RegisteredWindow*>::iterator it = this->m_registeredWindows.begin();
+
+        while (it != this->m_registeredWindows.end()) {
+            RegisteredWindow* tmpRegisteredWindow = (*it);
+
+            if ((tmpRegisteredWindow->EventClass & eventClass) == eventClass) {
+                HRESULT res;
+                LPWFSRESULT result = NULL;
+                res = allocateBuffer(&result);
+
+                if (res != WFS_SUCCESS) {
+                    TRACE("notifyEvent: erro no allocateBuffer!");
+                    return;
+                }
+
+                result->hResult = hResult;
+                result->hService = tmpRegisteredWindow->Service;
+                result->RequestID = NULL;
+                result->tsTimestamp = time;
+                result->u.dwEventID = eventID;
+
+                if (lpBuffer != NULL && bufferSize > 0) {
+                    res = allocateMoreBuffer(bufferSize, result, &result->lpBuffer);
+
+                    if (res == WFS_SUCCESS && result->lpBuffer != NULL) {
+                        memcpy(result->lpBuffer, lpBuffer, bufferSize);
+                    }
+                }
+                else {
+                    result->lpBuffer = NULL;
+                }
+
+                while (PostMessage(tmpRegisteredWindow->WndReg, typeEvent, 0x00, (LPARAM)result) == FALSE) {
+                    Sleep(32L);
+                }
+
+            }
+            it++;
+        }
+    }
+}
+
+HRESULT CServiceProvider::allocateMoreBuffer(ULONG size, LPVOID parent, LPVOID* buffer) {
+    HRESULT res = WFMAllocateMore(size, parent, buffer);
+
+    return res;
+}
+
+int CServiceProvider::mapEvent(int typeEvent) {
+    int ret = 0;
+
+    //WFS_EXECUTE_EVENT
+    //WFS_SERVICE_EVENT
+    //WFS_USER_EVENT
+    //WFS_SYSTEM_EVENT
+
+    if (typeEvent == WFS_SERVICE_EVENT)
+        ret |= SERVICE_EVENTS;    
+
+    if(typeEvent == WFS_USER_EVENT)
+        ret |= USER_EVENTS;
+
+    if (typeEvent == WFS_SYSTEM_EVENT)
+        ret |= SYSTEM_EVENTS;
+
+    if (typeEvent == WFS_EXECUTE_EVENT)
+        ret |= EXECUTE_EVENTS;
+
+    return ret;
 }

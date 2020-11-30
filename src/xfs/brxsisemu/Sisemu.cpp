@@ -68,7 +68,7 @@ DWORD extern WINAPI SisStatus(LPSISEMUSTATUS status) {
         return result;
 
     for (unsigned int i = 0; i < sensors.length(); i++) {
-        status->Sensors[i] = (WORD)sensors[i];
+        status->Sensors[i] = (WORD)sensors[i] - 48;
     }
 
     //Auxiliares
@@ -78,7 +78,7 @@ DWORD extern WINAPI SisStatus(LPSISEMUSTATUS status) {
         return result;
 
     for (unsigned int i = 0; i < auxiliares.length(); i++) {
-        status->Auxiliaries[i] = (WORD)auxiliares[i];
+        status->Auxiliaries[i] = (WORD)auxiliares[i] - 48;
     }
 
     //Doors
@@ -88,7 +88,7 @@ DWORD extern WINAPI SisStatus(LPSISEMUSTATUS status) {
         return result;
 
     for (unsigned int i = 0; i < doors.length(); i++) {
-        status->Doors[i] = (WORD)doors[i];
+        status->Doors[i] = (WORD)doors[i] - 48;
     }
 
     //Guidlights
@@ -98,7 +98,7 @@ DWORD extern WINAPI SisStatus(LPSISEMUSTATUS status) {
         return result;
 
     for (unsigned int i = 0; i < guidlights.length(); i++) {
-        status->Guidlights[i] = (WORD)guidlights[i];
+        status->Guidlights[i] = (WORD)guidlights[i] - 48;
     }
 
     //Indicators
@@ -108,7 +108,7 @@ DWORD extern WINAPI SisStatus(LPSISEMUSTATUS status) {
         return result;
 
     for (unsigned int i = 0; i < indicators.length(); i++) {
-        status->Indicators[i] = (WORD)indicators[i];
+        status->Indicators[i] = (WORD)indicators[i] - 48;
     }
 
     //Extra
@@ -144,7 +144,7 @@ DWORD extern WINAPI SisCap(LPSISEMUCAP cap) {
         return result;
     
     for (unsigned int i = 0; i < sensors.length(); i++) {
-        cap->Sensors[i] = (WORD)sensors[i];
+        cap->Sensors[i] = (WORD)sensors[i] - 48;
     }
 
     //Auxiliares
@@ -154,7 +154,7 @@ DWORD extern WINAPI SisCap(LPSISEMUCAP cap) {
         return result;
 
     for (unsigned int i = 0; i < auxiliares.length(); i++) {
-        cap->Auxiliaries[i] = (WORD)auxiliares[i];
+        cap->Auxiliaries[i] = (WORD)auxiliares[i] - 48;
     }
 
     //Doors
@@ -164,7 +164,7 @@ DWORD extern WINAPI SisCap(LPSISEMUCAP cap) {
         return result;
 
     for (unsigned int i = 0; i < doors.length(); i++) {
-        cap->Doors[i] = (WORD)doors[i];
+        cap->Doors[i] = (WORD)doors[i] - 48;
     }
 
     //Guidlights
@@ -174,7 +174,7 @@ DWORD extern WINAPI SisCap(LPSISEMUCAP cap) {
         return result;
 
     for (unsigned int i = 0; i < guidlights.length(); i++) {
-        cap->Guidlights[i] = (WORD)guidlights[i];
+        cap->Guidlights[i] = (WORD)guidlights[i] - 48;
     }
 
     //Indicators
@@ -184,7 +184,7 @@ DWORD extern WINAPI SisCap(LPSISEMUCAP cap) {
         return result;
 
     for (unsigned int i = 0; i < indicators.length(); i++) {
-        cap->Indicators[i] = (WORD)indicators[i];
+        cap->Indicators[i] = (WORD)indicators[i] - 48;
     }
 
     //Extra
@@ -200,6 +200,8 @@ DWORD extern WINAPI SisCap(LPSISEMUCAP cap) {
 }
 
 DWORD extern WINAPI SisReset() {
+    Sleep(3 * 1000);
+    
     wstring key_path = L"SOFTWARE\\WOW6432Node\\XFS\\PHYSICAL_SERVICES\\brxsisemu" + wstring(L"\\Reset");
 
     DWORD result = CRegistry::ReadValueDw(key_path.c_str(), TEXT("Result"));

@@ -48,6 +48,7 @@ public:
 	//Funções que resolvem os comandos WFP
 	HRESULT wfpOpen(CCommand* cmd);
 	HRESULT wfpClose(CCommand* cmd);
+	void deregisterAllWindows(HSERVICE hService);
 	HRESULT wfpCancel(CCommand* cmd);
 	RegisteredWindow* findRegisteredWindowsByHandle(HWND Wnd);
 	RegisteredWindow* findRegisteredWindowsByService(HSERVICE hService);
@@ -76,6 +77,9 @@ public:
 	void substractNumberOfCommandsExecuting();
 
 	void* run();
+	void notifyEvent(HRESULT hResult, int typeEvent, int eventID, LPVOID lpBuffer, int bufferSize);
+	HRESULT allocateMoreBuffer(ULONG size, LPVOID parent, LPVOID* buffer);
+	int mapEvent(int typeEvent);
 };
 
 class CCommandExecuter : public CThread{

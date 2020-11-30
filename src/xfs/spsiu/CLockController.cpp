@@ -54,7 +54,7 @@ void CLockController::setLockerWindowHandle(HSERVICE hService, HWND windowHandle
 
 int CLockController::lock(HSERVICE hService, HWND windowHandle, long timeout)
 {
-    //TODO: mutex
+    
     HRESULT hResult = WFS_ERR_INTERNAL_ERROR;
 
     //Verifica se o processo requisitante não detém a trava atual ou se está esperando na fila
@@ -92,8 +92,6 @@ int CLockController::lock(HSERVICE hService, HWND windowHandle, long timeout)
             CLockController::removeRequest(hService);
         }
     }
-
-    //TODO: mutex
 
     return hResult;
 }

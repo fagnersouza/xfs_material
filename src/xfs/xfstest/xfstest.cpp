@@ -297,7 +297,7 @@ void PrintSiuStatus(LPWFSSIUSTATUS status)
     //Sensors
     aux.clear();
     for (int i = 0; i <= WFS_SIU_SENSORS_MAX; i++) {
-        int st = (int)status->fwSensors[i] - 48;
+        int st = (int)status->fwSensors[i];
         aux.append(to_string(st));
     }
     sprintf_s(buf, "%s fwSensors: %s", CONSOLE_TAB, aux.c_str());
@@ -306,7 +306,7 @@ void PrintSiuStatus(LPWFSSIUSTATUS status)
     //Doors
     aux.clear();
     for (int i = 0; i <= WFS_SIU_DOORS_MAX; i++) {
-        int st = (int)status->fwDoors[i] - 48;
+        int st = (int)status->fwDoors[i];
         aux.append(to_string(st));
     }
     sprintf_s(buf, "%s fwDoors: %s", CONSOLE_TAB, aux.c_str());
@@ -315,7 +315,7 @@ void PrintSiuStatus(LPWFSSIUSTATUS status)
     //Auxiliaries
     aux.clear();
     for (int i = 0; i <= WFS_SIU_AUXILIARIES_MAX; i++) {
-        int st = (int)status->fwAuxiliaries[i] - 48;
+        int st = (int)status->fwAuxiliaries[i];
         aux.append(to_string(st));
     }
     sprintf_s(buf, "%s fwAuxiliaries: %s", CONSOLE_TAB, aux.c_str());
@@ -324,7 +324,7 @@ void PrintSiuStatus(LPWFSSIUSTATUS status)
     //GuidLights
     aux.clear();
     for (int i = 0; i <= WFS_SIU_GUIDLIGHTS_MAX; i++) {
-        int st = (int)status->fwGuidLights[i] - 48;
+        int st = (int)status->fwGuidLights[i];
         aux.append(to_string(st));
     }
     sprintf_s(buf, "%s fwGuidLights: %s", CONSOLE_TAB, aux.c_str());
@@ -333,7 +333,7 @@ void PrintSiuStatus(LPWFSSIUSTATUS status)
     //Indicators
     aux.clear();
     for (int i = 0; i <= WFS_SIU_INDICATORS_MAX; i++) {
-        int st = (int)status->fwIndicators[i] - 48;
+        int st = (int)status->fwIndicators[i];
         aux.append(to_string(st));
     }
     sprintf_s(buf, "%s fwIndicators: %s", CONSOLE_TAB, aux.c_str());
@@ -370,7 +370,7 @@ void PrintSiuCaps(LPWFSSIUCAPS caps)
     //Sensors
     aux.clear();
     for (int i = 0; i <= WFS_SIU_SENSORS_MAX; i++) {
-        int st = (int)caps->fwSensors[i] - 48;
+        int st = (int)caps->fwSensors[i];
         aux.append(to_string(st));
     }
     sprintf_s(buf, "%s fwSensors: %s", CONSOLE_TAB, aux.c_str());
@@ -379,7 +379,7 @@ void PrintSiuCaps(LPWFSSIUCAPS caps)
     //Doors
     aux.clear();
     for (int i = 0; i <= WFS_SIU_DOORS_MAX; i++) {
-        int st = (int)caps->fwDoors[i] - 48;
+        int st = (int)caps->fwDoors[i];
         aux.append(to_string(st));
     }
     sprintf_s(buf, "%s fwDoors: %s", CONSOLE_TAB, aux.c_str());
@@ -388,7 +388,7 @@ void PrintSiuCaps(LPWFSSIUCAPS caps)
     //Auxiliaries
     aux.clear();
     for (int i = 0; i <= WFS_SIU_AUXILIARIES_MAX; i++) {
-        int st = (int)caps->fwAuxiliaries[i] - 48;
+        int st = (int)caps->fwAuxiliaries[i];
         aux.append(to_string(st));
     }
     sprintf_s(buf, "%s fwAuxiliaries: %s", CONSOLE_TAB, aux.c_str());
@@ -397,7 +397,7 @@ void PrintSiuCaps(LPWFSSIUCAPS caps)
     //GuidLights
     aux.clear();
     for (int i = 0; i <= WFS_SIU_GUIDLIGHTS_MAX; i++) {
-        int st = (int)caps->fwGuidLights[i] - 48;
+        int st = (int)caps->fwGuidLights[i];
         aux.append(to_string(st));
     }
     sprintf_s(buf, "%s fwGuidLights: %s", CONSOLE_TAB, aux.c_str());
@@ -406,7 +406,7 @@ void PrintSiuCaps(LPWFSSIUCAPS caps)
     //Indicators
     aux.clear();
     for (int i = 0; i <= WFS_SIU_INDICATORS_MAX; i++) {
-        int st = (int)caps->fwIndicators[i] - 48;
+        int st = (int)caps->fwIndicators[i] ;
         aux.append(to_string(st));
     }
     sprintf_s(buf, "%s fwIndicators: %s", CONSOLE_TAB, aux.c_str());
